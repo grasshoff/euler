@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Euler-Briefe: Referenz mit BibTeX — Euler Opera omnia</title>
+<meta name="description" content="Die Briefe Leonhard Eulers nach dem Stand der kritischen Bände der Reihe IV A, einzeln als BibTeX @letter zitierbar.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,460;0,9..144,560;1,9..144,460&family=Source+Sans+3:ital,wght@0,400;0,560;0,650;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,560;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/landing.css">
+<style>
+.ref-tools { display: grid; gap: .8rem; margin: 1.4rem 0 1rem; }
+.ref-row { display: flex; flex-wrap: wrap; gap: .5rem .8rem; align-items: center; }
+.ref-row input[type=search], .ref-row input[type=number] {
+  font: inherit; padding: .5rem .7rem; border: 1px solid var(--line-strong); background: var(--paper); color: var(--ink); border-radius: 2px; }
+.ref-row input[type=search] { flex: 1 1 22rem; min-width: 14rem; }
+.ref-row input[type=number] { width: 6.2rem; }
+.ref-row label { font-size: .88rem; color: var(--oxford-soft); }
+.ref-count { font-size: .92rem; color: var(--oxford-soft); margin: .4rem 0 .6rem; }
+.ref-table { width: 100%; border-collapse: collapse; font-size: .93rem; background: var(--paper); border: 1px solid var(--line); }
+.ref-table th { text-align: left; font-weight: 650; color: var(--oxford); padding: .5rem .6rem; border-bottom: 2px solid var(--gold); background: var(--sand-deep); white-space: nowrap; }
+.ref-table td { padding: .42rem .6rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.ref-table tr:hover td { background: #fbf6ea; }
+.ref-table td.num { white-space: nowrap; color: var(--oxford-soft); }
+.ref-table td.date { white-space: nowrap; }
+.tag { display: inline-block; font-size: .72rem; padding: .05rem .4rem; border: 1px solid var(--line-strong); border-radius: 2px; color: var(--oxford-soft); margin-left: .35rem; }
+.tag.reg { border-color: var(--gold-deep); color: var(--gold-deep); }
+.bib-btn { font: inherit; font-size: .82rem; border: 1px solid var(--oxford); background: var(--oxford); color: #f7f1e4; padding: .22rem .6rem; border-radius: 2px; cursor: pointer; white-space: nowrap; }
+.bib-btn:hover { background: var(--oxford-soft); }
+.bib-btn.done { background: var(--gold-deep); border-color: var(--gold-deep); }
+.bib-show { font: inherit; font-size: .82rem; border: 0; background: none; color: var(--oxford); text-decoration: underline; cursor: pointer; margin-left: .4rem; }
+.bib-pre { margin: .4rem 0 .1rem; padding: .6rem .8rem; background: var(--sand); border-left: 3px solid var(--gold); font: 0.8rem/1.45 ui-monospace, Menlo, monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+.pager { display: flex; gap: .6rem; align-items: center; margin: 1rem 0 2rem; }
+.note-box { border-left: 3px solid var(--gold); background: var(--paper); padding: .8rem 1rem; margin: 1.2rem 0; font-size: .95rem; }
+</style>
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt</a>
+<header class="mast">
+  <div class="mast-inner">
+    <p class="brand brand-lg"><a href="../"><span>Euler</span> Opera omnia</a></p>
+    <nav aria-label="Abschnitte">
+      <a href="../bestand/">Bestand</a>
+      <a href="./" aria-current="page">Briefe</a>
+      <a href="../#quellen">Quellen</a>
+      <a href="https://lettre.ngrok.dev/euler-opera/" target="_blank" rel="noopener">Edition</a>
+    </nav>
+  </div>
+</header>
+<main id="inhalt">
+<div class="wrap">
+  <section class="story-hero">
+        <p class="home-back"><a href="../index.html">Zur Startseite</a></p>
+        
+    <p class="kicker">Referenz</p>
+    <h1>Eulers Briefe,<br>einzeln zitierbar</h1>
+    <p class="lead">1.040 Briefe nach dem Stand der kritischen Bände IV A 2 bis 8. Jeder Brief lässt sich als BibTeX-Eintrag <code>@letter</code> kopieren.</p>
+  </section>
+
+  <div class="note-box">
+    <p><strong>Maßgeblich sind die kritischen Bände.</strong> Der Registerband <em>Descriptio commercii epistolici</em> (IV A 1) ist ein erster Entwurf mit Fehlern. Wo ein Brief in einem späteren Band steht, gilt dessen Angabe. Briefe, die nur der Registerband nennt (2.353), sind als solche gekennzeichnet; sie sind kein gesicherter Bestand.</p>
+    <p>Die Listen sind maschinell aus den Seiten der Bände gelesen und noch nicht vollständig gegen den Druck geprüft. 75 Einträge des Registerbandes, deren Kopf sich nicht sicher lesen ließ, sind hier nicht aufgeführt.</p>
+  </div>
+
+  <div class="ref-tools" role="search">
+    <div class="ref-row">
+      <input type="search" id="q" placeholder="Person, Ort oder Datum, z. B. Goldbach 1742" aria-label="Suche">
+      <label>von <input type="number" id="y0" min="1700" max="1800" placeholder="1725"></label>
+      <label>bis <input type="number" id="y1" min="1700" max="1800" placeholder="1783"></label>
+    </div>
+    <div class="ref-row" id="chips" aria-label="Bände"></div>
+  </div>
+  <p class="ref-count" id="count" aria-live="polite"></p>
+  <table class="ref-table">
+    <thead><tr><th>Datum</th><th>Von</th><th>An</th><th>Ort</th><th>Fundstelle</th><th></th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  <div class="pager"><button class="chip" id="prev">Zurück</button><span id="pg"></span><button class="chip" id="next">Weiter</button>
+    <button class="chip" id="dl" style="margin-left:auto">Treffer als .bib laden</button></div>
+
+  <div class="note-box">
+    <p>Rechte an den Briefen und den Editionen liegen bei der Bernoulli-Euler-Gesellschaft, Basel. Diese Seite enthält nur bibliographische Angaben, keine Briefwortlaute und keine Regesten. Sekundärliteratur ist nicht aufgenommen.</p>
+  </div>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <div><p>Euler Opera omnia</p><p>Gerd Graßhoff, Humboldt-Universität zu Berlin, Forschungsinstitut des Deutschen Museums</p></div>
+    <div><p><a href="letters.json">Daten (JSON)</a></p></div>
+  </div>
+</footer>
+<script>
+(function () {
+  var PAGE = 100, all = [], vols = [], sel = {ed: true, reg: false, v: null}, hits = [], page = 0;
+  var $ = function (i) { return document.getElementById(i); };
+  fetch('letters.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (j) {
+    all = j.letters; vols = j.volumes; chips(); run();
+  }).catch(function (e) { $('count').textContent = 'Die Daten konnten nicht geladen werden (' + e.message + ').'; });
+
+  function chip(label, count, pressed, fn) {
+    var b = document.createElement('button'); b.className = 'chip'; b.setAttribute('aria-pressed', pressed ? 'true' : 'false');
+    b.innerHTML = label + ' <span class="c">' + count + '</span>'; b.onclick = function () { fn(b); }; return b;
+  }
+  function chips() {
+    var box = $('chips'); box.innerHTML = '';
+    var nE = all.filter(function (x) { return x.b === 'e'; }).length, nR = all.length - nE;
+    var bE = chip('Kritische Bände', nE, sel.ed, function (b) { sel.ed = !sel.ed; b.setAttribute('aria-pressed', sel.ed); run(); });
+    var bR = chip('Nur im Registerband', nR, sel.reg, function (b) { sel.reg = !sel.reg; b.setAttribute('aria-pressed', sel.reg); run(); });
+    box.appendChild(bE); box.appendChild(bR);
+    vols.forEach(function (v) {
+      box.appendChild(chip(v.v, v.n, false, function (b) {
+        sel.v = sel.v === v.v ? null : v.v;
+        Array.prototype.forEach.call(box.querySelectorAll('.chip[data-v]'), function (c) { c.setAttribute('aria-pressed', c.dataset.v === sel.v); });
+        run();
+      }));
+      box.lastChild.dataset.v = v.v;
+    });
+  }
+  function norm(s) { return (s || '').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, ''); }
+  function run() {
+    var terms = norm($('q').value).split(/\s+/).filter(Boolean);
+    var y0 = parseInt($('y0').value, 10), y1 = parseInt($('y1').value, 10);
+    hits = all.filter(function (x) {
+      if (x.b === 'e' && !sel.ed) return false;
+      if (x.b === 'r' && !sel.reg) return false;
+      if (sel.v && x.v !== sel.v) return false;
+      var y = x.d ? parseInt(x.d.slice(0, 4), 10) : null;
+      if (y0 && (y === null || y < y0)) return false;
+      if (y1 && (y === null || y > y1)) return false;
+      if (terms.length) { var h = norm([x.s, x.t, x.p, x.dt, x.v, x.n, x.d].join(' ')); for (var i = 0; i < terms.length; i++) if (h.indexOf(terms[i]) < 0) return false; }
+      return true;
+    });
+    page = 0; draw();
+  }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]; }); }
+  function copy(text, btn) {
+    function ok() { var o = btn.textContent; btn.textContent = 'Kopiert'; btn.classList.add('done'); setTimeout(function () { btn.textContent = o; btn.classList.remove('done'); }, 1400); }
+    if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(text).then(ok, fallback); } else fallback();
+    function fallback() { var t = document.createElement('textarea'); t.value = text; t.style.position = 'fixed'; t.style.opacity = '0'; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); ok(); } catch (e) { btn.textContent = 'Nicht möglich'; } document.body.removeChild(t); }
+  }
+  function draw() {
+    var n = hits.length, pages = Math.max(1, Math.ceil(n / PAGE));
+    $('count').textContent = n.toLocaleString('de-DE') + ' Briefe' + (n ? '' : ' — nichts gefunden');
+    var tb = $('rows'); tb.innerHTML = '';
+    hits.slice(page * PAGE, page * PAGE + PAGE).forEach(function (x) {
+      var tr = document.createElement('tr');
+      var src = x.b === 'e' ? x.v + ' Nr. ' + esc(x.n) + (x.R ? ' <span class="tag">R ' + x.R + '</span>' : '') + (x.x ? '<span class="tag">verschollen</span>' : '')
+                            : 'IV A 1 R ' + x.R + ' <span class="tag reg">nur Registerband</span>';
+      tr.innerHTML = '<td class="date">' + esc(x.dt || x.d || '—') + '</td><td>' + esc(x.s) + '</td><td>' + esc(x.t) + '</td><td>' + esc(x.p) + '</td><td class="num">' + src + '</td><td></td>';
+      var td = tr.lastChild, b = document.createElement('button'); b.className = 'bib-btn'; b.textContent = 'BibTeX kopieren'; b.onclick = function () { copy(x.bib, b); };
+      var s = document.createElement('button'); s.className = 'bib-show'; s.textContent = 'zeigen';
+      s.onclick = function () { var nxt = tr.nextSibling; if (nxt && nxt.className === 'bib-row') { nxt.remove(); s.textContent = 'zeigen'; return; }
+        var r = document.createElement('tr'); r.className = 'bib-row'; r.innerHTML = '<td colspan="6"><pre class="bib-pre">' + esc(x.bib) + '</pre></td>'; tr.after(r); s.textContent = 'verbergen'; };
+      td.appendChild(b); td.appendChild(s); tb.appendChild(tr);
+    });
+    $('pg').textContent = 'Seite ' + (page + 1) + ' von ' + pages;
+    $('prev').disabled = page === 0; $('next').disabled = page >= pages - 1;
+  }
+  $('q').addEventListener('input', run); $('y0').addEventListener('input', run); $('y1').addEventListener('input', run);
+  $('prev').onclick = function () { if (page > 0) { page--; draw(); window.scrollTo(0, 0); } };
+  $('next').onclick = function () { page++; draw(); window.scrollTo(0, 0); };
+  $('dl').onclick = function () {
+    var blob = new Blob([hits.map(function (x) { return x.bib; }).join('\n\n') + '\n'], {type: 'text/plain;charset=utf-8'});
+    var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'euler-briefe.bib'; document.body.appendChild(a); a.click(); a.remove();
+  };
+})();
+</script>
+</body>
+</html>

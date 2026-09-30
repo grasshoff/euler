@@ -1,0 +1,149 @@
+{
+ "slug": "euler",
+ "facts": {
+  "oo_vols": {
+   "value": 84,
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+  },
+  "oo_pages": {
+   "value": 41219,
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+  },
+  "oo_vols_I": {
+   "value": 30,
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+  },
+  "oo_pages_I": {
+   "value": 15001,
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+  },
+  "oo_vols_II": {
+   "value": 33,
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+  },
+  "oo_pages_II": {
+   "value": 13918,
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+  },
+  "oo_vols_III": {
+   "value": 13,
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+  },
+  "oo_pages_III": {
+   "value": 5931,
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+  },
+  "oo_vols_IVA": {
+   "value": 8,
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+  },
+  "oo_pages_IVA": {
+   "value": 6369,
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+  },
+  "oo_year_min": {
+   "value": 1911,
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+  },
+  "oo_year_max": {
+   "value": 2022,
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+  },
+  "en_entries": {
+   "value": 866,
+   "source": "enestroem.bib: entries with an Eneström number as key"
+  },
+  "en_docs": {
+   "value": 767,
+   "source": "PDAI enestroem: directories E<number>"
+  },
+  "en_pages": {
+   "value": 28408,
+   "source": "PDAI enestroem: page folders of E<number> directories"
+  },
+  "en_year_min": {
+   "value": 1725,
+   "source": "enestroem.bib: first year of the field year"
+  },
+  "en_year_max": {
+   "value": 1783,
+   "source": "enestroem.bib: first year of the field year"
+  },
+  "en_dated": {
+   "value": 825,
+   "source": "enestroem.bib: entries with a year"
+  },
+  "iva_edition_letters": {
+   "value": 1040,
+   "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8)"
+  },
+  "iva_edition_lost": {
+   "value": 85,
+   "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8) (numbers in brackets = lost letters)"
+  },
+  "iva_catalogue_entries": {
+   "value": 2799,
+   "source": "letters_reference.duckdb descriptio (distinct R numbers of the main list of IVA 1, machine-read)"
+  },
+  "iva_register_only": {
+   "value": 2353,
+   "source": "letters_reference.duckdb reference (Descriptio entries no edition letter claims, reading suspect ones excluded)"
+  },
+  "iva_aligned": {
+   "value": 644,
+   "source": "letters_reference.duckdb crosswalk"
+  },
+  "iva_first": {
+   "value": 1725,
+   "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8)"
+  },
+  "iva_last": {
+   "value": 1778,
+   "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8)"
+  },
+  "iva_vols_critical": {
+   "value": 7,
+   "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8)"
+  },
+  "iva_top_n": {
+   "value": 250,
+   "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8) (largest partner)"
+  },
+  "iva_top_name": {
+   "value": "D. Bernoulli",
+   "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8) (largest partner)"
+  },
+  "sec_docs": {
+   "value": 16,
+   "source": "PDAI euler_sec: documents with bibliographic data"
+  },
+  "sec_pages": {
+   "value": 2703,
+   "source": "PDAI euler_sec: page folders"
+  },
+  "e57_pages": {
+   "value": 106,
+   "source": "euler-argumentation-pilot/report/pilot-results.qmd (report of 2026-04-23)"
+  },
+  "e57_prop": {
+   "value": 127,
+   "source": "euler-argumentation-pilot/report/pilot-results.qmd"
+  },
+  "e57_caput": {
+   "value": 8,
+   "source": "euler-argumentation-pilot/report/pilot-results.qmd"
+  },
+  "e57_formulas": {
+   "value": 1504,
+   "source": "euler-argumentation-pilot/report/pilot-results.qmd"
+  },
+  "e57_sentences": {
+   "value": 2131,
+   "source": "euler-argumentation-pilot/report/pilot-results.qmd"
+  }
+ },
+ "notes": [
+  "eulerOO volumes are the directories with a biblio.xml that carries a <volume> field; EOII27 has none and is not counted.",
+  "Eneström years above 1800 excluded from the decade chart: [1954]"
+ ]
+}
