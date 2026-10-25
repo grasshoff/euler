@@ -600,3 +600,14 @@ footer p { margin: 0.15rem 0; }
   .guide-hint { grid-template-columns: 1fr; }
   .guide-sticker { justify-self: start; }
 }
+
+/* the shared question form of every landing: one input, one action, opens the viewer's Anfrage column */
+.ask { margin: 1.4rem 0 0.4rem; padding: 1rem 1.1rem; border: 1px solid var(--line); border-radius: 10px; background: color-mix(in srgb, var(--paper, #fbf8f1) 92%, #c8a22a 8%); }
+.ask label { display: block; font-family: var(--sans, "Source Sans 3", sans-serif); font-weight: 650; color: var(--oxford, #002147); margin-bottom: 0.45rem; }
+.ask-row { display: flex; gap: 0.5rem; }
+.ask-row input[type=text] { flex: 1; min-width: 0; font: inherit; font-size: 1rem; padding: 0.55rem 0.7rem; border: 1px solid var(--line-strong, #b9b2a2); border-radius: 7px; background: #fff; }
+.ask-row input[type=text]:focus { outline: none; border-color: #c8a22a; box-shadow: 0 0 0 3px rgba(200, 162, 42, 0.25); }
+.ask-row button { font: inherit; font-weight: 650; padding: 0.55rem 1rem; border: 0; border-radius: 7px; background: var(--oxford, #002147); color: #fff; cursor: pointer; }
+.ask-row button:hover { background: #c8a22a; color: #002147; }
+.ask-hint { margin: 0.5rem 0 0; font-size: 0.86rem; color: var(--muted, #5c5c5c); }
+@media (max-width: 600px) { .ask-row { flex-direction: column; } }
