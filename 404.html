@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Famulus · page not found</title>
+<script>
+// Written from platform/config/landings.yaml by famulus_namespace.not_found_page; do not edit by hand.
+// Renamed repositories (old_repo -> repo): keep the rest of the path.
+var MOVED = {"ancient-sundials-2026": "/sundials/", "babylon-2026": "/babylon/", "bischoff-2026": "/medieval/", "brahe-2026": "/brahe/", "euler-2026": "/euler/", "famulus-news": "/news/", "karman-2026": "/karman/", "kausalitaet-2026": "/kausalitaet/", "kepler-2026": "/kepler/", "kepleriana-2026": "/kepleriana/", "kopernikus-2026": "/kopernikus/", "landings-2026": "/editions/", "tractatus-typoskripte-2026": "/tractatus-typoskripte/", "wittgenstein-mechanik-2026": "/wittgenstein-mechanik/"};
+// Live services (famulus_namespace.live_paths): <collection>/<rest> shows <ngrok_base><route>/<rest>, and the gateway
+// /live/<path> shows <ngrok_base>/<path>, in a full-page frame. The viewer reports its address (ai-viewer
+// famulus-shell.js) and the address bar follows it, so it always reads famulus.lettre.ai.
+var GATEWAY = "live", LIVE = "https://lettre.ngrok.dev", PATHS = {"/brahe-oo": "/brahe/", "/copernicus": "/kopernikus/", "/diaries": "/babylon/", "/euler-opera": "/euler/", "/karman": "/karman/", "/kepler-gw": "/kepler/", "/kepleriana-munich-2024": "/kepleriana/", "/medieval-sec": "/medieval/", "/tractatus-typoskripte": "/tractatus-typoskripte/", "/wittgenstein-mechanik": "/wittgenstein-mechanik/"};
+function service(p) {
+  var seg = p.split("/")[1] || "";
+  if (seg === GATEWAY) return p.slice(seg.length + 1);
+  for (var r in PATHS) {
+    if (p.indexOf(PATHS[r]) === 0 && p.length > PATHS[r].length) return r + "/" + p.slice(PATHS[r].length);
+  }
+  return null;
+}
+function publicPath(p) {
+  for (var r in PATHS) {
+    if (p.indexOf(r + "/") === 0 && p.length > r.length + 1) return PATHS[r] + p.slice(r.length + 1);
+  }
+  return "/" + GATEWAY + p;
+}
+(function () {
+  var p = location.pathname, seg = p.split("/")[1] || "", s = service(p);
+  if (s) {
+    document.documentElement.className = "live";
+    document.addEventListener("DOMContentLoaded", function () {
+      var f = document.createElement("iframe");
+      f.src = LIVE + s + location.search + location.hash;
+      f.title = "Famulus";
+      f.allow = "clipboard-read; clipboard-write; fullscreen";
+      f.allowFullscreen = true;
+      f.addEventListener("load", function () { f.contentWindow.postMessage({famulus: "shell"}, LIVE); });
+      document.body.appendChild(f);
+    });
+    window.addEventListener("message", function (e) {
+      var d = e.data;
+      if (e.origin !== LIVE || !d || d.famulus !== "loc" || typeof d.path !== "string" || d.path.charAt(0) !== "/") return;
+      history.replaceState(null, "", publicPath(d.path) + (d.search || "") + (d.hash || ""));
+      if (d.title) document.title = d.title;
+    });
+  } else if (Object.prototype.hasOwnProperty.call(MOVED, seg)) {
+    location.replace(MOVED[seg] + p.slice(seg.length + 2) + location.search + location.hash);
+  }
+})();
+</script>
+<style>
+:root { --ink: #002147; --gold: #c8a22a; --paper: #faf8f3; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.5 Georgia, serif; }
+main { max-width: 36rem; margin: 18vh auto; padding: 0 16px; }
+h1 { font-weight: 500; } a { color: var(--ink); text-decoration-color: var(--gold); }
+html.live, html.live body { height: 100%; overflow: hidden; }
+html.live main { display: none; }
+html.live iframe { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; z-index: 2147483647; background: #fff; }
+</style>
+</head>
+<body>
+<main>
+<h1>This page does not exist.</h1>
+<p><a href="/">Famulus</a> · <a href="/news/">Famulus News</a> · <a href="/guide/">Wegweiser</a> · <a href="/editions/">Editions</a></p>
+</main>
+</body>
+</html>
