@@ -1,0 +1,824 @@
+{
+ "collection": "euler",
+ "stand": "2026-10-27 13:30",
+ "issues": [
+  {
+   "id": "EULER-F1",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "fehler",
+   "titel": "Textabdeckung der Opera omnia falsch bewertet",
+   "befund": "Die Auswertung vom 24.10. meldete nur 6.689 von 41.219 Seiten mit Text. Die Seiten der Eneström-Dokumente sind aber Ausschnitte derselben Bände: 26.953 Seiten (in allen Ordnern, Dubletten mitgezählt) waren längst transkribiert, nur an anderer Stelle.",
+   "beleg": "development/famulus-proof/runs/seitenkarte/eulerOO-2026-10-26.md",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "owner",
+   "hinweis_von": "Projektleitung",
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": "Seitenkarte durch Bildabgleich aller Seiten; Übernahme der Transkriptionen mit Herkunftsangabe",
+   "frist": null,
+   "erledigt_am": "2026-10-26",
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-26",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "EULER-L1",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "luecke",
+   "titel": "Seiten der Opera omnia ohne Transkription",
+   "befund": "7.391 Seiten der Reihen I–III haben kein Gegenstück in den Eneström-Dokumenten: Titelbogen, Vorworte und Einleitungen der Herausgeber, Werke ohne Eneström-Dokument, Register und Tafeln sowie 115 Seiten, deren Zuordnung nicht eindeutig war.",
+   "beleg": "pdai-collections/eulerOO/_seitenkarte/luecken.tsv",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "geplant",
+   "zusammen_mit": null,
+   "aufgabe": "Lesen mit Kimi im Wochenend-Kontingent, je Band zuerst eine Stichprobenprüfung von fünf Seiten",
+   "frist": "2026-11-01",
+   "erledigt_am": null,
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-26",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "geplant"
+    }
+   ]
+  },
+  {
+   "id": "EULER-L2",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "luecke",
+   "titel": "Ganze Bände ohne Eneström-Dokumente",
+   "befund": "Für I 16.1, I 16.2, II 3, II 11.1 und II 11.2 gibt es keine einzige Eneström-Seite, für II 4 und II 24 fast keine. II 3/II 4 (Theoria motus corporum solidorum, E289) liegt in enestroem nur als Originaldruck von 1765 vor.",
+   "beleg": "development/famulus-proof/runs/seitenkarte/eulerOO-2026-10-26.md",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "geplant",
+   "zusammen_mit": null,
+   "aufgabe": "Teil der Wochenend-Lesung (L1)",
+   "frist": "2026-11-01",
+   "erledigt_am": null,
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-26",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "geplant"
+    }
+   ]
+  },
+  {
+   "id": "EULER-L3",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "luecke",
+   "titel": "Eneström-Nummern ohne Dokument",
+   "befund": "Das Verzeichnis führt 866 Hauptnummern (1.009 mit Nachdrucken und Varianten), in enestroem liegen 767 Dokumente. Es fehlen 99 Hauptnummern, darunter die Abhandlungen zu Saiten und elastischen Körpern (E439–E443, E471, E481, E482, E526) und zur Mondtheorie (E371, E504).",
+   "beleg": "pdai-collections/enestroem/apparat/apparat.duckdb (enestroem_verzeichnis)",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "in_arbeit",
+   "zusammen_mit": null,
+   "aufgabe": "Rückführung aus den Opera omnia, nur mit drei Belegen: Kopf „Commentatio N indicis ENESTROEMIANI“, Titel gleich dem Verzeichnis, Kolumnentitel bis zur nächsten harten Grenze. Unsicheres geht in eine Prüfliste.",
+   "frist": "2026-11-02",
+   "erledigt_am": null,
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-27",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "in_arbeit"
+    }
+   ]
+  },
+  {
+   "id": "EULER-L4",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "luecke",
+   "titel": "Band I 8 fehlt",
+   "befund": "Der Ordner, der als I 8 (Introductio in analysin infinitorum, Teil 1) geführt wird, enthält einen Scan von I 25. Die Introductio selbst ist nicht im Bestand. Fahndung am 27.10.: alle elf Kopien dieser Datei auf beiden Datenträgern (drei Fassungen vom 3. und 9. Juni 2021) enthalten I 25; ein Exemplar mit „Series prima, Volumen octavum“ gibt es nirgends. Der Fehler stammt aus dem Scan bzw. der Lieferung vom Juni 2021. Springer hat den gedruckten Band geliefert (Lieferung 88216458 vom 27.04.2021); der Scandienst lieferte unter seiner ISBN einen zweiten Scan von I 25. Rückfrage an den Scandienst am 27.10.2026 vorbereitet.",
+   "beleg": "development/famulus-proof/runs/seitenkarte/band-audit-2026-10-27.md",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "entscheidung",
+   "zusammen_mit": null,
+   "aufgabe": "Nachscan von I 8 beim Scandienst anfordern; danach den Ordner ersetzen und die Lücken lesen",
+   "frist": null,
+   "erledigt_am": null,
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-26",
+   "geaendert": "2026-10-27T12:30:10",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "entscheidung"
+    }
+   ]
+  },
+  {
+   "id": "EULER-F2",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "fehler",
+   "titel": "Doppelte Bandordner",
+   "befund": "III 1 liegt zweimal vor (gleicher Scan), II 27 zweimal (zwei Rasterungen), und der Ordner „I 8“ ist eine Kopie von I 25.",
+   "beleg": "pdai-collections/eulerOO/_seitenkarte/seitenkarte.duckdb (Tabelle dubletten)",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": "Als Dubletten führen; jede Seite wird nur einmal gelesen und in die Kopie übertragen",
+   "frist": null,
+   "erledigt_am": "2026-10-26",
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-26",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "EULER-F3",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "fehler",
+   "titel": "Ältere Transkriptionen formal nicht gültig",
+   "befund": "Die übernommenen Seiten stammen zu 88 % aus einer Lesung vom März 2026 mit einem inzwischen ausgemusterten Modell. In einer Stichprobe von 300 Seiten genügen nur 39 % der Seitengrammatik.",
+   "beleg": "Prüflauf vom 26.10.2026 gegen pdai-core page.dtd",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "entscheidung",
+   "zusammen_mit": null,
+   "aufgabe": "Neulesung in enestroem; die Verbesserung gelangt automatisch nach eulerOO",
+   "frist": null,
+   "erledigt_am": null,
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-26",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "entscheidung"
+    }
+   ]
+  },
+  {
+   "id": "EULER-F4",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "fehler",
+   "titel": "Falsche Seitenzahl auf Impressumseiten",
+   "befund": "Auf der Impressumseite von I 1 wurde die Druckzählung „9 8 7 6 5 4 3 2“ als Seitenzahl 9 gelesen.",
+   "beleg": "pdai-collections/eulerOO/978-3-7643-1400-2/pages/page_006/page_006.xml",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "geplant",
+   "zusammen_mit": null,
+   "aufgabe": "Seitenzahlerkennung für Titelbogen ohne Seitenzahl berichtigen",
+   "frist": "2026-11-09",
+   "erledigt_am": null,
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-26",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "geplant"
+    }
+   ]
+  },
+  {
+   "id": "EULER-R1",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "referenz",
+   "titel": "Eneström-Dokumente mit fremdem Inhalt",
+   "befund": "Sechs Dokumente beginnen mit dem Kopf einer anderen Nummer: E101 (enthält I 25 ab E9 statt der Introductio), E104 (enthält E127), E653 (E658), E457 (E340), E220 (E221 mit) und E35 (ganzer Band III 2 mit E17).",
+   "beleg": "pdai-collections/eulerOO/_seitenkarte/e_kopfpruefung.json",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "geplant",
+   "zusammen_mit": null,
+   "aufgabe": "Aus den Opera omnia nach der Seitenkarte neu schneiden",
+   "frist": "2026-11-09",
+   "erledigt_am": null,
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-27",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "geplant"
+    }
+   ]
+  },
+  {
+   "id": "EULER-R2",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "referenz",
+   "titel": "Eneström-Dokumente mit falschem Anfang",
+   "befund": "E127, E305, E315 und E340 beginnen mitten im Text eines Aufsatzes, E91 mit dem Reihentitel des Bandes III 1.",
+   "beleg": "pdai-collections/eulerOO/_seitenkarte/e_kopfpruefung.json",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "geplant",
+   "zusammen_mit": null,
+   "aufgabe": "Aus den Opera omnia nach der Seitenkarte neu schneiden",
+   "frist": "2026-11-09",
+   "erledigt_am": null,
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-27",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "geplant"
+    }
+   ]
+  },
+  {
+   "id": "EULER-R3",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "referenz",
+   "titel": "Unscharfe Ränder der Eneström-Dokumente",
+   "befund": "Manche Dokumente enthalten Seiten des benachbarten Aufsatzes; E136 beginnt etwa mit den zwei letzten Seiten von E126. Andere enthalten ganze Bände (E17/E35 in III 2, E343/E417 in III 11, E92/E344 in III 12).",
+   "beleg": "Prüflauf von enestroem_rueckfuehrung.py vom 27.10.2026 (Kolumnentitel)",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "geplant",
+   "zusammen_mit": null,
+   "aufgabe": "Ränder nach den Kolumnentiteln der Opera omnia berichtigen",
+   "frist": "2026-11-09",
+   "erledigt_am": null,
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-27",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "geplant"
+    }
+   ]
+  },
+  {
+   "id": "EULER-R4",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "referenz",
+   "titel": "Widersprüche im Briefregister der Reihe IVA",
+   "befund": "Das Briefregister führt julianische Daten für Briefe, die die Synopse als gregorianisch ausweist, den Ort des Empfängers als Absendeort und 157 Repertoriumsnummern, die Briefe verschiedener Daten teilen.",
+   "beleg": "Dossier famulus-proof, Befunde vom 24.10.2026",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "entscheidung",
+   "zusammen_mit": null,
+   "aufgabe": "Als Widersprüche führen und je Brief gegen die kritische Edition entscheiden",
+   "frist": null,
+   "erledigt_am": null,
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-24",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "entscheidung"
+    }
+   ]
+  },
+  {
+   "id": "EULER-A1",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "ablauf",
+   "titel": "Kontingentgrenze falsch gedeutet",
+   "befund": "Am 26.10. galt die Ollama-Grenze als Wochenlimit; tatsächlich war es das Sitzungslimit, das nach einigen Stunden endet. Die Woche war erst zur Hälfte verbraucht.",
+   "beleg": "Antwort des Dienstes „session usage limit“, 26.10.2026",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": "Beide Grenzen unterscheiden; Wochenkapazität messen, prognostizieren und eine Reserve für das Wochenende halten",
+   "frist": null,
+   "erledigt_am": "2026-10-26",
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-26",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "EULER-A2",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "ablauf",
+   "titel": "Stilles Ausweichen auf ein anderes Lesemodell",
+   "befund": "An der Kontingentgrenze las die Texterkennung jede Seite stillschweigend mit einem anderen Modell weiter.",
+   "beleg": "ocr_runner client.py, dual_read.py, cure_run.py",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": "Anhalten statt Ausweichen; Fortsetzung, sobald die Grenze fällt",
+   "frist": null,
+   "erledigt_am": "2026-10-26",
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-26",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "EULER-A3",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "ablauf",
+   "titel": "Verarbeitungskette brach ohne Meldung ab",
+   "befund": "Die Nachbaukette endete in der Nacht zum 27.10. ohne Eintrag; die Ursache war nicht mehr festzustellen.",
+   "beleg": "/Volumes/PDAI-1/tmp/seitenkarte/nachbau.log",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": "Kettenwächter, der jeden Abbruch analysiert, die bekannte Ursache behebt und neu startet",
+   "frist": null,
+   "erledigt_am": "2026-10-27",
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-27",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "EULER-F5",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "fehler",
+   "titel": "Enthält jeder Bandordner, was angegeben ist?",
+   "befund": "Vollständiges Audit aller 85 Bandordner gegen Titelblatt, Bandtitel, Bogensignaturen und den Abgleich der Seitenbilder mit dem PDF. Ein Ordner enthält einen anderen Band (I 8, siehe L4); alle anderen sind bestätigt.",
+   "beleg": "development/famulus-proof/runs/seitenkarte/band-audit-2026-10-27.md",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "owner",
+   "hinweis_von": "Projektleitung",
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": "Band-Audit (band_audit.py) als feste Prüfung; Einzelprüfung jedes Hinweises",
+   "frist": null,
+   "erledigt_am": "2026-10-27",
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-27",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "EULER-1",
+   "collection": "euler",
+   "bereich": "rundgang",
+   "art": "luecke",
+   "titel": "Dossier-Schritte des Rundgangs noch nicht aufgenommen",
+   "befund": "Die Schritte »Dossier Christian Goldbach« und »Rechtfertigung einer Angabe« sind vorbereitet und geprüft, aber erst aufnehmbar, wenn der Dossier-Dienst läuft.",
+   "beleg": "landings2026/projects/euler/project.yaml (skip_steps)",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "geplant",
+   "zusammen_mit": null,
+   "aufgabe": "Nach FAMULUS-1 aufnehmen und veröffentlichen",
+   "frist": null,
+   "erledigt_am": null,
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-27",
+   "geaendert": "2026-10-27T12:26:27",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "geplant"
+    }
+   ]
+  },
+  {
+   "id": "EULER-2",
+   "collection": "euler",
+   "bereich": "rundgang",
+   "art": "referenz",
+   "titel": "Beleg mit Seitenindex statt Druckseite angegeben",
+   "befund": "Die Bildunterschrift nannte für Goldbachs Geburt »S. 13«; das ist der Seitenindex, gedruckt ist es S. 4 der Einleitung von IV A 4.",
+   "beleg": null,
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": null,
+   "frist": null,
+   "erledigt_am": "2026-10-27",
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-27",
+   "geaendert": "2026-10-27T12:26:27",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  }
+ ],
+ "plattform": [
+  {
+   "id": "FAMULUS-1",
+   "collection": "famulus",
+   "bereich": "dienst",
+   "art": "fehler",
+   "titel": "Dossier-, Wörterbuch- und Erläuterungsdienst ausgefallen",
+   "befund": "Seit dem Neustart des Mac Studio am 27.10. hängt jeder Editions-Server dort beim ersten Zugriff auf /Volumes/PDAI-1 in open(): macOS wartet auf die Freigabe für platform-run. Openscience erreicht die Famulus-Speicher über den Mac Studio, daher fallen Erläuterung, Seitenübersetzung, Wörterbuch, Dossier und Anfrage in allen Editionen aus.",
+   "beleg": "platform/logs/access-watch.jsonl; dossiers/platform.md (Incident 27 Oct 2026)",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "entscheidung",
+   "zusammen_mit": null,
+   "aufgabe": "Festplattenvollzugriff für ~/Library/Application Support/ai-platform/bin/platform-run (Projektleitung), dann Editionen neu starten",
+   "frist": null,
+   "erledigt_am": null,
+   "schwere": "hoch",
+   "n_meldungen": 0,
+   "erkannt": "2026-10-27",
+   "geaendert": "2026-10-27T12:26:26",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "entscheidung"
+    }
+   ]
+  },
+  {
+   "id": "FAMULUS-2",
+   "collection": "famulus",
+   "bereich": "viewer",
+   "art": "fehler",
+   "titel": "Menü zeigt in jeder Edition die Euler-Sammlungen",
+   "befund": "Das ☰-Menü listete unter Sammlungen fest Euler Opera Omnia und Eneström-Katalog, auch bei Kepler.",
+   "beleg": "pdai/viewer/ai-viewer/viewer.html (#menuCollections)",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": null,
+   "frist": null,
+   "erledigt_am": "2026-10-27",
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-27",
+   "geaendert": "2026-10-27T12:26:26",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "FAMULUS-3",
+   "collection": "famulus",
+   "bereich": "viewer",
+   "art": "bedienung",
+   "titel": "Menü englisch unter deutscher Oberfläche, ?ui= ging verloren",
+   "befund": "Die Überschriften des ☰-Menüs waren unter jeder Oberflächensprache englisch; der Parameter ?ui= wurde beim Laden aus der Adresse entfernt.",
+   "beleg": "viewer.html, famulus-sprache.js",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": null,
+   "frist": null,
+   "erledigt_am": "2026-10-27",
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-27",
+   "geaendert": "2026-10-27T12:26:26",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "FAMULUS-4",
+   "collection": "famulus",
+   "bereich": "viewer",
+   "art": "fehler",
+   "titel": "Dossier einer Person per Adresse (?dossier=) öffnete nicht",
+   "befund": "Der Parameter ?dossier=<id> ging beim Laden verloren, und beim ersten Seitenwechsel fiel das Dossier auf die Personenauswahl zurück, wenn die Person nicht auf der Seite steht.",
+   "beleg": "viewer.html, famulus-dossier.js",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": null,
+   "frist": null,
+   "erledigt_am": "2026-10-27",
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-27",
+   "geaendert": "2026-10-27T12:26:26",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "FAMULUS-5",
+   "collection": "famulus",
+   "bereich": "dienst",
+   "art": "ablauf",
+   "titel": "Editionen Euler, Kepler und Kármán 18 Minuten nicht erreichbar",
+   "befund": "Ein Stopp-Befehl für die hängenden Server auf dem Mac Studio wurde an openscience weitergeleitet und hielt dort die Haupt-Editionen an (11:33–11:52, öffentlich 502).",
+   "beleg": "dossiers/platform.md (Incident 27 Oct 2026)",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": null,
+   "frist": null,
+   "erledigt_am": "2026-10-27",
+   "schwere": "hoch",
+   "n_meldungen": 0,
+   "erkannt": "2026-10-27",
+   "geaendert": "2026-10-27T12:26:26",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "FAMULUS-6",
+   "collection": "famulus",
+   "bereich": "landing",
+   "art": "fehler",
+   "titel": "Öffentliche /live/-Links ohne Weiterleitung",
+   "befund": "Die Links famulus.lettre.ai/live/… der Landings zeigten »page not found«, weil die Weiterleitungsseite des Seitenstamms nicht veröffentlicht war.",
+   "beleg": "scholarly/projects/famulus-site/404.html",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": null,
+   "frist": null,
+   "erledigt_am": "2026-10-27",
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-27",
+   "geaendert": "2026-10-27T12:26:26",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  }
+ ]
+}

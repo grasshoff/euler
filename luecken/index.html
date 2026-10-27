@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,460;0,9..144,560;1,9..144,460&family=Source+Sans+3:ital,wght@0,400;0,560;0,650;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,560;1,8..60,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/landing.css?v=20261027132246">
+  <link rel="stylesheet" href="../assets/landing.css?v=20261027133843">
 <!-- famulus:publisher:start -->
 <meta name="referrer" content="no-referrer-when-downgrade">
 <meta name="publisher" content="OpenScienceTechnology GmbH">
@@ -93,9 +93,9 @@
 </tr>
 <tr>
 <td>L4</td>
-<td><strong>Band I 8 fehlt.</strong> Der Ordner, der als I 8 (Introductio in analysin infinitorum, Teil 1) geführt wird, enthält einen Scan von I 25. Die Introductio selbst ist nicht im Bestand. Fahndung am 27.10.: alle elf Kopien dieser Datei auf beiden Datenträgern (drei Fassungen vom 3. und 9. Juni 2021) enthalten I 25; ein Exemplar mit „Series prima, Volumen octavum“ gibt es nirgends. Der Fehler stammt aus dem Scan bzw. der Lieferung vom Juni 2021.</td>
+<td><strong>Band I 8 fehlt.</strong> Der Ordner, der als I 8 (Introductio in analysin infinitorum, Teil 1) geführt wird, enthält einen Scan von I 25. Die Introductio selbst ist nicht im Bestand. Fahndung am 27.10.: alle elf Kopien dieser Datei auf beiden Datenträgern (drei Fassungen vom 3. und 9. Juni 2021) enthalten I 25; ein Exemplar mit „Series prima, Volumen octavum“ gibt es nirgends. Der Fehler stammt aus dem Scan bzw. der Lieferung vom Juni 2021. Springer hat den gedruckten Band geliefert (Lieferung 88216458 vom 27.04.2021); der Scandienst lieferte unter seiner ISBN einen zweiten Scan von I 25. Rückfrage an den Scandienst am 27.10.2026 vorbereitet.</td>
 <td>26. 10.</td>
-<td>Den Band beim Verlag oder bei der Bernoulli-Euler-Gesellschaft neu beschaffen und den Ordner berichtigen</td>
+<td>Nachscan von I 8 beim Scandienst anfordern; danach den Ordner ersetzen und die Lücken lesen</td>
 <td>Entscheidung der Projektleitung</td>
 </tr>
 </tbody>
@@ -246,6 +246,12 @@
 </table></div>
 </div>
 </section>
+      <section class="iss-nav-band" id="issues" aria-labelledby="iss-nav-t">
+        <h2 id="iss-nav-t">Alle Probleme und ihr Stand</h2>
+        <p class="section-lead">Jedes erkannte Problem mit Befund, Aufgabe, Frist und Verlauf. Nichts wird gestrichen; Erledigtes bleibt mit Datum stehen.</p>
+        <div class="iss-nav" data-issues-nav data-collection="euler" data-kuerzel="EULER" data-issues-api="https://lettre.ngrok.dev/famulus-issues/api" data-snapshot="../data/issues.json" data-nav="../luecken/#issues"><p class="iss-laden">Die Liste wird geladen …</p></div>
+      </section>
+
 
     </div>
   </main>
@@ -258,10 +264,11 @@
     <div class="wrap"></div>
   </footer>
 
-  <script src="../assets/vendor/d3.v7.min.js?v=20261027132246"></script>
-  <script src="../data/bundle.js?v=20261027132246"></script>
-  <script src="../assets/js/charts.js?v=20261027132246"></script>
-  <script src="../assets/js/scrolly.js?v=20261027132246"></script>
+  <script src="../assets/vendor/d3.v7.min.js?v=20261027133843"></script>
+  <script src="../data/bundle.js?v=20261027133843"></script>
+  <script src="../assets/js/charts.js?v=20261027133843"></script>
+  <script src="../assets/js/issues.js?v=20261027133843"></script>
+  <script src="../assets/js/scrolly.js?v=20261027133843"></script>
 <!-- famulus:publisher:start -->
 <p class="famulus-publisher" style="max-width:46rem;margin:2.5rem auto 1.5rem;padding:.7rem 16px 0;border-top:2px solid #c8a22a;font:13px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;opacity:.8">Herausgegeben von der OpenScienceTechnology GmbH · <a href="/impressum/">Impressum</a> · <a href="/datenschutz/">Datenschutz</a></p>
 <script>(function(){try{var d=JSON.stringify({u:location.pathname,r:document.referrer,m:""});navigator.sendBeacon?navigator.sendBeacon("https://lettre.ngrok.dev/famulus-counter/api/hit",d):fetch("https://lettre.ngrok.dev/famulus-counter/api/hit",{method:'POST',body:d,keepalive:true,mode:'no-cors'})}catch(e){}})();</script>

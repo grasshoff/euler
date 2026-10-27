@@ -263,23 +263,31 @@
   },
   "def_erledigt": {
    "value": 6,
-   "source": "pdai/collections/eulerOO/defizite.yaml: tasks with status erledigt"
+   "source": "issues.duckdb (euler, bereich daten): tasks with status erledigt"
   },
   "def_in_arbeit": {
    "value": 1,
-   "source": "pdai/collections/eulerOO/defizite.yaml: tasks with status in_arbeit"
+   "source": "issues.duckdb (euler, bereich daten): tasks with status in_arbeit"
   },
   "def_geplant": {
    "value": 6,
-   "source": "pdai/collections/eulerOO/defizite.yaml: tasks with status geplant"
+   "source": "issues.duckdb (euler, bereich daten): tasks with status geplant"
   },
   "def_entscheidung": {
    "value": 3,
-   "source": "pdai/collections/eulerOO/defizite.yaml: tasks with status entscheidung"
+   "source": "issues.duckdb (euler, bereich daten): tasks with status entscheidung"
+  },
+  "def_bestaetigt": {
+   "value": 0,
+   "source": "issues.duckdb (euler, bereich daten): tasks with status bestaetigt"
+  },
+  "def_gemeldet": {
+   "value": 0,
+   "source": "issues.duckdb (euler, bereich daten): tasks with status gemeldet"
   },
   "def_n": {
    "value": 16,
-   "source": "pdai/collections/eulerOO/defizite.yaml: entries of the task list"
+   "source": "issues.duckdb (euler, bereich daten): entries of the task list"
   },
   "def_tage_max": {
    "value": 0,
@@ -294,7 +302,7 @@
    "source": "defizite.yaml: latest deadline of the open tasks"
   },
   "def_tabelle_luecke": {
-   "value": "| Nr. | Befund | erkannt | Aufgabe | Stand |\n|---|---|---|---|---|\n| L1 | **Seiten der Opera omnia ohne Transkription.** 7.391 Seiten der Reihen I–III haben kein Gegenstück in den Eneström-Dokumenten: Titelbogen, Vorworte und Einleitungen der Herausgeber, Werke ohne Eneström-Dokument, Register und Tafeln sowie 115 Seiten, deren Zuordnung nicht eindeutig war. | 26. 10. | Lesen mit Kimi im Wochenend-Kontingent, je Band zuerst eine Stichprobenprüfung von fünf Seiten | geplant, Frist 1. 11. |\n| L2 | **Ganze Bände ohne Eneström-Dokumente.** Für I 16.1, I 16.2, II 3, II 11.1 und II 11.2 gibt es keine einzige Eneström-Seite, für II 4 und II 24 fast keine. II 3/II 4 (Theoria motus corporum solidorum, E289) liegt in enestroem nur als Originaldruck von 1765 vor. | 26. 10. | Teil der Wochenend-Lesung (L1) | geplant, Frist 1. 11. |\n| L3 | **Eneström-Nummern ohne Dokument.** Das Verzeichnis führt 866 Hauptnummern (1.009 mit Nachdrucken und Varianten), in enestroem liegen 767 Dokumente. Es fehlen 99 Hauptnummern, darunter die Abhandlungen zu Saiten und elastischen Körpern (E439–E443, E471, E481, E482, E526) und zur Mondtheorie (E371, E504). | 27. 10. | Rückführung aus den Opera omnia, nur mit drei Belegen: Kopf „Commentatio N indicis ENESTROEMIANI“, Titel gleich dem Verzeichnis, Kolumnentitel bis zur nächsten harten Grenze. Unsicheres geht in eine Prüfliste. | in Arbeit, Frist 2. 11. |\n| L4 | **Band I 8 fehlt.** Der Ordner, der als I 8 (Introductio in analysin infinitorum, Teil 1) geführt wird, enthält einen Scan von I 25. Die Introductio selbst ist nicht im Bestand. Fahndung am 27.10.: alle elf Kopien dieser Datei auf beiden Datenträgern (drei Fassungen vom 3. und 9. Juni 2021) enthalten I 25; ein Exemplar mit „Series prima, Volumen octavum“ gibt es nirgends. Der Fehler stammt aus dem Scan bzw. der Lieferung vom Juni 2021. | 26. 10. | Den Band beim Verlag oder bei der Bernoulli-Euler-Gesellschaft neu beschaffen und den Ordner berichtigen | Entscheidung der Projektleitung |",
+   "value": "| Nr. | Befund | erkannt | Aufgabe | Stand |\n|---|---|---|---|---|\n| L1 | **Seiten der Opera omnia ohne Transkription.** 7.391 Seiten der Reihen I–III haben kein Gegenstück in den Eneström-Dokumenten: Titelbogen, Vorworte und Einleitungen der Herausgeber, Werke ohne Eneström-Dokument, Register und Tafeln sowie 115 Seiten, deren Zuordnung nicht eindeutig war. | 26. 10. | Lesen mit Kimi im Wochenend-Kontingent, je Band zuerst eine Stichprobenprüfung von fünf Seiten | geplant, Frist 1. 11. |\n| L2 | **Ganze Bände ohne Eneström-Dokumente.** Für I 16.1, I 16.2, II 3, II 11.1 und II 11.2 gibt es keine einzige Eneström-Seite, für II 4 und II 24 fast keine. II 3/II 4 (Theoria motus corporum solidorum, E289) liegt in enestroem nur als Originaldruck von 1765 vor. | 26. 10. | Teil der Wochenend-Lesung (L1) | geplant, Frist 1. 11. |\n| L3 | **Eneström-Nummern ohne Dokument.** Das Verzeichnis führt 866 Hauptnummern (1.009 mit Nachdrucken und Varianten), in enestroem liegen 767 Dokumente. Es fehlen 99 Hauptnummern, darunter die Abhandlungen zu Saiten und elastischen Körpern (E439–E443, E471, E481, E482, E526) und zur Mondtheorie (E371, E504). | 27. 10. | Rückführung aus den Opera omnia, nur mit drei Belegen: Kopf „Commentatio N indicis ENESTROEMIANI“, Titel gleich dem Verzeichnis, Kolumnentitel bis zur nächsten harten Grenze. Unsicheres geht in eine Prüfliste. | in Arbeit, Frist 2. 11. |\n| L4 | **Band I 8 fehlt.** Der Ordner, der als I 8 (Introductio in analysin infinitorum, Teil 1) geführt wird, enthält einen Scan von I 25. Die Introductio selbst ist nicht im Bestand. Fahndung am 27.10.: alle elf Kopien dieser Datei auf beiden Datenträgern (drei Fassungen vom 3. und 9. Juni 2021) enthalten I 25; ein Exemplar mit „Series prima, Volumen octavum“ gibt es nirgends. Der Fehler stammt aus dem Scan bzw. der Lieferung vom Juni 2021. Springer hat den gedruckten Band geliefert (Lieferung 88216458 vom 27.04.2021); der Scandienst lieferte unter seiner ISBN einen zweiten Scan von I 25. Rückfrage an den Scandienst am 27.10.2026 vorbereitet. | 26. 10. | Nachscan von I 8 beim Scandienst anfordern; danach den Ordner ersetzen und die Lücken lesen | Entscheidung der Projektleitung |",
    "source": "defizite.yaml: the entries of kind luecke as a table"
   },
   "def_tabelle_fehler": {
@@ -308,6 +316,26 @@
   "def_tabelle_ablauf": {
    "value": "| Nr. | Befund | erkannt | Aufgabe | Stand |\n|---|---|---|---|---|\n| A1 | **Kontingentgrenze falsch gedeutet.** Am 26.10. galt die Ollama-Grenze als Wochenlimit; tatsächlich war es das Sitzungslimit, das nach einigen Stunden endet. Die Woche war erst zur Hälfte verbraucht. | 26. 10. | Beide Grenzen unterscheiden; Wochenkapazität messen, prognostizieren und eine Reserve für das Wochenende halten | erledigt am 26. 10. |\n| A2 | **Stilles Ausweichen auf ein anderes Lesemodell.** An der Kontingentgrenze las die Texterkennung jede Seite stillschweigend mit einem anderen Modell weiter. | 26. 10. | Anhalten statt Ausweichen; Fortsetzung, sobald die Grenze fällt | erledigt am 26. 10. |\n| A3 | **Verarbeitungskette brach ohne Meldung ab.** Die Nachbaukette endete in der Nacht zum 27.10. ohne Eintrag; die Ursache war nicht mehr festzustellen. | 27. 10. | Kettenwächter, der jeden Abbruch analysiert, die bekannte Ursache behebt und neu startet | erledigt am 27. 10. |",
    "source": "defizite.yaml: the entries of kind ablauf as a table"
+  },
+  "iss_n": {
+   "value": 24,
+   "source": "platform/registry/issues/issues.duckdb (collection euler and famulus): issues"
+  },
+  "iss_offen": {
+   "value": 12,
+   "source": "platform/registry/issues/issues.duckdb (collection euler and famulus): open issues"
+  },
+  "iss_gemeldet": {
+   "value": 0,
+   "source": "platform/registry/issues/issues.duckdb (collection euler and famulus): reported, not yet checked"
+  },
+  "iss_in_arbeit": {
+   "value": 1,
+   "source": "platform/registry/issues/issues.duckdb (collection euler and famulus): in work"
+  },
+  "iss_erledigt": {
+   "value": 12,
+   "source": "platform/registry/issues/issues.duckdb (collection euler and famulus): done"
   }
  },
  "notes": [

@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,460;0,9..144,560;1,9..144,460&family=Source+Sans+3:ital,wght@0,400;0,560;0,650;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,560;1,8..60,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/landing.css?v=20261027132246">
+  <link rel="stylesheet" href="assets/landing.css?v=20261027133843">
 <!-- famulus:publisher:start -->
 <meta name="referrer" content="no-referrer-when-downgrade">
 <meta name="publisher" content="OpenScienceTechnology GmbH">
@@ -56,9 +56,20 @@
           <input type="hidden" name="bedeutung" value="1"><button type="submit">Fragen</button></div>
           <p class="ask-hint">Famulus liest die Frage, bestimmt den Evidenzraum und antwortet mit Belegen – in der Spalte „Anfrage“ des Viewers.</p>
         </form>
+        <section class="iss-card" data-issues-card data-collection="euler" data-kuerzel="EULER" data-issues-api="https://lettre.ngrok.dev/famulus-issues/api" data-snapshot="data/issues.json" data-nav="luecken/#issues" aria-labelledby="iss-t-euler">
+          <div class="iss-kopf"><span class="iss-symbol" aria-hidden="true">!</span>
+            <div><h2 id="iss-t-euler">Ein Problem gefunden?</h2><p>Beschreiben Sie, was fehlt oder nicht stimmt. Famulus prüft mit einem Sprachmodell, ob es schon bekannt ist, und nimmt es sonst auf.</p></div></div>
+          <form class="iss-form" novalidate>
+            <textarea name="text" rows="2" minlength="10" maxlength="2000" required placeholder="z. B. „Die Übersetzung lädt nicht“ oder „Auf Seite 12 fehlt der Text“" aria-label="Ein Problem gefunden?"></textarea>
+            <input class="iss-hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button type="submit">Prüfen</button>
+          </form>
+          <div class="iss-antwort" aria-live="polite"></div>
+          <a class="iss-zahlen" href="luecken/#issues"><span><b>12</b> offen</span><span><b>1</b> in Arbeit</span><span><b>12</b> erledigt</span><span class="iss-alle">Alle ansehen →</span></a>
+        </section>
       </section>
 
-      <div class="gp gp-nur-vollbild" data-guide="tour" data-autostart="false" data-base="guide/" data-v="20261027132246" data-open="https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199" data-all="lesen/"></div>
+      <div class="gp gp-nur-vollbild" data-guide="tour" data-autostart="false" data-base="guide/" data-v="20261027133843" data-open="https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199" data-all="lesen/"></div>
       <section class="portals" aria-label="Einstiege">
 <article class="portal lead-card" id="bestand">
 <p class="mark">Erzählung</p>
@@ -129,12 +140,13 @@
     <div class="wrap"></div>
   </footer>
 
-  <script src="assets/vendor/d3.v7.min.js?v=20261027132246"></script>
-  <script src="data/bundle.js?v=20261027132246"></script>
-  <script src="assets/js/charts.js?v=20261027132246"></script>
-  <script src="assets/js/guide.js?v=20261027132246"></script>
-  <script src="assets/js/guide-player.js?v=20261027132246"></script>
-  <script src="assets/js/scrolly.js?v=20261027132246"></script>
+  <script src="assets/vendor/d3.v7.min.js?v=20261027133843"></script>
+  <script src="data/bundle.js?v=20261027133843"></script>
+  <script src="assets/js/charts.js?v=20261027133843"></script>
+  <script src="assets/js/guide.js?v=20261027133843"></script>
+  <script src="assets/js/guide-player.js?v=20261027133843"></script>
+  <script src="assets/js/issues.js?v=20261027133843"></script>
+  <script src="assets/js/scrolly.js?v=20261027133843"></script>
 <!-- famulus:publisher:start -->
 <p class="famulus-publisher" style="max-width:46rem;margin:2.5rem auto 1.5rem;padding:.7rem 16px 0;border-top:2px solid #c8a22a;font:13px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;opacity:.8">Herausgegeben von der OpenScienceTechnology GmbH · <a href="/impressum/">Impressum</a> · <a href="/datenschutz/">Datenschutz</a></p>
 <script>(function(){try{var d=JSON.stringify({u:location.pathname,r:document.referrer,m:""});navigator.sendBeacon?navigator.sendBeacon("https://lettre.ngrok.dev/famulus-counter/api/hit",d):fetch("https://lettre.ngrok.dev/famulus-counter/api/hit",{method:'POST',body:d,keepalive:true,mode:'no-cors'})}catch(e){}})();</script>
