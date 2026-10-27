@@ -1,7 +1,41 @@
 {
  "collection": "euler",
- "stand": "2026-10-27 20:39",
+ "stand": "2026-10-27 13:30",
  "issues": [
+  {
+   "id": "EULER-F1",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "fehler",
+   "titel": "Textabdeckung der Opera omnia falsch bewertet",
+   "befund": "Die Auswertung vom 24.10. meldete nur 6.689 von 41.219 Seiten mit Text. Die Seiten der Eneström-Dokumente sind aber Ausschnitte derselben Bände: 26.953 Seiten (in allen Ordnern, Dubletten mitgezählt) waren längst transkribiert, nur an anderer Stelle.",
+   "beleg": "development/famulus-proof/runs/seitenkarte/eulerOO-2026-10-26.md",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "owner",
+   "hinweis_von": "Projektleitung",
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": "Seitenkarte durch Bildabgleich aller Seiten; Übernahme der Transkriptionen mit Herkunftsangabe",
+   "frist": null,
+   "erledigt_am": "2026-10-26",
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-26",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
   {
    "id": "EULER-L1",
    "collection": "euler",
@@ -150,15 +184,15 @@
    "stichworte": null,
    "quelle": "sitzung",
    "hinweis_von": null,
-   "status": "entscheidung",
+   "status": "erledigt",
    "zusammen_mit": null,
-   "aufgabe": "Die doppelten Ordner zusammenführen; bis dahin wird jede Seite nur einmal gelesen und in die Kopie übertragen",
+   "aufgabe": "Als Dubletten führen; jede Seite wird nur einmal gelesen und in die Kopie übertragen",
    "frist": null,
-   "erledigt_am": null,
+   "erledigt_am": "2026-10-26",
    "schwere": null,
    "n_meldungen": 0,
    "erkannt": "2026-10-26",
-   "geaendert": "2026-10-27T12:46:38",
+   "geaendert": "2026-10-27T12:25:54",
    "verlauf": [
     {
      "ts": "2026-10-27",
@@ -169,11 +203,6 @@
      "ts": "2026-10-27",
      "feld": "status",
      "neu": "erledigt"
-    },
-    {
-     "ts": "2026-10-27",
-     "feld": "status",
-     "neu": "entscheidung"
     }
    ]
   },
@@ -208,6 +237,40 @@
      "ts": "2026-10-27",
      "feld": "status",
      "neu": "entscheidung"
+    }
+   ]
+  },
+  {
+   "id": "EULER-F4",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "fehler",
+   "titel": "Falsche Seitenzahl auf Impressumseiten",
+   "befund": "Auf der Impressumseite von I 1 wurde die Druckzählung „9 8 7 6 5 4 3 2“ als Seitenzahl 9 gelesen.",
+   "beleg": "pdai-collections/eulerOO/978-3-7643-1400-2/pages/page_006/page_006.xml",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "geplant",
+   "zusammen_mit": null,
+   "aufgabe": "Seitenzahlerkennung für Titelbogen ohne Seitenzahl berichtigen",
+   "frist": "2026-11-09",
+   "erledigt_am": null,
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-26",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "geplant"
     }
    ]
   },
@@ -348,6 +411,142 @@
    ]
   },
   {
+   "id": "EULER-A1",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "ablauf",
+   "titel": "Kontingentgrenze falsch gedeutet",
+   "befund": "Am 26.10. galt die Ollama-Grenze als Wochenlimit; tatsächlich war es das Sitzungslimit, das nach einigen Stunden endet. Die Woche war erst zur Hälfte verbraucht.",
+   "beleg": "Antwort des Dienstes „session usage limit“, 26.10.2026",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": "Beide Grenzen unterscheiden; Wochenkapazität messen, prognostizieren und eine Reserve für das Wochenende halten",
+   "frist": null,
+   "erledigt_am": "2026-10-26",
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-26",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "EULER-A2",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "ablauf",
+   "titel": "Stilles Ausweichen auf ein anderes Lesemodell",
+   "befund": "An der Kontingentgrenze las die Texterkennung jede Seite stillschweigend mit einem anderen Modell weiter.",
+   "beleg": "ocr_runner client.py, dual_read.py, cure_run.py",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": "Anhalten statt Ausweichen; Fortsetzung, sobald die Grenze fällt",
+   "frist": null,
+   "erledigt_am": "2026-10-26",
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-26",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "EULER-A3",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "ablauf",
+   "titel": "Verarbeitungskette brach ohne Meldung ab",
+   "befund": "Die Nachbaukette endete in der Nacht zum 27.10. ohne Eintrag; die Ursache war nicht mehr festzustellen.",
+   "beleg": "/Volumes/PDAI-1/tmp/seitenkarte/nachbau.log",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": "Kettenwächter, der jeden Abbruch analysiert, die bekannte Ursache behebt und neu startet",
+   "frist": null,
+   "erledigt_am": "2026-10-27",
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-27",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "EULER-F5",
+   "collection": "euler",
+   "bereich": "daten",
+   "art": "fehler",
+   "titel": "Enthält jeder Bandordner, was angegeben ist?",
+   "befund": "Vollständiges Audit aller 85 Bandordner gegen Titelblatt, Bandtitel, Bogensignaturen und den Abgleich der Seitenbilder mit dem PDF. Ein Ordner enthält einen anderen Band (I 8, siehe L4); alle anderen sind bestätigt.",
+   "beleg": "development/famulus-proof/runs/seitenkarte/band-audit-2026-10-27.md",
+   "ort": null,
+   "stichworte": null,
+   "quelle": "owner",
+   "hinweis_von": "Projektleitung",
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": "Band-Audit (band_audit.py) als feste Prüfung; Einzelprüfung jedes Hinweises",
+   "frist": null,
+   "erledigt_am": "2026-10-27",
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-27",
+   "geaendert": "2026-10-27T12:25:54",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
    "id": "EULER-1",
    "collection": "euler",
    "bereich": "rundgang",
@@ -378,6 +577,40 @@
      "ts": "2026-10-27",
      "feld": "status",
      "neu": "geplant"
+    }
+   ]
+  },
+  {
+   "id": "EULER-2",
+   "collection": "euler",
+   "bereich": "rundgang",
+   "art": "referenz",
+   "titel": "Beleg mit Seitenindex statt Druckseite angegeben",
+   "befund": "Die Bildunterschrift nannte für Goldbachs Geburt »S. 13«; das ist der Seitenindex, gedruckt ist es S. 4 der Einleitung von IV A 4.",
+   "beleg": null,
+   "ort": null,
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": null,
+   "frist": null,
+   "erledigt_am": "2026-10-27",
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-27",
+   "geaendert": "2026-10-27T12:26:27",
+   "verlauf": [
+    {
+     "ts": "2026-10-27",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "erledigt"
     }
    ]
   }
