@@ -1,0 +1,896 @@
+{
+ "slug": "euler",
+ "lang": "de",
+ "viewport": [
+  1280,
+  800
+ ],
+ "captured": "2026-10-26 22:08",
+ "title": "Ein Rundgang durch die Edition",
+ "lead": "Von den vier Reihen der Opera omnia über Eneström und den Briefwechsel mit Christian Goldbach bis zur Zielvorgabe: wie man liest, Stellen wählt, erläutern und übersetzen lässt, nachschlägt, zitiert und die Sammlung befragt.",
+ "steps": [
+  {
+   "id": "bestand",
+   "kind": "card",
+   "card": {
+    "kicker": "Leonhardi Euleri Opera omnia",
+    "title": "Vier Reihen, 84 Bände, 41.219 Seiten",
+    "figures": [
+     {
+      "v": "30",
+      "k": "Reihe I · Mathematik"
+     },
+     {
+      "v": "33",
+      "k": "Reihe II · Mechanik und Astronomie"
+     },
+     {
+      "v": "13",
+      "k": "Reihe III · Physik"
+     },
+     {
+      "v": "8",
+      "k": "Reihe IVA · Briefwechsel"
+     }
+    ],
+    "lines": [
+     "Erschienen 1911 bis 2022",
+     "Herausgegeben von der Bernoulli-Euler-Gesellschaft im Auftrag der Schweizerischen Akademie der Naturwissenschaften"
+    ]
+   },
+   "frame": null,
+   "pre": null,
+   "caption": "Die Opera omnia: vier Reihen, 84 Bände.",
+   "key": [],
+   "target": null,
+   "clicks": 0,
+   "focus": null,
+   "zoom": null,
+   "chrome": true,
+   "hold": 8,
+   "tour": true,
+   "cards": [],
+   "url": "https://famulus.lettre.ai/euler/",
+   "audio": "voice/bestand.m4a",
+   "audio_s": 19.21
+  },
+  {
+   "id": "enestroem",
+   "frame": "frames/01.webp",
+   "pre": null,
+   "caption": "Das Eneström-Verzeichnis zählt Eulers Schriften: 866 Nummern, 767 als Digitalisat – hier E53, die Brücken von Königsberg.",
+   "key": [],
+   "target": null,
+   "clicks": 0,
+   "focus": [
+    0.0,
+    0.06,
+    0.5004,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 6,
+   "tour": true,
+   "cards": [],
+   "url": "https://famulus.lettre.ai/live/viewer/enestroem/E53?p=2",
+   "audio": "voice/enestroem.m4a",
+   "audio_s": 10.01
+  },
+  {
+   "id": "briefwechsel",
+   "frame": "frames/02.webp",
+   "pre": null,
+   "caption": "Reihe IVA, der Briefwechsel: 1.040 Briefe in den kritischen Bänden – hier Daniel Bernoulli an Euler, 4. Januar 1727.",
+   "key": [],
+   "target": null,
+   "clicks": 0,
+   "focus": [
+    0.5004,
+    0.06,
+    0.4996,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 6,
+   "tour": true,
+   "cards": [],
+   "url": "https://famulus.lettre.ai/live/euler-oo-iv/eulerOO-IVA/978-3-319-33989-4?p=97",
+   "audio": "voice/briefwechsel.m4a",
+   "audio_s": 13.08
+  },
+  {
+   "id": "open",
+   "frame": "frames/03.webp",
+   "pre": null,
+   "caption": "Band IV A 4, der Briefwechsel mit Christian Goldbach. Brief 51 vom 7. Juni 1742: links das Faksimile, rechts die Transkription.",
+   "key": [],
+   "target": null,
+   "clicks": 0,
+   "focus": [
+    0.5004,
+    0.06,
+    0.4996,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 4.5,
+   "tour": true,
+   "cards": [
+    "blaettern",
+    "zitieren"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=198",
+   "audio": "voice/open.m4a",
+   "audio_s": 14.45
+  },
+  {
+   "id": "next",
+   "frame": "frames/04.webp",
+   "pre": null,
+   "caption": "Die Pfeiltasten blättern: → vor, ← zurück.",
+   "key": [
+    "→"
+   ],
+   "target": null,
+   "clicks": 0,
+   "focus": [
+    0.6101,
+    0.0075,
+    0.1277,
+    0.045
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 3.2,
+   "tour": true,
+   "cards": [
+    "blaettern"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199",
+   "audio": "voice/next.m4a",
+   "audio_s": 5.76
+  },
+  {
+   "id": "transkription",
+   "frame": "frames/05.webp",
+   "pre": null,
+   "caption": "Die Transkription ist strukturierter Text: Briefkopf, Absätze, Formeln und Anmerkungen als geprüftes XML – maschinenlesbar.",
+   "key": [],
+   "target": [
+    0.9139,
+    0.11,
+    0.0525,
+    0.0375
+   ],
+   "clicks": 1,
+   "focus": [
+    0.5004,
+    0.06,
+    0.4996,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 6,
+   "tour": true,
+   "cards": [],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199",
+   "audio": "voice/transkription.m4a",
+   "audio_s": 9.37
+  },
+  {
+   "id": "sentence",
+   "frame": "frames/06.webp",
+   "pre": "frames/06a.webp",
+   "caption": "Zweimal klicken wählt einen Satz – hier Goldbachs Vermutung: jede Zahl größer als 2 sei eine Summe dreier Primzahlen.",
+   "key": [
+    "2× Klick"
+   ],
+   "target": [
+    0.7146,
+    0.4002,
+    0.0031,
+    0.005
+   ],
+   "clicks": 2,
+   "focus": [
+    0.5543,
+    0.3896,
+    0.3918,
+    0.0585
+   ],
+   "zoom": 1.35,
+   "chrome": true,
+   "hold": 4.5,
+   "tour": true,
+   "cards": [
+    "auswahl"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199",
+   "audio": "voice/sentence.m4a",
+   "audio_s": 12.42
+  },
+  {
+   "id": "erlaeuterung",
+   "frame": "frames/07.webp",
+   "pre": null,
+   "caption": "Erläuterung: Famulus liest die markierte Stelle im Zusammenhang ihrer Seite und erklärt sie.",
+   "key": [],
+   "target": [
+    0.9556,
+    0.123,
+    0.0444,
+    0.1597
+   ],
+   "clicks": 1,
+   "focus": [
+    0.7031,
+    0.06,
+    0.2969,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 5.5,
+   "tour": true,
+   "cards": [
+    "erlaeuterung"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199&bedeutung=1",
+   "audio": "voice/erlaeuterung.m4a",
+   "audio_s": 9.33
+  },
+  {
+   "id": "uebersetzung",
+   "frame": "frames/08.webp",
+   "pre": null,
+   "caption": "Übersetzung: dieselbe Stelle in Ihrer Sprache, mit den Fachbegriffen der Sammlung.",
+   "key": [],
+   "target": [
+    0.9556,
+    0.2901,
+    0.0444,
+    0.1604
+   ],
+   "clicks": 1,
+   "focus": [
+    0.7031,
+    0.06,
+    0.2969,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 5,
+   "tour": true,
+   "cards": [
+    "uebersetzung",
+    "sprache"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199&bedeutung=1",
+   "audio": "voice/uebersetzung.m4a",
+   "audio_s": 7.21
+  },
+  {
+   "id": "ue-seite",
+   "frame": "frames/09.webp",
+   "pre": null,
+   "caption": "„Seite“ übersetzt die ganze Seite, mit Überschriften, Randnotizen und Anmerkungen.",
+   "key": [],
+   "target": [
+    0.8256,
+    0.1313,
+    0.0395,
+    0.0277
+   ],
+   "clicks": 1,
+   "focus": [
+    0.7031,
+    0.06,
+    0.2969,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 5,
+   "tour": true,
+   "cards": [
+    "uebersetzung"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199&bedeutung=1",
+   "audio": "voice/ue-seite.m4a",
+   "audio_s": 7.39
+  },
+  {
+   "id": "word",
+   "frame": "frames/10.webp",
+   "pre": "frames/10a.webp",
+   "caption": "Ein Klick wählt ein Wort.",
+   "key": [
+    "1× Klick"
+   ],
+   "target": [
+    0.9014,
+    0.5889,
+    0.0031,
+    0.005
+   ],
+   "clicks": 1,
+   "focus": [
+    0.8889,
+    0.5783,
+    0.0571,
+    0.0262
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 3,
+   "tour": true,
+   "cards": [
+    "auswahl",
+    "woerterbuch"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199",
+   "audio": "voice/word.m4a",
+   "audio_s": 2.88
+  },
+  {
+   "id": "woerterbuch",
+   "frame": "frames/11.webp",
+   "pre": null,
+   "caption": "Wörterbuch: das Wort wird auf sein Lemma zurückgeführt, mit jeder Belegstelle der Sammlung.",
+   "key": [],
+   "target": [
+    0.9556,
+    0.458,
+    0.0444,
+    0.155
+   ],
+   "clicks": 1,
+   "focus": [
+    0.0125,
+    0.08,
+    0.4688,
+    0.9
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 5.5,
+   "tour": true,
+   "cards": [
+    "woerterbuch"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199",
+   "audio": "voice/woerterbuch.m4a",
+   "audio_s": 7.81
+  },
+  {
+   "id": "linguistik",
+   "kind": "card",
+   "card": {
+    "kicker": "Linguistische Analyse",
+    "title": "Jeder Satz zerlegt, jedes Wort bestimmt",
+    "figures": [
+     {
+      "v": "826.846",
+      "k": "Sätze analysiert"
+     },
+     {
+      "v": "11.950.215",
+      "k": "Wörter mit Grundform und Wortart"
+     }
+    ],
+    "lines": [
+     "In den Sprachen der Texte: jede Form auf ihre Grundform zurückgeführt",
+     "Darauf beruhen Wörterbuch, Erläuterung und Suche"
+    ]
+   },
+   "frame": null,
+   "pre": null,
+   "caption": "Linguistische Analyse: 826.846 Sätze, jedes Wort mit Grundform und Wortart.",
+   "key": [],
+   "target": null,
+   "clicks": 0,
+   "focus": null,
+   "zoom": null,
+   "chrome": true,
+   "hold": 7,
+   "tour": true,
+   "cards": [],
+   "url": "https://famulus.lettre.ai/euler/",
+   "audio": "voice/linguistik.m4a",
+   "audio_s": 8.91
+  },
+  {
+   "id": "paragraph",
+   "frame": "frames/12.webp",
+   "pre": "frames/12a.webp",
+   "caption": "Drei Klicks wählen den ganzen Absatz. Esc hebt die Auswahl auf, ⌘C kopiert sie.",
+   "key": [
+    "3× Klick"
+   ],
+   "target": [
+    0.5844,
+    0.3997,
+    0.0031,
+    0.005
+   ],
+   "clicks": 3,
+   "focus": [
+    0.5719,
+    0.3891,
+    0.2237,
+    0.0262
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 3.5,
+   "tour": false,
+   "cards": [
+    "auswahl"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199"
+  },
+  {
+   "id": "jump",
+   "frame": "frames/13.webp",
+   "pre": null,
+   "caption": "Seitenfeld: 204 und Enter springt zu Eulers Antwort vom 30. Juni 1742.",
+   "key": [
+    "204",
+    "Enter"
+   ],
+   "target": [
+    0.6414,
+    0.0075,
+    0.0297,
+    0.045
+   ],
+   "clicks": 1,
+   "focus": [
+    0.6101,
+    0.0075,
+    0.1277,
+    0.045
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 4,
+   "tour": true,
+   "cards": [
+    "blaettern",
+    "zitieren"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205",
+   "audio": "voice/jump.m4a",
+   "audio_s": 10.18
+  },
+  {
+   "id": "reply",
+   "frame": "frames/14.webp",
+   "pre": "frames/14a.webp",
+   "caption": "Euler: dass jede gerade Zahl eine Summe zweier Primzahlen sei, halte er für ein ganz gewisses Theorem – beweisen könne er es nicht.",
+   "key": [],
+   "target": [
+    0.7755,
+    0.4753,
+    0.0031,
+    0.005
+   ],
+   "clicks": 2,
+   "focus": [
+    0.5543,
+    0.4647,
+    0.3918,
+    0.0907
+   ],
+   "zoom": 1.5,
+   "chrome": true,
+   "hold": 5.5,
+   "tour": true,
+   "cards": [
+    "zitieren"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205",
+   "audio": "voice/reply.m4a",
+   "audio_s": 12.16
+  },
+  {
+   "id": "zoom",
+   "frame": "frames/15.webp",
+   "pre": null,
+   "caption": "↑ und ↓ zoomen das Faksimile; scrollen verschiebt den Ausschnitt.",
+   "key": [
+    "↑",
+    "↑",
+    "↑"
+   ],
+   "target": null,
+   "clicks": 0,
+   "focus": [
+    0.0,
+    0.06,
+    0.5004,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 3.5,
+   "tour": true,
+   "cards": [
+    "ansicht"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205",
+   "audio": "voice/zoom.m4a",
+   "audio_s": 4.71
+  },
+  {
+   "id": "layout-text",
+   "frame": "frames/16.webp",
+   "pre": null,
+   "caption": "Der Knopf rechts oben wechselt die Ansicht: Faksimile, Beide, Text – und Synopse, wo die Edition eine Übersetzung mitbringt.",
+   "key": [],
+   "target": [
+    0.8915,
+    0.0112,
+    0.0644,
+    0.0375
+   ],
+   "clicks": 1,
+   "focus": [
+    0.8997,
+    0.0112,
+    0.0563,
+    0.0375
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 3,
+   "tour": true,
+   "cards": [
+    "ansicht"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205",
+   "audio": "voice/layout-text.m4a",
+   "audio_s": 9.6
+  },
+  {
+   "id": "menu",
+   "frame": "frames/17.webp",
+   "pre": null,
+   "caption": "Das Menü ☰: Anordnung, Sprache, Oberfläche, Zoom, Sammlungen und Werkzeuge.",
+   "key": [],
+   "target": [
+    0.0069,
+    0.0075,
+    0.0281,
+    0.045
+   ],
+   "clicks": 1,
+   "focus": [
+    0.0,
+    0.06,
+    0.2188,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 4.5,
+   "tour": true,
+   "cards": [
+    "menue"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205",
+   "audio": "voice/menu.m4a",
+   "audio_s": 4.4
+  },
+  {
+   "id": "ui-sprache",
+   "frame": "frames/18.webp",
+   "pre": null,
+   "caption": "Unter „Oberfläche“ wählen Sie die Sprache des Viewers: die Reiter rechts wechseln sofort.",
+   "key": [],
+   "target": [
+    0.0372,
+    0.4763,
+    0.0249,
+    0.0262
+   ],
+   "clicks": 1,
+   "focus": [
+    0.0,
+    0.4238,
+    0.218,
+    0.1013
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 4,
+   "tour": false,
+   "cards": [
+    "sprache",
+    "menue"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205&ui=en"
+  },
+  {
+   "id": "fullscreen",
+   "frame": "frames/19.webp",
+   "pre": null,
+   "caption": "#F füllt den Bildschirm mit der Seite, Esc kehrt zurück.",
+   "key": [
+    "#",
+    "F"
+   ],
+   "target": null,
+   "clicks": 0,
+   "focus": [
+    0.0,
+    0.06,
+    1.0,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": false,
+   "hold": 3.5,
+   "tour": true,
+   "cards": [
+    "ansicht"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205&ui=de",
+   "audio": "voice/fullscreen.m4a",
+   "audio_s": 4.51
+  },
+  {
+   "id": "anfrage",
+   "frame": "frames/20.webp",
+   "pre": null,
+   "caption": "Anfrage: eine Frage an die ganze Sammlung, gelesen im Zusammenhang dieser Seite.",
+   "key": [
+    "?"
+   ],
+   "target": [
+    0.9556,
+    0.7636,
+    0.0444,
+    0.1134
+   ],
+   "clicks": 1,
+   "focus": [
+    0.7031,
+    0.06,
+    0.2969,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 4,
+   "tour": true,
+   "cards": [
+    "anfrage"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205&ui=de&bedeutung=1",
+   "audio": "voice/anfrage.m4a",
+   "audio_s": 4.85
+  },
+  {
+   "id": "antwort",
+   "frame": "frames/21.webp",
+   "pre": null,
+   "caption": "Die Antwort kommt mit Belegen: jeder Beleg öffnet die Seite, auf der er steht.",
+   "key": [
+    "Enter"
+   ],
+   "target": null,
+   "clicks": 0,
+   "focus": [
+    0.7031,
+    0.06,
+    0.2969,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 6.5,
+   "tour": true,
+   "cards": [
+    "anfrage"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205&ui=de&bedeutung=1",
+   "audio": "voice/antwort.m4a",
+   "audio_s": 7.01
+  },
+  {
+   "id": "dossier",
+   "frame": "frames/22.webp",
+   "pre": null,
+   "caption": "Dossier: die Personen, Orte und Institutionen der Seite – hier Schumacher, Maupertuis, Petersburg – jede mit einer festen Kennung über alle Bände.",
+   "key": [],
+   "target": [
+    0.9556,
+    0.6205,
+    0.0444,
+    0.1356
+   ],
+   "clicks": 1,
+   "focus": [
+    0.0125,
+    0.08,
+    0.4688,
+    0.9
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 6,
+   "tour": true,
+   "cards": [],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=201",
+   "audio": "voice/dossier.m4a",
+   "audio_s": 8.37
+  },
+  {
+   "id": "indizes",
+   "kind": "card",
+   "card": {
+    "kicker": "Gesamtindizes · Stand heute",
+    "title": "Über alle Bände hinweg",
+    "figures": [
+     {
+      "v": "3.506",
+      "k": "Personen"
+     },
+     {
+      "v": "1.201",
+      "k": "Orte"
+     },
+     {
+      "v": "536",
+      "k": "Institutionen"
+     },
+     {
+      "v": "5.738",
+      "k": "Datumsangaben"
+     },
+     {
+      "v": "141",
+      "k": "Fachbegriffe, an 222.118 Stellen"
+     }
+    ],
+    "lines": [
+     "Eine Suche über alle Bände der Opera omnia: 1.020 Belege für numerus in 266 Millisekunden"
+    ]
+   },
+   "frame": null,
+   "pre": null,
+   "caption": "Gesamtindizes: 3.506 Personen, 1.201 Orte, 5.738 Datumsangaben, 141 Fachbegriffe – gesucht in Sekundenbruchteilen.",
+   "key": [],
+   "target": null,
+   "clicks": 0,
+   "focus": null,
+   "zoom": null,
+   "chrome": true,
+   "hold": 8,
+   "tour": true,
+   "cards": [],
+   "url": "https://famulus.lettre.ai/euler/",
+   "audio": "voice/indizes.m4a",
+   "audio_s": 18.21
+  },
+  {
+   "id": "ziel",
+   "kind": "card",
+   "card": {
+    "kicker": "Die Zielvorgabe",
+    "title": "Eulers Werk vollständig erschlossen",
+    "figures": [
+     {
+      "v": "6.304",
+      "k": "Seiten Briefwechsel transkribiert"
+     },
+     {
+      "v": "27.491",
+      "k": "Seiten Eneström-Schriften transkribiert"
+     },
+     {
+      "v": "34.850",
+      "k": "Seiten der Reihen I–III folgen"
+     }
+    ],
+    "lines": [
+     "Alle Texte transkribiert und für die besten Sprachmodelle im Kontext erschlossen",
+     "Jede Seite mit fester Adresse, Zitat und Herkunft",
+     "Gesamtindizes von Personen, Orten, Datumsangaben und Begriffen",
+     "Suchen in Bruchteilen einer Sekunde"
+    ]
+   },
+   "frame": null,
+   "pre": null,
+   "caption": "Das Ziel: alle Texte transkribiert, für die besten Sprachmodelle erschlossen, mit Gesamtindizes – Suchen in Sekundenbruchteilen.",
+   "key": [],
+   "target": null,
+   "clicks": 0,
+   "focus": null,
+   "zoom": null,
+   "chrome": true,
+   "hold": 11,
+   "tour": true,
+   "cards": [],
+   "url": "https://famulus.lettre.ai/euler/",
+   "audio": "voice/ziel.m4a",
+   "audio_s": 19.97
+  },
+  {
+   "id": "ausblick",
+   "kind": "card",
+   "card": {
+    "kicker": "Ausblick",
+    "title": "Was Famulus möglich macht",
+    "lines": [
+     "Famulus lernt, wie Euler seine Beweise anlegt",
+     "Es verfolgt, wie eine Problemstellung im Briefwechsel gelöst wird – im Hin und Her der Korrespondenten",
+     "Beweislücken werden erkannt, heuristische Verfahren benannt, die kritischen Überlegungen der besten Mathematiker der Zeit offengelegt",
+     "So wird die Famulus-Referenz zum Beispiel für das tiefe Lesen der eindrücklichsten Sammlung der Mathematikgeschichte",
+     "Ein Vorhaben, das sich mit Unterstützern besonders eindrücklich entwickeln lässt"
+    ]
+   },
+   "frame": null,
+   "pre": null,
+   "caption": "Ausblick, mit Unterstützern weiterzuentwickeln: Famulus lernt Eulers Beweisführung, verfolgt die gemeinsame Lösung im Briefwechsel und legt Lücken, Heuristiken und Kritik offen.",
+   "key": [],
+   "target": null,
+   "clicks": 0,
+   "focus": null,
+   "zoom": null,
+   "chrome": true,
+   "hold": 14,
+   "tour": true,
+   "cards": [],
+   "url": "https://famulus.lettre.ai/euler/",
+   "audio": "voice/ausblick.m4a",
+   "audio_s": 35.78
+  },
+  {
+   "id": "referenz",
+   "kind": "card",
+   "card": {
+    "kicker": "Famulus-Referenz",
+    "title": "Referenzwissen in der Epoche der KI-Agenten",
+    "lines": [
+     "Die autorisierte Basis für Fragen zu und mit Euler, den Bernoullis und den besten Mathematikern des 18. Jahrhunderts"
+    ]
+   },
+   "frame": null,
+   "pre": null,
+   "caption": "Famulus-Referenz: die autorisierte Basis für Fragen zu und mit Euler, den Bernoullis und den besten Mathematikern des 18. Jahrhunderts.",
+   "key": [],
+   "target": null,
+   "clicks": 0,
+   "focus": null,
+   "zoom": null,
+   "chrome": true,
+   "hold": 9,
+   "tour": true,
+   "cards": [],
+   "url": "https://famulus.lettre.ai/euler/",
+   "audio": "voice/referenz.m4a",
+   "audio_s": 15.55
+  }
+ ],
+ "intro": {
+  "audio": "voice/intro.m4a",
+  "audio_s": 11.36,
+  "text": "Willkommen bei Leonhard Eulers Opera omnia. Ein Rundgang in wenigen Minuten: was die Edition enthält, wie man sie liest und was sie einmal leisten soll."
+ },
+ "outro": {
+  "audio": "voice/outro.m4a",
+  "audio_s": 5.6,
+  "text": "Das ist die Opera omnia. Öffnen Sie den Brief und lesen Sie weiter."
+ },
+ "voice": {
+  "engine": "basel-saetze",
+  "label": "Schweizer Hochdeutsch nach dem Dialekt-Vorbild, satzweise erzeugt (Qwen3-TTS Base bf16, lokal)"
+ }
+}

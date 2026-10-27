@@ -140,10 +140,87 @@
   "e57_sentences": {
    "value": 2131,
    "source": "euler-argumentation-pilot/report/pilot-results.qmd"
+  },
+  "oo_xml_I": {
+   "value": 12973,
+   "source": "PDAI <collection>/<doc>/pages/page_NNN/page_NNN.xml (page folders with their transcription)"
+  },
+  "oo_xml_II": {
+   "value": 9762,
+   "source": "PDAI <collection>/<doc>/pages/page_NNN/page_NNN.xml (page folders with their transcription)"
+  },
+  "oo_xml_III": {
+   "value": 4597,
+   "source": "PDAI <collection>/<doc>/pages/page_NNN/page_NNN.xml (page folders with their transcription)"
+  },
+  "oo_xml_IVA": {
+   "value": 6304,
+   "source": "PDAI <collection>/<doc>/pages/page_NNN/page_NNN.xml (page folders with their transcription)"
+  },
+  "oo_xml_I_III": {
+   "value": 27332,
+   "source": "PDAI <collection>/<doc>/pages/page_NNN/page_NNN.xml (page folders with their transcription)"
+  },
+  "oo_pages_I_III": {
+   "value": 34850,
+   "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8)"
+  },
+  "en_xml": {
+   "value": 27491,
+   "source": "PDAI <collection>/<doc>/pages/page_NNN/page_NNN.xml (page folders with their transcription), Eneström E-documents"
+  },
+  "ling_sentences": {
+   "value": 826846,
+   "source": "eulerOO + enestroem _corpus.duckdb stz_sentences (Stanza: sentences with lemma and part of speech)"
+  },
+  "ling_tokens": {
+   "value": 11950215,
+   "source": "eulerOO + enestroem _spacy.duckdb sp_token (spaCy tokens with lemma, part of speech, dependency)"
+  },
+  "ling_tokens_mio": {
+   "value": 12.0,
+   "source": "ling_tokens in millions"
+  },
+  "idx_persons": {
+   "value": 3506,
+   "source": "_register/register.duckdb: distinct individuals (ind_einzelding) mentioned in eulerOO, eulerOO-IVA, enestroem (ind_nennung)"
+  },
+  "idx_places": {
+   "value": 1201,
+   "source": "_register/register.duckdb: distinct individuals (ind_einzelding) mentioned in eulerOO, eulerOO-IVA, enestroem (ind_nennung)"
+  },
+  "idx_institutions": {
+   "value": 536,
+   "source": "_register/register.duckdb: distinct individuals (ind_einzelding) mentioned in eulerOO, eulerOO-IVA, enestroem (ind_nennung)"
+  },
+  "idx_dates": {
+   "value": 5738,
+   "source": "eulerOO_famulus.duckdb fq_mentions ent_type DATE (date expressions found in the transcriptions)"
+  },
+  "idx_concepts": {
+   "value": 141,
+   "source": "eulerOO + enestroem _corpus.duckdb stz_begriffe: distinct technical terms found in the texts"
+  },
+  "idx_concept_mentions": {
+   "value": 222118,
+   "source": "eulerOO + enestroem _corpus.duckdb stz_begriffe: their occurrences"
+  },
+  "search_ms": {
+   "value": 266,
+   "source": "last measurement kept: the search service was not reachable at this build (HTTP Error 503: Service Unavailable)"
+  },
+  "search_hits": {
+   "value": 1020,
+   "source": "last measurement kept: the search service was not reachable at this build (HTTP Error 503: Service Unavailable)"
+  },
+  "search_docs": {
+   "value": 8,
+   "source": "last measurement kept: the search service was not reachable at this build (HTTP Error 503: Service Unavailable)"
   }
  },
  "notes": [
   "eulerOO volumes are the directories with a biblio.xml that carries a <volume> field; EOII27 has none and is not counted.",
-  "Eneström years above 1800 excluded from the decade chart: [1954]"
+  "Eneström years above 1800 excluded from the decade chart: [1954]",
+  "search_ms/search_hits/search_docs: the Wörterbuch service did not answer at build time (HTTP Error 503: Service Unavailable); the values are those of the last successful measurement."
  ]
 }

@@ -30,6 +30,7 @@ function publicPath(p) {
   var p = location.pathname, seg = p.split("/")[1] || "", s = service(p);
   if (s) {
     document.documentElement.className = "live";
+    document.title = "Famulus";        // a working live page is no "page not found"; the viewer may report its own title
     document.addEventListener("DOMContentLoaded", function () {
       var f = document.createElement("iframe");
       f.src = LIVE + s + location.search + location.hash;
