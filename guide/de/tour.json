@@ -704,32 +704,31 @@
    "audio_s": 7.01
   },
   {
-   "id": "dossier",
-   "frame": "frames/22.webp",
+   "id": "wissen",
+   "kind": "card",
+   "card": {
+    "kicker": "Die Besonderheit von Famulus",
+    "title": "Wissen = wahre Aussagen + Rechtfertigung",
+    "lines": [
+     "Famulus beantwortet Fragen nicht nur, es rechtfertigt die Antwort",
+     "Mit Angabe und Ausgabe der Evidenz: jede Aussage an die Stelle der Quelle gebunden, die sie trägt"
+    ]
+   },
+   "frame": null,
    "pre": null,
-   "caption": "Dossier: die Personen, Orte und Institutionen der Seite – hier Schumacher, Maupertuis, Petersburg – jede mit einer festen Kennung über alle Bände.",
+   "caption": "Die Besonderheit von Famulus: Antworten mit Rechtfertigung. Wissen = wahre Aussagen + Rechtfertigung.",
    "key": [],
-   "target": [
-    0.9556,
-    0.6205,
-    0.0444,
-    0.1356
-   ],
-   "clicks": 1,
-   "focus": [
-    0.0125,
-    0.08,
-    0.4688,
-    0.9
-   ],
+   "target": null,
+   "clicks": 0,
+   "focus": null,
    "zoom": null,
    "chrome": true,
-   "hold": 6,
+   "hold": 9,
    "tour": true,
    "cards": [],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=201",
-   "audio": "voice/dossier.m4a",
-   "audio_s": 8.37
+   "url": "https://famulus.lettre.ai/euler/",
+   "audio": "voice/wissen.m4a",
+   "audio_s": 15.72
   },
   {
    "id": "indizes",

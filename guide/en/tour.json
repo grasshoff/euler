@@ -662,30 +662,29 @@
    "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205&ui=en&bedeutung=1"
   },
   {
-   "id": "dossier",
-   "frame": "frames/22.webp",
+   "id": "wissen",
+   "kind": "card",
+   "card": {
+    "kicker": "What sets Famulus apart",
+    "title": "Knowledge = true propositions + justification",
+    "lines": [
+     "Famulus does not only answer questions, it justifies the answer",
+     "By naming and showing the evidence: every proposition bound to the passage of the source that carries it"
+    ]
+   },
+   "frame": null,
    "pre": null,
-   "caption": "Dossier: the persons, places and institutions on the page – here Schumacher, Maupertuis, Petersburg – each with one fixed identifier across all volumes.",
+   "caption": "What sets Famulus apart: answers with their justification. Knowledge = true propositions + justification.",
    "key": [],
-   "target": [
-    0.9556,
-    0.6185,
-    0.0444,
-    0.1356
-   ],
-   "clicks": 1,
-   "focus": [
-    0.0125,
-    0.08,
-    0.4688,
-    0.9
-   ],
+   "target": null,
+   "clicks": 0,
+   "focus": null,
    "zoom": null,
    "chrome": true,
-   "hold": 6,
+   "hold": 9,
    "tour": true,
    "cards": [],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=201"
+   "url": "https://famulus.lettre.ai/euler/"
   },
   {
    "id": "indizes",
