@@ -198,11 +198,11 @@
    "source": "eulerOO_famulus.duckdb fq_mentions ent_type DATE (date expressions found in the transcriptions)"
   },
   "idx_concepts": {
-   "value": 141,
+   "value": 173,
    "source": "eulerOO + enestroem _corpus.duckdb stz_begriffe: distinct technical terms found in the texts"
   },
   "idx_concept_mentions": {
-   "value": 222118,
+   "value": 477848,
    "source": "eulerOO + enestroem _corpus.duckdb stz_begriffe: their occurrences"
   },
   "search_ms": {
@@ -216,6 +216,98 @@
   "search_docs": {
    "value": 8,
    "source": "last measurement kept: the search service was not reachable at this build (HTTP Error 503: Service Unavailable)"
+  },
+  "sk_seiten": {
+   "value": 33329,
+   "source": "eulerOO/_seitenkarte/seitenkarte.duckdb: pages of series I–III (duplicate folders once)"
+  },
+  "sk_uebernommen": {
+   "value": 25655,
+   "source": "seitenkarte.duckdb: pages matched by image to an Eneström E-document page, transcription taken over"
+  },
+  "sk_baende_ohne_e": {
+   "value": 7,
+   "source": "seitenkarte.duckdb: volumes with less than a quarter of their pages in E-documents"
+  },
+  "sk_dubletten": {
+   "value": 3,
+   "source": "seitenkarte.duckdb, table dubletten: volume folders holding the same scan as another"
+  },
+  "sk_luecke": {
+   "value": 7391,
+   "source": "eulerOO/_seitenkarte/luecken.tsv: pages to transcribe"
+  },
+  "sk_offen": {
+   "value": 7100,
+   "source": "oo_luecken_plan.offen(): gap pages without a reading yet"
+  },
+  "sk_gelesen": {
+   "value": 3,
+   "source": "quality/dual-read reports with a written decision: gap pages read since 26 Oct 2026 (Kimi)"
+  },
+  "sk_pilot": {
+   "value": 288,
+   "source": "luecken.tsv: gap pages that carry only the March 2026 pilot reading"
+  },
+  "ek_fremd": {
+   "value": 6,
+   "source": "e_kopfpruefung.json: E-documents whose first pages carry the head of another number"
+  },
+  "ek_ohne": {
+   "value": 62,
+   "source": "e_kopfpruefung.json: E-documents without a Commentatio head (mostly books)"
+  },
+  "ek_eigen": {
+   "value": 699,
+   "source": "E-documents beginning with the head of their own number"
+  },
+  "def_erledigt": {
+   "value": 6,
+   "source": "pdai/collections/eulerOO/defizite.yaml: tasks with status erledigt"
+  },
+  "def_in_arbeit": {
+   "value": 1,
+   "source": "pdai/collections/eulerOO/defizite.yaml: tasks with status in_arbeit"
+  },
+  "def_geplant": {
+   "value": 6,
+   "source": "pdai/collections/eulerOO/defizite.yaml: tasks with status geplant"
+  },
+  "def_entscheidung": {
+   "value": 3,
+   "source": "pdai/collections/eulerOO/defizite.yaml: tasks with status entscheidung"
+  },
+  "def_n": {
+   "value": 16,
+   "source": "pdai/collections/eulerOO/defizite.yaml: entries of the task list"
+  },
+  "def_tage_max": {
+   "value": 0,
+   "source": "defizite.yaml: longest time from detection to completion, in days, of the completed tasks"
+  },
+  "def_dauer_text": {
+   "value": "noch am Tag ihrer Erkennung",
+   "source": "defizite.yaml: def_tage_max in words"
+  },
+  "def_frist_spaetest": {
+   "value": "9. 11. 2026",
+   "source": "defizite.yaml: latest deadline of the open tasks"
+  },
+  "def_tabelle_luecke": {
+   "value": "| Nr. | Befund | erkannt | Aufgabe | Stand |\n|---|---|---|---|---|\n| L1 | **Seiten der Opera omnia ohne Transkription.** 7.391 Seiten der Reihen I–III haben kein Gegenstück in den Eneström-Dokumenten: Titelbogen, Vorworte und Einleitungen der Herausgeber, Werke ohne Eneström-Dokument, Register und Tafeln sowie 115 Seiten, deren Zuordnung nicht eindeutig war. | 26. 10. | Lesen mit Kimi im Wochenend-Kontingent, je Band zuerst eine Stichprobenprüfung von fünf Seiten | geplant, Frist 1. 11. |\n| L2 | **Ganze Bände ohne Eneström-Dokumente.** Für I 16.1, I 16.2, II 3, II 11.1 und II 11.2 gibt es keine einzige Eneström-Seite, für II 4 und II 24 fast keine. II 3/II 4 (Theoria motus corporum solidorum, E289) liegt in enestroem nur als Originaldruck von 1765 vor. | 26. 10. | Teil der Wochenend-Lesung (L1) | geplant, Frist 1. 11. |\n| L3 | **Eneström-Nummern ohne Dokument.** Das Verzeichnis führt 866 Hauptnummern (1.009 mit Nachdrucken und Varianten), in enestroem liegen 767 Dokumente. Es fehlen 99 Hauptnummern, darunter die Abhandlungen zu Saiten und elastischen Körpern (E439–E443, E471, E481, E482, E526) und zur Mondtheorie (E371, E504). | 27. 10. | Rückführung aus den Opera omnia, nur mit drei Belegen: Kopf „Commentatio N indicis ENESTROEMIANI“, Titel gleich dem Verzeichnis, Kolumnentitel bis zur nächsten harten Grenze. Unsicheres geht in eine Prüfliste. | in Arbeit, Frist 2. 11. |\n| L4 | **Band I 8 fehlt.** Der Ordner, der als I 8 (Introductio in analysin infinitorum, Teil 1) geführt wird, enthält einen Scan von I 25. Die Introductio selbst ist nicht im Bestand. Fahndung am 27.10.: alle elf Kopien dieser Datei auf beiden Datenträgern (drei Fassungen vom 3. und 9. Juni 2021) enthalten I 25; ein Exemplar mit „Series prima, Volumen octavum“ gibt es nirgends. Der Fehler stammt aus dem Scan bzw. der Lieferung vom Juni 2021. | 26. 10. | Den Band beim Verlag oder bei der Bernoulli-Euler-Gesellschaft neu beschaffen und den Ordner berichtigen | Entscheidung der Projektleitung |",
+   "source": "defizite.yaml: the entries of kind luecke as a table"
+  },
+  "def_tabelle_fehler": {
+   "value": "| Nr. | Befund | erkannt | Aufgabe | Stand |\n|---|---|---|---|---|\n| F1 | **Textabdeckung der Opera omnia falsch bewertet.** Die Auswertung vom 24.10. meldete nur 6.689 von 41.219 Seiten mit Text. Die Seiten der Eneström-Dokumente sind aber Ausschnitte derselben Bände: 26.953 Seiten (in allen Ordnern, Dubletten mitgezählt) waren längst transkribiert, nur an anderer Stelle. | 26. 10. | Seitenkarte durch Bildabgleich aller Seiten; Übernahme der Transkriptionen mit Herkunftsangabe | erledigt am 26. 10. |\n| F2 | **Doppelte Bandordner.** III 1 liegt zweimal vor (gleicher Scan), II 27 zweimal (zwei Rasterungen), und der Ordner „I 8“ ist eine Kopie von I 25. | 26. 10. | Als Dubletten führen; jede Seite wird nur einmal gelesen und in die Kopie übertragen | erledigt am 26. 10. |\n| F3 | **Ältere Transkriptionen formal nicht gültig.** Die übernommenen Seiten stammen zu 88 % aus einer Lesung vom März 2026 mit einem inzwischen ausgemusterten Modell. In einer Stichprobe von 300 Seiten genügen nur 39 % der Seitengrammatik. | 26. 10. | Neulesung in enestroem; die Verbesserung gelangt automatisch nach eulerOO | Entscheidung der Projektleitung |\n| F4 | **Falsche Seitenzahl auf Impressumseiten.** Auf der Impressumseite von I 1 wurde die Druckzählung „9 8 7 6 5 4 3 2“ als Seitenzahl 9 gelesen. | 26. 10. | Seitenzahlerkennung für Titelbogen ohne Seitenzahl berichtigen | geplant, Frist 9. 11. |\n| F5 | **Enthält jeder Bandordner, was angegeben ist?.** Vollständiges Audit aller 85 Bandordner gegen Titelblatt, Bandtitel, Bogensignaturen und den Abgleich der Seitenbilder mit dem PDF. Ein Ordner enthält einen anderen Band (I 8, siehe L4); alle anderen sind bestätigt. | 27. 10. | Band-Audit (band_audit.py) als feste Prüfung; Einzelprüfung jedes Hinweises | erledigt am 27. 10. |",
+   "source": "defizite.yaml: the entries of kind fehler as a table"
+  },
+  "def_tabelle_referenz": {
+   "value": "| Nr. | Befund | erkannt | Aufgabe | Stand |\n|---|---|---|---|---|\n| R1 | **Eneström-Dokumente mit fremdem Inhalt.** Sechs Dokumente beginnen mit dem Kopf einer anderen Nummer: E101 (enthält I 25 ab E9 statt der Introductio), E104 (enthält E127), E653 (E658), E457 (E340), E220 (E221 mit) und E35 (ganzer Band III 2 mit E17). | 27. 10. | Aus den Opera omnia nach der Seitenkarte neu schneiden | geplant, Frist 9. 11. |\n| R2 | **Eneström-Dokumente mit falschem Anfang.** E127, E305, E315 und E340 beginnen mitten im Text eines Aufsatzes, E91 mit dem Reihentitel des Bandes III 1. | 27. 10. | Aus den Opera omnia nach der Seitenkarte neu schneiden | geplant, Frist 9. 11. |\n| R3 | **Unscharfe Ränder der Eneström-Dokumente.** Manche Dokumente enthalten Seiten des benachbarten Aufsatzes; E136 beginnt etwa mit den zwei letzten Seiten von E126. Andere enthalten ganze Bände (E17/E35 in III 2, E343/E417 in III 11, E92/E344 in III 12). | 27. 10. | Ränder nach den Kolumnentiteln der Opera omnia berichtigen | geplant, Frist 9. 11. |\n| R4 | **Widersprüche im Briefregister der Reihe IVA.** Das Briefregister führt julianische Daten für Briefe, die die Synopse als gregorianisch ausweist, den Ort des Empfängers als Absendeort und 157 Repertoriumsnummern, die Briefe verschiedener Daten teilen. | 24. 10. | Als Widersprüche führen und je Brief gegen die kritische Edition entscheiden | Entscheidung der Projektleitung |",
+   "source": "defizite.yaml: the entries of kind referenz as a table"
+  },
+  "def_tabelle_ablauf": {
+   "value": "| Nr. | Befund | erkannt | Aufgabe | Stand |\n|---|---|---|---|---|\n| A1 | **Kontingentgrenze falsch gedeutet.** Am 26.10. galt die Ollama-Grenze als Wochenlimit; tatsächlich war es das Sitzungslimit, das nach einigen Stunden endet. Die Woche war erst zur Hälfte verbraucht. | 26. 10. | Beide Grenzen unterscheiden; Wochenkapazität messen, prognostizieren und eine Reserve für das Wochenende halten | erledigt am 26. 10. |\n| A2 | **Stilles Ausweichen auf ein anderes Lesemodell.** An der Kontingentgrenze las die Texterkennung jede Seite stillschweigend mit einem anderen Modell weiter. | 26. 10. | Anhalten statt Ausweichen; Fortsetzung, sobald die Grenze fällt | erledigt am 26. 10. |\n| A3 | **Verarbeitungskette brach ohne Meldung ab.** Die Nachbaukette endete in der Nacht zum 27.10. ohne Eintrag; die Ursache war nicht mehr festzustellen. | 27. 10. | Kettenwächter, der jeden Abbruch analysiert, die bekannte Ursache behebt und neu startet | erledigt am 27. 10. |",
+   "source": "defizite.yaml: the entries of kind ablauf as a table"
   }
  },
  "notes": [

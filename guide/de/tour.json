@@ -731,6 +731,73 @@
    "audio_s": 15.72
   },
   {
+   "id": "evidenz",
+   "kind": "card",
+   "card": {
+    "kicker": "Der Evidenznachweis",
+    "title": "Eine Aussage und ihre Rechtfertigung",
+    "ki_label": "Übliche KI-Antwort",
+    "woher": "Woher?",
+    "famulus_label": "Famulus",
+    "status_label": "Status",
+    "status_text": "Vorschlag",
+    "von": " von ",
+    "begruendet_label": "Satzteilen begründet",
+    "fazit": "wahre Aussage + Rechtfertigung = Wissen",
+    "evidence": {
+     "aussage": "Christian Goldbach wurde am 18. März 1690 in Königsberg in Ostpreußen geboren.",
+     "teile": [
+      {
+       "rolle": "Person",
+       "aussage": "Christian Goldbach",
+       "spanne": "Christian Goldbach",
+       "spanne_voll": "Christian Goldbach"
+      },
+      {
+       "rolle": "Ereignis",
+       "aussage": "geboren",
+       "spanne": "was born",
+       "spanne_voll": "was born on March 18th, 1690, at Königsberg"
+      },
+      {
+       "rolle": "Datum",
+       "aussage": "18. März 1690",
+       "spanne": "March 18th, 1690",
+       "spanne_voll": "born on March 18th, 1690"
+      },
+      {
+       "rolle": "Ort",
+       "aussage": "Königsberg",
+       "spanne": "Königsberg",
+       "spanne_voll": "at Königsberg"
+      }
+     ],
+     "beleg": "Christian Goldbach was born on March 18th, 1690, at Königsberg in Eastern Prussia",
+     "img": "evidenz-beleg.webp",
+     "status": "vorgeschlagen",
+     "adresse": "P:978-3-0348-0892-7#13/p1",
+     "ref": "Opera omnia IV A 4, Einleitung, S. 4",
+     "begruendet": 4,
+     "klauseln": 4
+    }
+   },
+   "frame": null,
+   "pre": null,
+   "caption": "Der Evidenznachweis: jede Aussage in ihre Teile zerlegt und jeder Teil an den Wortlaut der Quelle gebunden.",
+   "key": [],
+   "target": null,
+   "clicks": 0,
+   "focus": null,
+   "zoom": null,
+   "chrome": true,
+   "hold": 24,
+   "tour": true,
+   "cards": [],
+   "url": "https://famulus.lettre.ai/euler/",
+   "audio": "voice/evidenz.m4a",
+   "audio_s": 30.15
+  },
+  {
    "id": "indizes",
    "kind": "card",
    "card": {

@@ -221,6 +221,7 @@
     // the picture of a step, with spotlight and camera; `now` without transitions
     show(s, now) {
       if (s.kind === 'card') { this.card_(s, now); return; }
+      (this.evTimers || []).forEach(clearTimeout); this.evTimers = [];
       this.slide.classList.remove('on');
       const src = q(this.base + lang() + '/' + s.frame);
       const [on, off] = this.imgA.classList.contains('on') ? [this.imgA, this.imgB] : [this.imgB, this.imgA];
@@ -237,7 +238,10 @@
     // a slide: kicker, title, figures counting up, lines appearing one after the other
     card_(s, now) {
       const c = s.card || {};
+      (this.evTimers || []).forEach(clearTimeout); this.evTimers = [];
       this.slide.innerHTML = '';
+      this.slide.classList.toggle('gp-ev-slide', !!c.evidence);
+      if (c.evidence) { this.evidence(s, c, now); return; }
       if (c.kicker) this.slide.append(el('p', 'gp-s-kicker', c.kicker));
       if (c.title) this.slide.append(el('h3', 'gp-s-title', c.title));
       if (c.figures && c.figures.length) {
@@ -262,6 +266,88 @@
       if (s.url) this.url.textContent = s.url.replace(/^https?:\/\//, '');
       this.win.classList.toggle('gp-full', s.chrome === false);
       if (!now && !RM) this.slide.querySelectorAll('.gp-s-v').forEach(v => this.count(v));
+    }
+
+    // the evidence of one statement as a sequence (card.evidence, made from a dossier fact): the bare answer of a usual
+    // AI and its question "where from?"; the same statement split into its parts; the source with the spans each part is
+    // bound to, drawn as lines; the address, the status and the verdict. Timed over the step (its narration); `now`
+    // (a jump, a paused tour) shows the end state at once.
+    evidence(s, c, now) {
+      const ev = c.evidence, T = this.dur(s), S = this.slide;
+      const box = el('div', 'gp-ev');
+      if (c.kicker) box.append(el('p', 'gp-s-kicker', c.kicker));
+      if (c.title) box.append(el('h3', 'gp-s-title', c.title));
+      const marked = (text, parts, key) => {
+        const p = el('p', 'gp-ev-satz');
+        const out = [];
+        const hits = parts.map((t, i) => ({ i, at: text.indexOf(t[key]), len: t[key].length })).filter(h => h.at >= 0).sort((x, y) => x.at - y.at);
+        let pos = 0;
+        hits.forEach(h => {
+          if (h.at < pos) return;
+          if (h.at > pos) out.push(document.createTextNode(text.slice(pos, h.at)));
+          const m = el('mark', 'gp-ev-m gp-ev-c' + h.i, text.slice(h.at, h.at + h.len)); m.dataset.i = h.i;
+          out.push(m); pos = h.at + h.len;
+        });
+        if (pos < text.length) out.push(document.createTextNode(text.slice(pos)));
+        p.append(...out);
+        return p;
+      };
+      const ki = el('div', 'gp-ev-ki');
+      ki.append(el('span', 'gp-ev-lab', c.ki_label || 'KI'), el('p', 'gp-ev-satz', ev.aussage), el('span', 'gp-ev-woher', c.woher || '?'));
+      const grid = el('div', 'gp-ev-grid');
+      const fam = el('div', 'gp-ev-fam');
+      const rollen = el('div', 'gp-ev-rollen');
+      ev.teile.forEach((t, i) => { const r = el('span', 'gp-ev-rolle gp-ev-c' + i, t.rolle); r.dataset.i = i; rollen.append(r); });
+      fam.append(el('span', 'gp-ev-lab', c.famulus_label || 'Famulus'), marked(ev.aussage, ev.teile, 'aussage'), rollen);
+      const qu = el('div', 'gp-ev-quelle');
+      if (ev.img) { const im = el('img', 'gp-ev-img'); im.src = q(this.base + lang() + '/frames/' + ev.img); im.alt = ''; qu.append(im); }
+      qu.append(marked(ev.beleg, ev.teile, 'spanne'));
+      qu.querySelector('.gp-ev-satz').classList.add('gp-ev-beleg');
+      qu.append(el('p', 'gp-ev-ref', ev.ref + ' · ' + (c.status_label || 'Status') + ': ' + (c.status_text || ev.status) + ' · ' +
+        ev.begruendet + (c.von || ' / ') + ev.klauseln + ' ' + (c.begruendet_label || '')));
+      grid.append(fam, qu);
+      const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); svg.setAttribute('class', 'gp-ev-lines');
+      box.append(ki, grid, el('p', 'gp-ev-fazit', c.fazit || ''));
+      S.append(box, svg);
+      S.classList.toggle('gp-now', !!now);
+      S.classList.add('on');
+      this.spot.classList.remove('on'); this.cursor.classList.remove('on'); this.cam.style.transform = '';
+      if (s.url) this.url.textContent = s.url.replace(/^https?:\/\//, '');
+      this.win.classList.toggle('gp-full', s.chrome === false);
+      const lines = () => {
+        svg.innerHTML = '';
+        const b = S.getBoundingClientRect();
+        if (!b.width) return;
+        svg.setAttribute('viewBox', `0 0 ${b.width} ${b.height}`);
+        ev.teile.forEach((t, i) => {
+          const a = fam.querySelector(`.gp-ev-m[data-i="${i}"]`), z = qu.querySelector(`.gp-ev-m[data-i="${i}"]`);
+          if (!a || !z) return;
+          const ra = a.getBoundingClientRect(), rz = z.getBoundingClientRect();
+          const x1 = ra.left + ra.width / 2 - b.left, y1 = ra.bottom - b.top + 2, x2 = rz.left + rz.width / 2 - b.left, y2 = rz.top - b.top - 2;
+          const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+          const my = (y1 + y2) / 2;
+          path.setAttribute('d', `M${x1},${y1} C${x1},${my} ${x2},${my} ${x2},${y2}`);
+          path.setAttribute('class', 'gp-ev-line gp-ev-c' + i);
+          path.dataset.i = i;
+          svg.append(path);
+          const L = path.getTotalLength(); path.style.strokeDasharray = L; path.style.strokeDashoffset = now ? 0 : L;
+        });
+      };
+      const at = (frac, fn) => { if (now) fn(); else this.evTimers.push(setTimeout(fn, frac * T)); };
+      const on = (sel, cls) => () => S.querySelectorAll(sel).forEach(n => n.classList.add(cls || 'an'));
+      // the phases (fractions of the step): the bare answer, its parts, the source and the bindings, the verdict
+      at(0.02, on('.gp-ev-ki'));
+      at(0.14, on('.gp-ev-woher'));
+      at(0.30, () => { S.querySelector('.gp-ev-ki').classList.add('weg'); on('.gp-ev-fam')(); });
+      ev.teile.forEach((t, i) => at(0.36 + i * 0.05, on(`.gp-ev-fam .gp-ev-c${i}`)));
+      at(0.58, () => { on('.gp-ev-quelle')(); });
+      at(0.62, lines);
+      ev.teile.forEach((t, i) => at(0.64 + i * 0.05, () => {
+        on(`.gp-ev-quelle .gp-ev-c${i}`)();
+        const pth = svg.querySelector(`path[data-i="${i}"]`); if (pth) pth.style.strokeDashoffset = 0;
+      }));
+      at(0.86, on('.gp-ev-fazit'));
+      if (now) requestAnimationFrame(lines);
     }
 
     count(v) {

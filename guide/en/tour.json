@@ -687,6 +687,71 @@
    "url": "https://famulus.lettre.ai/euler/"
   },
   {
+   "id": "evidenz",
+   "kind": "card",
+   "card": {
+    "kicker": "The evidence",
+    "title": "A statement and its justification",
+    "ki_label": "Usual AI answer",
+    "woher": "Where from?",
+    "famulus_label": "Famulus",
+    "status_label": "Status",
+    "status_text": "proposal",
+    "von": " of ",
+    "begruendet_label": "parts justified",
+    "fazit": "true proposition + justification = knowledge",
+    "evidence": {
+     "aussage": "Christian Goldbach wurde am 18. März 1690 in Königsberg in Ostpreußen geboren.",
+     "teile": [
+      {
+       "rolle": "Person",
+       "aussage": "Christian Goldbach",
+       "spanne": "Christian Goldbach",
+       "spanne_voll": "Christian Goldbach"
+      },
+      {
+       "rolle": "Event",
+       "aussage": "geboren",
+       "spanne": "was born",
+       "spanne_voll": "was born on March 18th, 1690, at Königsberg"
+      },
+      {
+       "rolle": "Date",
+       "aussage": "18. März 1690",
+       "spanne": "March 18th, 1690",
+       "spanne_voll": "born on March 18th, 1690"
+      },
+      {
+       "rolle": "Place",
+       "aussage": "Königsberg",
+       "spanne": "Königsberg",
+       "spanne_voll": "at Königsberg"
+      }
+     ],
+     "beleg": "Christian Goldbach was born on March 18th, 1690, at Königsberg in Eastern Prussia",
+     "img": "evidenz-beleg.webp",
+     "status": "vorgeschlagen",
+     "adresse": "P:978-3-0348-0892-7#13/p1",
+     "ref": "Opera omnia IV A 4, introduction, p. 4",
+     "begruendet": 4,
+     "klauseln": 4
+    }
+   },
+   "frame": null,
+   "pre": null,
+   "caption": "The evidence: every statement split into its parts, and every part bound to the wording of the source.",
+   "key": [],
+   "target": null,
+   "clicks": 0,
+   "focus": null,
+   "zoom": null,
+   "chrome": true,
+   "hold": 24,
+   "tour": true,
+   "cards": [],
+   "url": "https://famulus.lettre.ai/euler/"
+  },
+  {
    "id": "indizes",
    "kind": "card",
    "card": {
