@@ -972,3 +972,42 @@ html.gp-screen-open { overflow: hidden; }
 
 /* a wide table of a chapter (the task lists of a "Lücken" page) scrolls within itself on a phone, never the page */
 main table { display: block; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+/* ---- task list of a collection's deficits (facts *_html of build/facts/<slug>.py, 27 Oct 2026) */
+.defizite { display: grid; gap: 1rem; margin: 1.4rem 0 0.4rem; }
+.defizit {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--oxford-soft);
+  border-radius: 6px;
+  padding: 1rem 1.2rem 1.05rem;
+}
+.defizit.st-erledigt { border-left-color: #5f6b3a; }
+.defizit.st-in_arbeit { border-left-color: var(--gold); }
+.defizit.st-entscheidung { border-left-color: #9a4f3c; }
+.defizit-kopf { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 0.75rem; margin-bottom: 0.45rem; }
+.defizit-id {
+  font-family: var(--sans); font-size: 0.74rem; font-weight: 700; letter-spacing: 0.04em;
+  color: var(--oxford); background: var(--sand-deep); border-radius: 3px; padding: 0.1rem 0.45rem;
+}
+.defizit-titel { font-family: var(--display); font-size: 1.12rem; font-weight: 600; color: var(--oxford); margin: 0; flex: 1 1 16rem; }
+.defizit-stand {
+  font-family: var(--sans); font-size: 0.74rem; font-weight: 650; white-space: nowrap;
+  border-radius: 999px; padding: 0.15rem 0.6rem; background: var(--sand-deep); color: var(--ink);
+}
+.st-erledigt .defizit-stand { background: #e6ead6; color: #3d4626; }
+.st-in_arbeit .defizit-stand { background: var(--gold-pale); color: var(--gold-deep); }
+.st-geplant .defizit-stand { background: #dfe7f0; color: var(--oxford); }
+.st-entscheidung .defizit-stand { background: #f3e0da; color: #7a3a2b; }
+.defizit-befund { margin: 0 0 0.7rem; line-height: 1.55; }
+.defizit dl { display: grid; grid-template-columns: 7.5rem 1fr; gap: 0.3rem 0.9rem; margin: 0; font-size: 0.93rem; }
+.defizit dt { font-family: var(--sans); font-size: 0.74rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; color: var(--muted); padding-top: 0.15rem; }
+.defizit dd { margin: 0; }
+.defizit dd code { font-size: 0.8rem; word-break: break-all; color: var(--muted); }
+@media (max-width: 640px) {
+  .defizit dl { grid-template-columns: 1fr; }
+  .defizit dt { padding-top: 0.4rem; }
+}
+/* reading modes of a document in the document table (Seiten · Tafeln) */
+.doc-table .doc-modes { display: block; margin-top: .15rem; font-size: .82em; }
+.doc-table .doc-modes a { color: var(--gold-deep); }

@@ -5,16 +5,16 @@
   1280,
   800
  ],
- "captured": "2026-10-26 22:08",
+ "captured": "2026-10-31 13:23",
  "title": "Ein Rundgang durch die Edition",
- "lead": "Von den vier Reihen der Opera omnia über Eneström und den Briefwechsel mit Christian Goldbach bis zur Zielvorgabe: wie man liest, Stellen wählt, erläutern und übersetzen lässt, nachschlägt, zitiert und die Sammlung befragt.",
+ "lead": "Von den vier Reihen der Opera omnia über Eneström und den Briefwechsel mit Christian Goldbach bis zur Zielvorgabe: wie man liest, Stellen wählt, verstehen und übersetzen lässt, im Wörterbuch nachschlägt, zitiert und die Sammlung befragt.",
  "steps": [
   {
    "id": "bestand",
    "kind": "card",
    "card": {
     "kicker": "Leonhardi Euleri Opera omnia",
-    "title": "Vier Reihen, 84 Bände, 41.219 Seiten",
+    "title": "Vier Reihen, 84 Bände, 41.262 Seiten",
     "figures": [
      {
       "v": "30",
@@ -104,14 +104,14 @@
    "id": "open",
    "frame": "frames/03.webp",
    "pre": null,
-   "caption": "Band IV A 4, der Briefwechsel mit Christian Goldbach. Brief 51 vom 7. Juni 1742: links das Faksimile, rechts die Transkription.",
+   "caption": "Die Edition beginnt mit dem Titelblatt: links das Faksimile, rechts die Transkription.",
    "key": [],
    "target": null,
    "clicks": 0,
    "focus": [
-    0.5004,
+    0.0,
     0.06,
-    0.4996,
+    1.0,
     0.94
    ],
    "zoom": null,
@@ -122,48 +122,201 @@
     "blaettern",
     "zitieren"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=198",
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=1",
    "audio": "voice/open.m4a",
-   "audio_s": 14.45
+   "audio_s": 14.8
   },
   {
-   "id": "next",
+   "id": "titel-text",
    "frame": "frames/04.webp",
    "pre": null,
-   "caption": "Die Pfeiltasten blättern: → vor, ← zurück.",
-   "key": [
-    "→"
+   "caption": "Der Knopf rechts oben wechselt die Ansicht: nur der Text …",
+   "key": [],
+   "target": [
+    0.8915,
+    0.0112,
+    0.0644,
+    0.0375
    ],
-   "target": null,
-   "clicks": 0,
+   "clicks": 1,
    "focus": [
-    0.6101,
+    0.0,
+    0.06,
+    1.0,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 3.5,
+   "tour": true,
+   "cards": [
+    "ansicht"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=1",
+   "audio": "voice/titel-text.m4a",
+   "audio_s": 5.53
+  },
+  {
+   "id": "titel-faksimile",
+   "frame": "frames/05.webp",
+   "pre": null,
+   "caption": "… nur das Faksimile …",
+   "key": [],
+   "target": [
+    0.8997,
+    0.0112,
+    0.0563,
+    0.0375
+   ],
+   "clicks": 1,
+   "focus": [
+    0.0,
+    0.06,
+    1.0,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 3.5,
+   "tour": true,
+   "cards": [
+    "ansicht"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=1",
+   "audio": "voice/titel-faksimile.m4a",
+   "audio_s": 1.97
+  },
+  {
+   "id": "titel-beide",
+   "frame": "frames/06.webp",
+   "pre": null,
+   "caption": "… oder beide nebeneinander.",
+   "key": [],
+   "target": [
+    0.8728,
+    0.0112,
+    0.0831,
+    0.0375
+   ],
+   "clicks": 1,
+   "focus": [
+    0.0,
+    0.06,
+    1.0,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 3,
+   "tour": true,
+   "cards": [],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=1",
+   "audio": "voice/titel-beide.m4a",
+   "audio_s": 2.47
+  },
+  {
+   "id": "sprung",
+   "frame": "frames/07.webp",
+   "pre": null,
+   "caption": "Im Seitenfeld 13 eingeben und Enter: die Einleitung des Bandes, Goldbachs Lebenslauf.",
+   "key": [
+    "13",
+    "Enter"
+   ],
+   "target": [
+    0.7177,
+    0.0075,
+    0.0297,
+    0.045
+   ],
+   "clicks": 1,
+   "focus": [
+    0.6863,
     0.0075,
     0.1277,
     0.045
    ],
    "zoom": null,
    "chrome": true,
-   "hold": 3.2,
+   "hold": 4,
    "tour": true,
    "cards": [
-    "blaettern"
+    "blaettern",
+    "zitieren"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199",
-   "audio": "voice/next.m4a",
-   "audio_s": 5.76
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=14",
+   "audio": "voice/sprung.m4a",
+   "audio_s": 7.9
+  },
+  {
+   "id": "seite-text",
+   "frame": "frames/08.webp",
+   "pre": null,
+   "caption": "Auch hier: nur der Text …",
+   "key": [],
+   "target": [
+    0.8915,
+    0.0112,
+    0.0644,
+    0.0375
+   ],
+   "clicks": 1,
+   "focus": [
+    0.0,
+    0.06,
+    1.0,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 3,
+   "tour": true,
+   "cards": [
+    "ansicht"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=14",
+   "audio": "voice/seite-text.m4a",
+   "audio_s": 2.52
+  },
+  {
+   "id": "seite-faksimile",
+   "frame": "frames/09.webp",
+   "pre": null,
+   "caption": "… und die gedruckte Seite.",
+   "key": [],
+   "target": [
+    0.8997,
+    0.0112,
+    0.0563,
+    0.0375
+   ],
+   "clicks": 1,
+   "focus": [
+    0.0,
+    0.06,
+    1.0,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 3,
+   "tour": true,
+   "cards": [],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=14",
+   "audio": "voice/seite-faksimile.m4a",
+   "audio_s": 2.14
   },
   {
    "id": "transkription",
-   "frame": "frames/05.webp",
+   "frame": "frames/10.webp",
    "pre": null,
    "caption": "Die Transkription ist strukturierter Text: Briefkopf, Absätze, Formeln und Anmerkungen als geprüftes XML – maschinenlesbar.",
    "key": [],
    "target": [
-    0.9139,
-    0.11,
-    0.0525,
-    0.0375
+    0.8977,
+    0.1106,
+    0.0687,
+    0.0225
    ],
    "clicks": 1,
    "focus": [
@@ -177,28 +330,28 @@
    "hold": 6,
    "tour": true,
    "cards": [],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199",
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=14",
    "audio": "voice/transkription.m4a",
    "audio_s": 9.37
   },
   {
    "id": "sentence",
-   "frame": "frames/06.webp",
-   "pre": "frames/06a.webp",
-   "caption": "Zweimal klicken wählt einen Satz – hier Goldbachs Vermutung: jede Zahl größer als 2 sei eine Summe dreier Primzahlen.",
+   "frame": "frames/11.webp",
+   "pre": "frames/11a.webp",
+   "caption": "Zweimal klicken wählt einen Satz – hier: Christian Goldbach wurde am 18. März 1690 in Königsberg geboren.",
    "key": [
     "2× Klick"
    ],
    "target": [
-    0.7146,
-    0.4002,
+    0.5844,
+    0.3307,
     0.0031,
     0.005
    ],
    "clicks": 2,
    "focus": [
     0.5543,
-    0.3896,
+    0.3201,
     0.3918,
     0.0585
    ],
@@ -209,21 +362,21 @@
    "cards": [
     "auswahl"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199",
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=14",
    "audio": "voice/sentence.m4a",
-   "audio_s": 12.42
+   "audio_s": 9.53
   },
   {
    "id": "erlaeuterung",
-   "frame": "frames/07.webp",
+   "frame": "frames/12.webp",
    "pre": null,
-   "caption": "Erläuterung: Famulus liest die markierte Stelle im Zusammenhang ihrer Seite und erklärt sie.",
+   "caption": "Textverständnis: Famulus liest die markierte Stelle im Zusammenhang ihrer Seite. Eine vollständige Analyse mit Belegen gibt die Anfrage.",
    "key": [],
    "target": [
-    0.9556,
-    0.123,
-    0.0444,
-    0.1597
+    0.955,
+    0.1034,
+    0.045,
+    0.1988
    ],
    "clicks": 1,
    "focus": [
@@ -239,20 +392,20 @@
    "cards": [
     "erlaeuterung"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199&bedeutung=1",
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=14&bedeutung=1",
    "audio": "voice/erlaeuterung.m4a",
-   "audio_s": 9.33
+   "audio_s": 15.22
   },
   {
    "id": "uebersetzung",
-   "frame": "frames/08.webp",
+   "frame": "frames/13.webp",
    "pre": null,
-   "caption": "Übersetzung: dieselbe Stelle in Ihrer Sprache, mit den Fachbegriffen der Sammlung.",
+   "caption": "Übersetzung: die englische Einleitung ins Deutsche übertragen, mit den Fachbegriffen der Sammlung.",
    "key": [],
    "target": [
-    0.9556,
-    0.2901,
-    0.0444,
+    0.955,
+    0.3097,
+    0.045,
     0.1604
    ],
    "clicks": 1,
@@ -270,19 +423,19 @@
     "uebersetzung",
     "sprache"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199&bedeutung=1",
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=14&bedeutung=1",
    "audio": "voice/uebersetzung.m4a",
-   "audio_s": 7.21
+   "audio_s": 6.72
   },
   {
    "id": "ue-seite",
-   "frame": "frames/09.webp",
+   "frame": "frames/14.webp",
    "pre": null,
    "caption": "„Seite“ übersetzt die ganze Seite, mit Überschriften, Randnotizen und Anmerkungen.",
    "key": [],
    "target": [
     0.8256,
-    0.1313,
+    0.1355,
     0.0395,
     0.0277
    ],
@@ -300,53 +453,84 @@
    "cards": [
     "uebersetzung"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199&bedeutung=1",
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=14&bedeutung=1",
    "audio": "voice/ue-seite.m4a",
    "audio_s": 7.39
   },
   {
-   "id": "word",
-   "frame": "frames/10.webp",
-   "pre": "frames/10a.webp",
-   "caption": "Ein Klick wählt ein Wort.",
+   "id": "paragraph",
+   "frame": "frames/15.webp",
+   "pre": "frames/15a.webp",
+   "caption": "Drei Klicks wählen den ganzen Absatz. Esc hebt die Auswahl auf, ⌘C kopiert sie.",
    "key": [
-    "1× Klick"
+    "3× Klick"
    ],
    "target": [
-    0.9014,
-    0.5889,
+    0.7369,
+    0.3999,
     0.0031,
     0.005
    ],
-   "clicks": 1,
+   "clicks": 3,
    "focus": [
-    0.8889,
-    0.5783,
-    0.0571,
-    0.0262
+    0.5543,
+    0.3893,
+    0.3918,
+    0.0585
    ],
    "zoom": null,
    "chrome": true,
-   "hold": 3,
-   "tour": true,
+   "hold": 3.5,
+   "tour": false,
    "cards": [
-    "auswahl",
-    "woerterbuch"
+    "auswahl"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199",
-   "audio": "voice/word.m4a",
-   "audio_s": 2.88
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=14"
   },
   {
-   "id": "woerterbuch",
-   "frame": "frames/11.webp",
+   "id": "jump",
+   "frame": "frames/16.webp",
    "pre": null,
-   "caption": "Wörterbuch: das Wort wird auf sein Lemma zurückgeführt, mit jeder Belegstelle der Sammlung.",
+   "caption": "Im Seitenfeld 432 eingeben und Enter: Eulers Brief an Goldbach vom 25. Juni 1748.",
+   "key": [
+    "432",
+    "Enter"
+   ],
+   "target": [
+    0.7177,
+    0.0075,
+    0.0297,
+    0.045
+   ],
+   "clicks": 1,
+   "focus": [
+    0.6863,
+    0.0075,
+    0.1277,
+    0.045
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 4,
+   "tour": true,
+   "cards": [
+    "blaettern",
+    "zitieren"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433",
+   "audio": "voice/jump.m4a",
+   "audio_s": 9.33
+  },
+  {
+   "id": "wb-seite",
+   "frame": "frames/17.webp",
+   "pre": null,
+   "caption": "Wörterbuch: die Fachtermini dieser Seite zur Auswahl.",
    "key": [],
    "target": [
-    0.9556,
-    0.458,
-    0.0444,
+    0.955,
+    0.4776,
+    0.045,
     0.155
    ],
    "clicks": 1,
@@ -358,14 +542,44 @@
    ],
    "zoom": null,
    "chrome": true,
-   "hold": 5.5,
+   "hold": 5,
    "tour": true,
    "cards": [
     "woerterbuch"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199",
-   "audio": "voice/woerterbuch.m4a",
-   "audio_s": 7.81
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433",
+   "audio": "voice/wb-seite.m4a",
+   "audio_s": 4.83
+  },
+  {
+   "id": "wb-eintrag",
+   "frame": "frames/18.webp",
+   "pre": null,
+   "caption": "„Theorematis“ führt auf den Eintrag theorema: seine Bedeutungen im Sprachgebrauch der Sammlung, mit Belegen.",
+   "key": [],
+   "target": [
+    0.0289,
+    0.2037,
+    0.4359,
+    0.0375
+   ],
+   "clicks": 1,
+   "focus": [
+    0.0125,
+    0.08,
+    0.4688,
+    0.9
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 6,
+   "tour": true,
+   "cards": [
+    "woerterbuch"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433",
+   "audio": "voice/wb-eintrag.m4a",
+   "audio_s": 9.07
   },
   {
    "id": "linguistik",
@@ -375,7 +589,7 @@
     "title": "Jeder Satz zerlegt, jedes Wort bestimmt",
     "figures": [
      {
-      "v": "826.846",
+      "v": "832.771",
       "k": "Sätze analysiert"
      },
      {
@@ -385,12 +599,12 @@
     ],
     "lines": [
      "In den Sprachen der Texte: jede Form auf ihre Grundform zurückgeführt",
-     "Darauf beruhen Wörterbuch, Erläuterung und Suche"
+     "Darauf beruhen Wörterbuch, Textverständnis und Suche"
     ]
    },
    "frame": null,
    "pre": null,
-   "caption": "Linguistische Analyse: 826.846 Sätze, jedes Wort mit Grundform und Wortart.",
+   "caption": "Linguistische Analyse: 832.771 Sätze, jedes Wort mit Grundform und Wortart.",
    "key": [],
    "target": null,
    "clicks": 0,
@@ -405,87 +619,23 @@
    "audio_s": 8.91
   },
   {
-   "id": "paragraph",
-   "frame": "frames/12.webp",
-   "pre": "frames/12a.webp",
-   "caption": "Drei Klicks wählen den ganzen Absatz. Esc hebt die Auswahl auf, ⌘C kopiert sie.",
-   "key": [
-    "3× Klick"
-   ],
-   "target": [
-    0.5844,
-    0.3997,
-    0.0031,
-    0.005
-   ],
-   "clicks": 3,
-   "focus": [
-    0.5719,
-    0.3891,
-    0.2237,
-    0.0262
-   ],
-   "zoom": null,
-   "chrome": true,
-   "hold": 3.5,
-   "tour": false,
-   "cards": [
-    "auswahl"
-   ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199"
-  },
-  {
-   "id": "jump",
-   "frame": "frames/13.webp",
-   "pre": null,
-   "caption": "Seitenfeld: 204 und Enter springt zu Eulers Antwort vom 30. Juni 1742.",
-   "key": [
-    "204",
-    "Enter"
-   ],
-   "target": [
-    0.6414,
-    0.0075,
-    0.0297,
-    0.045
-   ],
-   "clicks": 1,
-   "focus": [
-    0.6101,
-    0.0075,
-    0.1277,
-    0.045
-   ],
-   "zoom": null,
-   "chrome": true,
-   "hold": 4,
-   "tour": true,
-   "cards": [
-    "blaettern",
-    "zitieren"
-   ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205",
-   "audio": "voice/jump.m4a",
-   "audio_s": 10.18
-  },
-  {
    "id": "reply",
-   "frame": "frames/14.webp",
-   "pre": "frames/14a.webp",
-   "caption": "Euler: dass jede gerade Zahl eine Summe zweier Primzahlen sei, halte er für ein ganz gewisses Theorem – beweisen könne er es nicht.",
+   "frame": "frames/19.webp",
+   "pre": "frames/19a.webp",
+   "caption": "Eulers Beweis am Viereck ABCD, mit der Abbildung der Edition; jede Stelle bleibt zitierbar.",
    "key": [],
    "target": [
-    0.7755,
-    0.4753,
+    0.5844,
+    0.4013,
     0.0031,
     0.005
    ],
    "clicks": 2,
    "focus": [
     0.5543,
-    0.4647,
+    0.3895,
     0.3918,
-    0.0907
+    0.0597
    ],
    "zoom": 1.5,
    "chrome": true,
@@ -494,13 +644,13 @@
    "cards": [
     "zitieren"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205",
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433",
    "audio": "voice/reply.m4a",
-   "audio_s": 12.16
+   "audio_s": 11.56
   },
   {
    "id": "zoom",
-   "frame": "frames/15.webp",
+   "frame": "frames/20.webp",
    "pre": null,
    "caption": "↑ und ↓ zoomen das Faksimile; scrollen verschiebt den Ausschnitt.",
    "key": [
@@ -523,15 +673,15 @@
    "cards": [
     "ansicht"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205",
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433",
    "audio": "voice/zoom.m4a",
    "audio_s": 4.71
   },
   {
    "id": "layout-text",
-   "frame": "frames/16.webp",
+   "frame": "frames/21.webp",
    "pre": null,
-   "caption": "Der Knopf rechts oben wechselt die Ansicht: Faksimile, Beide, Text – und Synopse, wo die Edition eine Übersetzung mitbringt.",
+   "caption": "Der Knopf rechts oben wechselt die Ansicht: Faksimile, Beide, Text.",
    "key": [],
    "target": [
     0.8915,
@@ -553,15 +703,15 @@
    "cards": [
     "ansicht"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205",
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433",
    "audio": "voice/layout-text.m4a",
-   "audio_s": 9.6
+   "audio_s": 7.2
   },
   {
    "id": "menu",
-   "frame": "frames/17.webp",
+   "frame": "frames/22.webp",
    "pre": null,
-   "caption": "Das Menü ☰: Anordnung, Sprache, Oberfläche, Zoom, Sammlungen und Werkzeuge.",
+   "caption": "Das Menü ☰: Anordnung, Sprache, Oberfläche, Zoom, Sammlungen, Hilfe mit den Tasten und Werkzeuge.",
    "key": [],
    "target": [
     0.0069,
@@ -583,13 +733,13 @@
    "cards": [
     "menue"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205",
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433",
    "audio": "voice/menu.m4a",
-   "audio_s": 4.4
+   "audio_s": 6.82
   },
   {
    "id": "ui-sprache",
-   "frame": "frames/18.webp",
+   "frame": "frames/23.webp",
    "pre": null,
    "caption": "Unter „Oberfläche“ wählen Sie die Sprache des Viewers: die Reiter rechts wechseln sofort.",
    "key": [],
@@ -614,11 +764,11 @@
     "sprache",
     "menue"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205&ui=en"
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433&ui=en"
   },
   {
    "id": "fullscreen",
-   "frame": "frames/19.webp",
+   "frame": "frames/24.webp",
    "pre": null,
    "caption": "#F füllt den Bildschirm mit der Seite, Esc kehrt zurück.",
    "key": [
@@ -640,22 +790,22 @@
    "cards": [
     "ansicht"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205&ui=de",
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433&ui=de",
    "audio": "voice/fullscreen.m4a",
    "audio_s": 4.51
   },
   {
    "id": "anfrage",
-   "frame": "frames/20.webp",
+   "frame": "frames/25.webp",
    "pre": null,
    "caption": "Anfrage: eine Frage an die ganze Sammlung, gelesen im Zusammenhang dieser Seite.",
    "key": [
     "?"
    ],
    "target": [
-    0.9556,
-    0.7636,
-    0.0444,
+    0.955,
+    0.7832,
+    0.045,
     0.1134
    ],
    "clicks": 1,
@@ -672,13 +822,13 @@
    "cards": [
     "anfrage"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205&ui=de&bedeutung=1",
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433&ui=de&bedeutung=1",
    "audio": "voice/anfrage.m4a",
    "audio_s": 4.85
   },
   {
    "id": "antwort",
-   "frame": "frames/21.webp",
+   "frame": "frames/26.webp",
    "pre": null,
    "caption": "Die Antwort kommt mit Belegen: jeder Beleg öffnet die Seite, auf der er steht.",
    "key": [
@@ -699,7 +849,7 @@
    "cards": [
     "anfrage"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205&ui=de&bedeutung=1",
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433&ui=de&bedeutung=1",
    "audio": "voice/antwort.m4a",
    "audio_s": 7.01
   },
@@ -805,7 +955,7 @@
     "title": "Über alle Bände hinweg",
     "figures": [
      {
-      "v": "3.506",
+      "v": "3.448",
       "k": "Personen"
      },
      {
@@ -821,17 +971,17 @@
       "k": "Datumsangaben"
      },
      {
-      "v": "141",
-      "k": "Fachbegriffe, an 222.118 Stellen"
+      "v": "173",
+      "k": "Fachbegriffe, an 477.848 Stellen"
      }
     ],
     "lines": [
-     "Eine Suche über alle Bände der Opera omnia: 1.020 Belege für numerus in 266 Millisekunden"
+     "Eine Suche über alle Bände der Opera omnia: 11.749 Belege für numerus in 246 Millisekunden"
     ]
    },
    "frame": null,
    "pre": null,
-   "caption": "Gesamtindizes: 3.506 Personen, 1.201 Orte, 5.738 Datumsangaben, 141 Fachbegriffe – gesucht in Sekundenbruchteilen.",
+   "caption": "Gesamtindizes: 3.448 Personen, 1.201 Orte, 5.738 Datumsangaben, 173 Fachbegriffe – gesucht in Sekundenbruchteilen.",
    "key": [],
    "target": null,
    "clicks": 0,
@@ -853,7 +1003,7 @@
     "title": "Eulers Werk vollständig erschlossen",
     "figures": [
      {
-      "v": "6.304",
+      "v": "6.369",
       "k": "Seiten Briefwechsel transkribiert"
      },
      {
@@ -861,7 +1011,7 @@
       "k": "Seiten Eneström-Schriften transkribiert"
      },
      {
-      "v": "34.850",
+      "v": "34.893",
       "k": "Seiten der Reihen I–III folgen"
      }
     ],

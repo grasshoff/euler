@@ -5,16 +5,16 @@
   1280,
   800
  ],
- "captured": "2026-10-26 22:12",
+ "captured": "2026-10-31 13:26",
  "title": "A tour of the edition",
- "lead": "From the four series of the Opera omnia through Eneström and the correspondence with Christian Goldbach to the goal: how to read, select passages, have them explained and translated, look words up, cite and ask the collection.",
+ "lead": "From the four series of the Opera omnia through Eneström and the correspondence with Christian Goldbach to the goal: how to read, select passages, have them understood and translated, look terms up in the dictionary, cite and ask the collection.",
  "steps": [
   {
    "id": "bestand",
    "kind": "card",
    "card": {
     "kicker": "Leonhardi Euleri Opera omnia",
-    "title": "Four series, 84 volumes, 41,219 pages",
+    "title": "Four series, 84 volumes, 41,262 pages",
     "figures": [
      {
       "v": "30",
@@ -98,14 +98,14 @@
    "id": "open",
    "frame": "frames/03.webp",
    "pre": null,
-   "caption": "Volume IV A 4, the correspondence with Christian Goldbach. Letter 51 of 7 June 1742: facsimile on the left, transcription on the right.",
+   "caption": "The edition opens with its title page: the facsimile on the left, the transcription on the right.",
    "key": [],
    "target": null,
    "clicks": 0,
    "focus": [
-    0.5004,
+    0.0,
     0.06,
-    0.4996,
+    1.0,
     0.94
    ],
    "zoom": null,
@@ -116,44 +116,187 @@
     "blaettern",
     "zitieren"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=198"
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=1"
   },
   {
-   "id": "next",
+   "id": "titel-text",
    "frame": "frames/04.webp",
    "pre": null,
-   "caption": "The arrow keys turn the pages: → forward, ← back.",
-   "key": [
-    "→"
+   "caption": "The button at the top right switches the view: the text alone …",
+   "key": [],
+   "target": [
+    0.8972,
+    0.0112,
+    0.0588,
+    0.0375
    ],
-   "target": null,
-   "clicks": 0,
+   "clicks": 1,
    "focus": [
-    0.6101,
+    0.0,
+    0.06,
+    1.0,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 3.5,
+   "tour": true,
+   "cards": [
+    "ansicht"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=1"
+  },
+  {
+   "id": "titel-faksimile",
+   "frame": "frames/05.webp",
+   "pre": null,
+   "caption": "… the facsimile alone …",
+   "key": [],
+   "target": [
+    0.8997,
+    0.0112,
+    0.0563,
+    0.0375
+   ],
+   "clicks": 1,
+   "focus": [
+    0.0,
+    0.06,
+    1.0,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 3.5,
+   "tour": true,
+   "cards": [
+    "ansicht"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=1"
+  },
+  {
+   "id": "titel-beide",
+   "frame": "frames/06.webp",
+   "pre": null,
+   "caption": "… or both side by side.",
+   "key": [],
+   "target": [
+    0.8728,
+    0.0112,
+    0.0831,
+    0.0375
+   ],
+   "clicks": 1,
+   "focus": [
+    0.0,
+    0.06,
+    1.0,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 3,
+   "tour": true,
+   "cards": [],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=1"
+  },
+  {
+   "id": "sprung",
+   "frame": "frames/07.webp",
+   "pre": null,
+   "caption": "Type 13 into the page field and press Enter: the volume's introduction, Goldbach's life.",
+   "key": [
+    "13",
+    "Enter"
+   ],
+   "target": [
+    0.7233,
+    0.0075,
+    0.0297,
+    0.045
+   ],
+   "clicks": 1,
+   "focus": [
+    0.6919,
     0.0075,
     0.1277,
     0.045
    ],
    "zoom": null,
    "chrome": true,
-   "hold": 3.2,
+   "hold": 4,
    "tour": true,
    "cards": [
-    "blaettern"
+    "blaettern",
+    "zitieren"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199"
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=14"
+  },
+  {
+   "id": "seite-text",
+   "frame": "frames/08.webp",
+   "pre": null,
+   "caption": "Here too: the text alone …",
+   "key": [],
+   "target": [
+    0.8972,
+    0.0112,
+    0.0588,
+    0.0375
+   ],
+   "clicks": 1,
+   "focus": [
+    0.0,
+    0.06,
+    1.0,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 3,
+   "tour": true,
+   "cards": [
+    "ansicht"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=14"
+  },
+  {
+   "id": "seite-faksimile",
+   "frame": "frames/09.webp",
+   "pre": null,
+   "caption": "… and the printed page.",
+   "key": [],
+   "target": [
+    0.8997,
+    0.0112,
+    0.0563,
+    0.0375
+   ],
+   "clicks": 1,
+   "focus": [
+    0.0,
+    0.06,
+    1.0,
+    0.94
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 3,
+   "tour": true,
+   "cards": [],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=14"
   },
   {
    "id": "transkription",
-   "frame": "frames/05.webp",
+   "frame": "frames/10.webp",
    "pre": null,
    "caption": "The transcription is structured text: letter heading, paragraphs, formulas and notes as validated XML – machine-readable.",
    "key": [],
    "target": [
-    0.9139,
-    0.11,
-    0.0525,
-    0.0375
+    0.8977,
+    0.1106,
+    0.0687,
+    0.0225
    ],
    "clicks": 1,
    "focus": [
@@ -167,26 +310,26 @@
    "hold": 6,
    "tour": true,
    "cards": [],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199"
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=14"
   },
   {
    "id": "sentence",
-   "frame": "frames/06.webp",
-   "pre": "frames/06a.webp",
-   "caption": "A double click selects a sentence – here Goldbach's conjecture: every number greater than 2 is a sum of three primes.",
+   "frame": "frames/11.webp",
+   "pre": "frames/11a.webp",
+   "caption": "A double click selects a sentence – here: Christian Goldbach was born on 18 March 1690 at Königsberg.",
    "key": [
     "2× click"
    ],
    "target": [
-    0.7299,
-    0.4002,
+    0.5844,
+    0.3307,
     0.0031,
     0.005
    ],
    "clicks": 2,
    "focus": [
     0.5543,
-    0.3896,
+    0.3201,
     0.3918,
     0.0585
    ],
@@ -197,19 +340,19 @@
    "cards": [
     "auswahl"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199"
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=14"
   },
   {
    "id": "erlaeuterung",
-   "frame": "frames/07.webp",
+   "frame": "frames/12.webp",
    "pre": null,
-   "caption": "Explanation: Famulus reads the marked passage in the context of its page and explains it.",
+   "caption": "Text comprehension: Famulus reads the marked passage in the context of its page. A full analysis with evidence comes from the Query.",
    "key": [],
    "target": [
-    0.9556,
-    0.1471,
-    0.0444,
-    0.1543
+    0.955,
+    0.1072,
+    0.045,
+    0.234
    ],
    "clicks": 1,
    "focus": [
@@ -225,18 +368,18 @@
    "cards": [
     "erlaeuterung"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199&bedeutung=1"
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=14&bedeutung=1"
   },
   {
    "id": "uebersetzung",
-   "frame": "frames/08.webp",
+   "frame": "frames/13.webp",
    "pre": null,
-   "caption": "Translation: the same passage in your language, bound to the collection's terminology.",
+   "caption": "Translation: the English introduction rendered into German, bound to the collection's terminology.",
    "key": [],
    "target": [
-    0.9556,
-    0.3089,
-    0.0444,
+    0.955,
+    0.3487,
+    0.045,
     0.1544
    ],
    "clicks": 1,
@@ -254,17 +397,17 @@
     "uebersetzung",
     "sprache"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199&bedeutung=1"
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=14&bedeutung=1"
   },
   {
    "id": "ue-seite",
-   "frame": "frames/09.webp",
+   "frame": "frames/14.webp",
    "pre": null,
    "caption": "“Page” translates the whole page, keeping headings, marginal notes and footnotes.",
    "key": [],
    "target": [
     0.8383,
-    0.1313,
+    0.1355,
     0.0392,
     0.0277
    ],
@@ -282,122 +425,28 @@
    "cards": [
     "uebersetzung"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199&bedeutung=1"
-  },
-  {
-   "id": "word",
-   "frame": "frames/10.webp",
-   "pre": "frames/10a.webp",
-   "caption": "One click selects a word.",
-   "key": [
-    "1× click"
-   ],
-   "target": [
-    0.9014,
-    0.5889,
-    0.0031,
-    0.005
-   ],
-   "clicks": 1,
-   "focus": [
-    0.8889,
-    0.5783,
-    0.0571,
-    0.0262
-   ],
-   "zoom": null,
-   "chrome": true,
-   "hold": 3,
-   "tour": true,
-   "cards": [
-    "auswahl",
-    "woerterbuch"
-   ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199"
-  },
-  {
-   "id": "woerterbuch",
-   "frame": "frames/11.webp",
-   "pre": null,
-   "caption": "Dictionary: the word is traced to its lemma, with every occurrence in the collection.",
-   "key": [],
-   "target": [
-    0.9556,
-    0.4708,
-    0.0444,
-    0.1401
-   ],
-   "clicks": 1,
-   "focus": [
-    0.0125,
-    0.08,
-    0.4688,
-    0.9
-   ],
-   "zoom": null,
-   "chrome": true,
-   "hold": 5.5,
-   "tour": true,
-   "cards": [
-    "woerterbuch"
-   ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199"
-  },
-  {
-   "id": "linguistik",
-   "kind": "card",
-   "card": {
-    "kicker": "Linguistic analysis",
-    "title": "Every sentence parsed, every word identified",
-    "figures": [
-     {
-      "v": "826,846",
-      "k": "sentences analysed"
-     },
-     {
-      "v": "11,950,215",
-      "k": "words with base form and part of speech"
-     }
-    ],
-    "lines": [
-     "In the languages of the texts: every form traced to its base form",
-     "Dictionary, explanation and search rest on it"
-    ]
-   },
-   "frame": null,
-   "pre": null,
-   "caption": "Linguistic analysis: 826,846 sentences, every word with base form and part of speech.",
-   "key": [],
-   "target": null,
-   "clicks": 0,
-   "focus": null,
-   "zoom": null,
-   "chrome": true,
-   "hold": 7,
-   "tour": true,
-   "cards": [],
-   "url": "https://famulus.lettre.ai/euler/"
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=14&bedeutung=1"
   },
   {
    "id": "paragraph",
-   "frame": "frames/12.webp",
-   "pre": "frames/12a.webp",
+   "frame": "frames/15.webp",
+   "pre": "frames/15a.webp",
    "caption": "Three clicks select the whole paragraph. Esc clears the selection, ⌘C copies it.",
    "key": [
     "3× click"
    ],
    "target": [
-    0.5844,
-    0.3997,
+    0.7345,
+    0.3999,
     0.0031,
     0.005
    ],
    "clicks": 3,
    "focus": [
-    0.5719,
-    0.3891,
-    0.2237,
-    0.0262
+    0.5543,
+    0.3893,
+    0.3918,
+    0.0585
    ],
    "zoom": null,
    "chrome": true,
@@ -406,26 +455,26 @@
    "cards": [
     "auswahl"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=199"
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=14"
   },
   {
    "id": "jump",
-   "frame": "frames/13.webp",
+   "frame": "frames/16.webp",
    "pre": null,
-   "caption": "Page field: 204 and Enter jumps to Euler's reply of 30 June 1742.",
+   "caption": "Type 432 into the page field and press Enter: Euler's letter to Goldbach of 25 June 1748.",
    "key": [
-    "204",
+    "432",
     "Enter"
    ],
    "target": [
-    0.6414,
+    0.7233,
     0.0075,
     0.0297,
     0.045
    ],
    "clicks": 1,
    "focus": [
-    0.6101,
+    0.6919,
     0.0075,
     0.1277,
     0.045
@@ -438,26 +487,117 @@
     "blaettern",
     "zitieren"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205"
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433"
+  },
+  {
+   "id": "wb-seite",
+   "frame": "frames/17.webp",
+   "pre": null,
+   "caption": "Dictionary: the technical terms of this page to choose from.",
+   "key": [],
+   "target": [
+    0.955,
+    0.5106,
+    0.045,
+    0.1401
+   ],
+   "clicks": 1,
+   "focus": [
+    0.0125,
+    0.08,
+    0.4688,
+    0.9
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 5,
+   "tour": true,
+   "cards": [
+    "woerterbuch"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433"
+  },
+  {
+   "id": "wb-eintrag",
+   "frame": "frames/18.webp",
+   "pre": null,
+   "caption": "“Theorematis” leads to the entry theorema: its senses in the usage of the collection, with references.",
+   "key": [],
+   "target": [
+    0.0289,
+    0.2037,
+    0.4359,
+    0.0375
+   ],
+   "clicks": 1,
+   "focus": [
+    0.0125,
+    0.08,
+    0.4688,
+    0.9
+   ],
+   "zoom": null,
+   "chrome": true,
+   "hold": 6,
+   "tour": true,
+   "cards": [
+    "woerterbuch"
+   ],
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433"
+  },
+  {
+   "id": "linguistik",
+   "kind": "card",
+   "card": {
+    "kicker": "Linguistic analysis",
+    "title": "Every sentence parsed, every word identified",
+    "figures": [
+     {
+      "v": "832,771",
+      "k": "sentences analysed"
+     },
+     {
+      "v": "11,950,215",
+      "k": "words with base form and part of speech"
+     }
+    ],
+    "lines": [
+     "In the languages of the texts: every form traced to its base form",
+     "Dictionary, text comprehension and search rest on it"
+    ]
+   },
+   "frame": null,
+   "pre": null,
+   "caption": "Linguistic analysis: 832,771 sentences, every word with base form and part of speech.",
+   "key": [],
+   "target": null,
+   "clicks": 0,
+   "focus": null,
+   "zoom": null,
+   "chrome": true,
+   "hold": 7,
+   "tour": true,
+   "cards": [],
+   "url": "https://famulus.lettre.ai/euler/"
   },
   {
    "id": "reply",
-   "frame": "frames/14.webp",
-   "pre": "frames/14a.webp",
-   "caption": "Euler: that every even number is a sum of two primes he holds to be a quite certain theorem – though he cannot prove it.",
+   "frame": "frames/19.webp",
+   "pre": "frames/19a.webp",
+   "caption": "Euler's proof on the quadrilateral ABCD, with the edition's figure; every passage stays citable.",
    "key": [],
    "target": [
-    0.817,
-    0.4753,
+    0.5844,
+    0.4013,
     0.0031,
     0.005
    ],
    "clicks": 2,
    "focus": [
     0.5543,
-    0.4647,
+    0.3895,
     0.3918,
-    0.0907
+    0.0597
    ],
    "zoom": 1.5,
    "chrome": true,
@@ -466,11 +606,11 @@
    "cards": [
     "zitieren"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205"
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433"
   },
   {
    "id": "zoom",
-   "frame": "frames/15.webp",
+   "frame": "frames/20.webp",
    "pre": null,
    "caption": "↑ and ↓ zoom the facsimile; scrolling moves the view.",
    "key": [
@@ -493,18 +633,18 @@
    "cards": [
     "ansicht"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205"
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433"
   },
   {
    "id": "layout-text",
-   "frame": "frames/16.webp",
+   "frame": "frames/21.webp",
    "pre": null,
-   "caption": "The button at the top right cycles the view: facsimile, both, text – and synopsis where the edition brings a translation.",
+   "caption": "The button at the top right cycles the view: facsimile, both, text.",
    "key": [],
    "target": [
-    0.8915,
+    0.8972,
     0.0112,
-    0.0644,
+    0.0588,
     0.0375
    ],
    "clicks": 1,
@@ -521,13 +661,13 @@
    "cards": [
     "ansicht"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205"
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433"
   },
   {
    "id": "menu",
-   "frame": "frames/17.webp",
+   "frame": "frames/22.webp",
    "pre": null,
-   "caption": "The ☰ menu: arrangement, language, interface, zoom, collections and tools.",
+   "caption": "The ☰ menu: arrangement, language, interface, zoom, collections, help with the keys, and tools.",
    "key": [],
    "target": [
     0.0069,
@@ -549,11 +689,11 @@
    "cards": [
     "menue"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205"
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433"
   },
   {
    "id": "ui-sprache",
-   "frame": "frames/18.webp",
+   "frame": "frames/23.webp",
    "pre": null,
    "caption": "Under “Interface” you choose the viewer's language: the tabs on the right switch at once.",
    "key": [],
@@ -578,11 +718,11 @@
     "sprache",
     "menue"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205&ui=de"
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433&ui=de"
   },
   {
    "id": "fullscreen",
-   "frame": "frames/19.webp",
+   "frame": "frames/24.webp",
    "pre": null,
    "caption": "#F fills the screen with the page, Esc returns.",
    "key": [
@@ -604,20 +744,20 @@
    "cards": [
     "ansicht"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205&ui=en"
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433&ui=en"
   },
   {
    "id": "anfrage",
-   "frame": "frames/20.webp",
+   "frame": "frames/25.webp",
    "pre": null,
    "caption": "Query: a question to the whole collection, read in the context of this page.",
    "key": [
     "?"
    ],
    "target": [
-    0.9556,
-    0.7616,
-    0.0444,
+    0.955,
+    0.8014,
+    0.045,
     0.0913
    ],
    "clicks": 1,
@@ -634,11 +774,11 @@
    "cards": [
     "anfrage"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205&ui=en&bedeutung=1"
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433&ui=en&bedeutung=1"
   },
   {
    "id": "antwort",
-   "frame": "frames/21.webp",
+   "frame": "frames/26.webp",
    "pre": null,
    "caption": "The answer comes with references: each one opens the page it stands on.",
    "key": [
@@ -659,7 +799,7 @@
    "cards": [
     "anfrage"
    ],
-   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=205&ui=en&bedeutung=1"
+   "url": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433&ui=en&bedeutung=1"
   },
   {
    "id": "wissen",
@@ -759,7 +899,7 @@
     "title": "Across every volume",
     "figures": [
      {
-      "v": "3,506",
+      "v": "3,448",
       "k": "persons"
      },
      {
@@ -775,17 +915,17 @@
       "k": "dates"
      },
      {
-      "v": "141",
-      "k": "technical terms, at 222,118 places"
+      "v": "173",
+      "k": "technical terms, at 477,848 places"
      }
     ],
     "lines": [
-     "One search across all volumes of the Opera omnia: 1,020 occurrences of numerus in 266 milliseconds"
+     "One search across all volumes of the Opera omnia: 11,749 occurrences of numerus in 246 milliseconds"
     ]
    },
    "frame": null,
    "pre": null,
-   "caption": "Collection-wide indices: 3,506 persons, 1,201 places, 5,738 dates, 141 technical terms – searched in fractions of a second.",
+   "caption": "Collection-wide indices: 3,448 persons, 1,201 places, 5,738 dates, 173 technical terms – searched in fractions of a second.",
    "key": [],
    "target": null,
    "clicks": 0,
@@ -805,7 +945,7 @@
     "title": "Euler's work fully opened up",
     "figures": [
      {
-      "v": "6,304",
+      "v": "6,369",
       "k": "pages of correspondence transcribed"
      },
      {
@@ -813,7 +953,7 @@
       "k": "pages of Eneström writings transcribed"
      },
      {
-      "v": "34,850",
+      "v": "34,893",
       "k": "pages of series I–III to follow"
      }
     ],
