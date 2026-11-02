@@ -6,7 +6,7 @@
    "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
   },
   "oo_pages": {
-   "value": 41219,
+   "value": 41262,
    "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
   },
   "oo_vols_I": {
@@ -14,7 +14,7 @@
    "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
   },
   "oo_pages_I": {
-   "value": 15001,
+   "value": 15044,
    "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
   },
   "oo_vols_II": {
@@ -114,11 +114,11 @@
    "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8) (largest partner)"
   },
   "sec_docs": {
-   "value": 16,
+   "value": 19,
    "source": "PDAI euler_sec: documents with bibliographic data"
   },
   "sec_pages": {
-   "value": 2703,
+   "value": 3834,
    "source": "PDAI euler_sec: page folders"
   },
   "e57_pages": {
@@ -142,7 +142,7 @@
    "source": "euler-argumentation-pilot/report/pilot-results.qmd"
   },
   "oo_xml_I": {
-   "value": 12973,
+   "value": 13039,
    "source": "PDAI <collection>/<doc>/pages/page_NNN/page_NNN.xml (page folders with their transcription)"
   },
   "oo_xml_II": {
@@ -154,15 +154,15 @@
    "source": "PDAI <collection>/<doc>/pages/page_NNN/page_NNN.xml (page folders with their transcription)"
   },
   "oo_xml_IVA": {
-   "value": 6304,
+   "value": 6369,
    "source": "PDAI <collection>/<doc>/pages/page_NNN/page_NNN.xml (page folders with their transcription)"
   },
   "oo_xml_I_III": {
-   "value": 27332,
+   "value": 27398,
    "source": "PDAI <collection>/<doc>/pages/page_NNN/page_NNN.xml (page folders with their transcription)"
   },
   "oo_pages_I_III": {
-   "value": 34850,
+   "value": 34893,
    "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8)"
   },
   "en_xml": {
@@ -170,7 +170,7 @@
    "source": "PDAI <collection>/<doc>/pages/page_NNN/page_NNN.xml (page folders with their transcription), Eneström E-documents"
   },
   "ling_sentences": {
-   "value": 826846,
+   "value": 832771,
    "source": "eulerOO + enestroem _corpus.duckdb stz_sentences (Stanza: sentences with lemma and part of speech)"
   },
   "ling_tokens": {
@@ -182,7 +182,7 @@
    "source": "ling_tokens in millions"
   },
   "idx_persons": {
-   "value": 3506,
+   "value": 3448,
    "source": "_register/register.duckdb: distinct individuals (ind_einzelding) mentioned in eulerOO, eulerOO-IVA, enestroem (ind_nennung)"
   },
   "idx_places": {
@@ -206,19 +206,19 @@
    "source": "eulerOO + enestroem _corpus.duckdb stz_begriffe: their occurrences"
   },
   "search_ms": {
-   "value": 266,
-   "source": "last measurement kept: the search service was not reachable at this build (HTTP Error 503: Service Unavailable)"
+   "value": 246,
+   "source": "measured at build: GET woerterbuch/vorkommen (lemma numerus, all eulerOO volumes), median of 3"
   },
   "search_hits": {
-   "value": 1020,
-   "source": "last measurement kept: the search service was not reachable at this build (HTTP Error 503: Service Unavailable)"
+   "value": 11749,
+   "source": "the same request: occurrences of the lemma numerus"
   },
   "search_docs": {
-   "value": 8,
-   "source": "last measurement kept: the search service was not reachable at this build (HTTP Error 503: Service Unavailable)"
+   "value": 74,
+   "source": "the same request: volumes with an occurrence"
   },
   "sk_seiten": {
-   "value": 33329,
+   "value": 33743,
    "source": "eulerOO/_seitenkarte/seitenkarte.duckdb: pages of series I–III (duplicate folders once)"
   },
   "sk_uebernommen": {
@@ -226,15 +226,15 @@
    "source": "seitenkarte.duckdb: pages matched by image to an Eneström E-document page, transcription taken over"
   },
   "sk_baende_ohne_e": {
-   "value": 7,
+   "value": 8,
    "source": "seitenkarte.duckdb: volumes with less than a quarter of their pages in E-documents"
   },
   "sk_dubletten": {
-   "value": 3,
+   "value": 2,
    "source": "seitenkarte.duckdb, table dubletten: volume folders holding the same scan as another"
   },
   "sk_luecke": {
-   "value": 7391,
+   "value": 7793,
    "source": "eulerOO/_seitenkarte/luecken.tsv: pages to transcribe"
   },
   "sk_offen": {
@@ -242,7 +242,7 @@
    "source": "oo_luecken_plan.offen(): gap pages without a reading yet"
   },
   "sk_gelesen": {
-   "value": 3,
+   "value": 405,
    "source": "quality/dual-read reports with a written decision: gap pages read since 26 Oct 2026 (Kimi)"
   },
   "sk_pilot": {
@@ -262,7 +262,7 @@
    "source": "E-documents beginning with the head of their own number"
   },
   "def_erledigt": {
-   "value": 6,
+   "value": 1,
    "source": "issues.duckdb (euler, bereich daten): tasks with status erledigt"
   },
   "def_in_arbeit": {
@@ -270,7 +270,7 @@
    "source": "issues.duckdb (euler, bereich daten): tasks with status in_arbeit"
   },
   "def_geplant": {
-   "value": 6,
+   "value": 5,
    "source": "issues.duckdb (euler, bereich daten): tasks with status geplant"
   },
   "def_entscheidung": {
@@ -286,43 +286,47 @@
    "source": "issues.duckdb (euler, bereich daten): tasks with status gemeldet"
   },
   "def_n": {
-   "value": 16,
+   "value": 10,
    "source": "issues.duckdb (euler, bereich daten): entries of the task list"
   },
-  "def_tage_max": {
-   "value": 0,
-   "source": "defizite.yaml: longest time from detection to completion, in days, of the completed tasks"
-  },
-  "def_dauer_text": {
-   "value": "noch am Tag ihrer Erkennung",
-   "source": "defizite.yaml: def_tage_max in words"
+  "def_offen": {
+   "value": 9,
+   "source": "issues.duckdb (euler, bereich daten): open tasks"
   },
   "def_frist_spaetest": {
    "value": "9. 11. 2026",
-   "source": "defizite.yaml: latest deadline of the open tasks"
+   "source": "issues.duckdb: latest deadline of the open tasks"
   },
-  "def_tabelle_luecke": {
-   "value": "| Nr. | Befund | erkannt | Aufgabe | Stand |\n|---|---|---|---|---|\n| L1 | **Seiten der Opera omnia ohne Transkription.** 7.391 Seiten der Reihen I–III haben kein Gegenstück in den Eneström-Dokumenten: Titelbogen, Vorworte und Einleitungen der Herausgeber, Werke ohne Eneström-Dokument, Register und Tafeln sowie 115 Seiten, deren Zuordnung nicht eindeutig war. | 26. 10. | Lesen mit Kimi im Wochenend-Kontingent, je Band zuerst eine Stichprobenprüfung von fünf Seiten | geplant, Frist 1. 11. |\n| L2 | **Ganze Bände ohne Eneström-Dokumente.** Für I 16.1, I 16.2, II 3, II 11.1 und II 11.2 gibt es keine einzige Eneström-Seite, für II 4 und II 24 fast keine. II 3/II 4 (Theoria motus corporum solidorum, E289) liegt in enestroem nur als Originaldruck von 1765 vor. | 26. 10. | Teil der Wochenend-Lesung (L1) | geplant, Frist 1. 11. |\n| L3 | **Eneström-Nummern ohne Dokument.** Das Verzeichnis führt 866 Hauptnummern (1.009 mit Nachdrucken und Varianten), in enestroem liegen 767 Dokumente. Es fehlen 99 Hauptnummern, darunter die Abhandlungen zu Saiten und elastischen Körpern (E439–E443, E471, E481, E482, E526) und zur Mondtheorie (E371, E504). | 27. 10. | Rückführung aus den Opera omnia, nur mit drei Belegen: Kopf „Commentatio N indicis ENESTROEMIANI“, Titel gleich dem Verzeichnis, Kolumnentitel bis zur nächsten harten Grenze. Unsicheres geht in eine Prüfliste. | in Arbeit, Frist 2. 11. |\n| L4 | **Band I 8 fehlt.** Der Ordner, der als I 8 (Introductio in analysin infinitorum, Teil 1) geführt wird, enthält einen Scan von I 25. Die Introductio selbst ist nicht im Bestand. Fahndung am 27.10.: alle elf Kopien dieser Datei auf beiden Datenträgern (drei Fassungen vom 3. und 9. Juni 2021) enthalten I 25; ein Exemplar mit „Series prima, Volumen octavum“ gibt es nirgends. Der Fehler stammt aus dem Scan bzw. der Lieferung vom Juni 2021. Springer hat den gedruckten Band geliefert (Lieferung 88216458 vom 27.04.2021); der Scandienst lieferte unter seiner ISBN einen zweiten Scan von I 25. Rückfrage an den Scandienst am 27.10.2026 vorbereitet. | 26. 10. | Nachscan von I 8 beim Scandienst anfordern; danach den Ordner ersetzen und die Lücken lesen | Entscheidung der Projektleitung |",
-   "source": "defizite.yaml: the entries of kind luecke as a table"
+  "def_luecke_n": {
+   "value": 4,
+   "source": "issues.duckdb: entries of kind luecke"
   },
-  "def_tabelle_fehler": {
-   "value": "| Nr. | Befund | erkannt | Aufgabe | Stand |\n|---|---|---|---|---|\n| F1 | **Textabdeckung der Opera omnia falsch bewertet.** Die Auswertung vom 24.10. meldete nur 6.689 von 41.219 Seiten mit Text. Die Seiten der Eneström-Dokumente sind aber Ausschnitte derselben Bände: 26.953 Seiten (in allen Ordnern, Dubletten mitgezählt) waren längst transkribiert, nur an anderer Stelle. | 26. 10. | Seitenkarte durch Bildabgleich aller Seiten; Übernahme der Transkriptionen mit Herkunftsangabe | erledigt am 26. 10. |\n| F2 | **Doppelte Bandordner.** III 1 liegt zweimal vor (gleicher Scan), II 27 zweimal (zwei Rasterungen), und der Ordner „I 8“ ist eine Kopie von I 25. | 26. 10. | Als Dubletten führen; jede Seite wird nur einmal gelesen und in die Kopie übertragen | erledigt am 26. 10. |\n| F3 | **Ältere Transkriptionen formal nicht gültig.** Die übernommenen Seiten stammen zu 88 % aus einer Lesung vom März 2026 mit einem inzwischen ausgemusterten Modell. In einer Stichprobe von 300 Seiten genügen nur 39 % der Seitengrammatik. | 26. 10. | Neulesung in enestroem; die Verbesserung gelangt automatisch nach eulerOO | Entscheidung der Projektleitung |\n| F4 | **Falsche Seitenzahl auf Impressumseiten.** Auf der Impressumseite von I 1 wurde die Druckzählung „9 8 7 6 5 4 3 2“ als Seitenzahl 9 gelesen. | 26. 10. | Seitenzahlerkennung für Titelbogen ohne Seitenzahl berichtigen | geplant, Frist 9. 11. |\n| F5 | **Enthält jeder Bandordner, was angegeben ist?.** Vollständiges Audit aller 85 Bandordner gegen Titelblatt, Bandtitel, Bogensignaturen und den Abgleich der Seitenbilder mit dem PDF. Ein Ordner enthält einen anderen Band (I 8, siehe L4); alle anderen sind bestätigt. | 27. 10. | Band-Audit (band_audit.py) als feste Prüfung; Einzelprüfung jedes Hinweises | erledigt am 27. 10. |",
-   "source": "defizite.yaml: the entries of kind fehler as a table"
+  "def_karten_luecke_html": {
+   "value": "<div class=\"defizite\"><article class=\"defizit st-geplant\" id=\"d-L1\"><div class=\"defizit-kopf\"><span class=\"defizit-id\">L1</span><h3 class=\"defizit-titel\">Seiten der Opera omnia ohne Transkription</h3><span class=\"defizit-stand\">geplant</span></div><p class=\"defizit-befund\">7.391 Seiten der Reihen I–III haben kein Gegenstück in den Eneström-Dokumenten: Titelbogen, Vorworte und Einleitungen der Herausgeber, Werke ohne Eneström-Dokument, Register und Tafeln sowie 115 Seiten, deren Zuordnung nicht eindeutig war.</p><dl><dt>Aufgabe</dt><dd>Lesen mit Kimi im Wochenend-Kontingent, je Band zuerst eine Stichprobenprüfung von fünf Seiten</dd><dt>Frist</dt><dd>1. 11. 2026</dd><dt>Erkannt</dt><dd>26. 10. 2026</dd><dt>Beleg</dt><dd><code>pdai-collections/eulerOO/_seitenkarte/luecken.tsv</code></dd></dl></article><article class=\"defizit st-geplant\" id=\"d-L2\"><div class=\"defizit-kopf\"><span class=\"defizit-id\">L2</span><h3 class=\"defizit-titel\">Ganze Bände ohne Eneström-Dokumente</h3><span class=\"defizit-stand\">geplant</span></div><p class=\"defizit-befund\">Für I 16.1, I 16.2, II 3, II 11.1 und II 11.2 gibt es keine einzige Eneström-Seite, für II 4 und II 24 fast keine. II 3/II 4 (Theoria motus corporum solidorum, E289) liegt in enestroem nur als Originaldruck von 1765 vor.</p><dl><dt>Aufgabe</dt><dd>Teil der Wochenend-Lesung (L1)</dd><dt>Frist</dt><dd>1. 11. 2026</dd><dt>Erkannt</dt><dd>26. 10. 2026</dd><dt>Beleg</dt><dd><code>development/famulus-proof/runs/seitenkarte/eulerOO-2026-10-26.md</code></dd></dl></article><article class=\"defizit st-in_arbeit\" id=\"d-L3\"><div class=\"defizit-kopf\"><span class=\"defizit-id\">L3</span><h3 class=\"defizit-titel\">Eneström-Nummern ohne Dokument</h3><span class=\"defizit-stand\">in Arbeit</span></div><p class=\"defizit-befund\">Das Verzeichnis führt 866 Hauptnummern (1.009 mit Nachdrucken und Varianten), in enestroem liegen 767 Dokumente. Es fehlen 99 Hauptnummern, darunter die Abhandlungen zu Saiten und elastischen Körpern (E439–E443, E471, E481, E482, E526) und zur Mondtheorie (E371, E504).</p><dl><dt>Aufgabe</dt><dd>Rückführung aus den Opera omnia, nur mit drei Belegen: Kopf „Commentatio N indicis ENESTROEMIANI“, Titel gleich dem Verzeichnis, Kolumnentitel bis zur nächsten harten Grenze. Unsicheres geht in eine Prüfliste.</dd><dt>Frist</dt><dd>2. 11. 2026</dd><dt>Erkannt</dt><dd>27. 10. 2026</dd><dt>Beleg</dt><dd><code>pdai-collections/enestroem/apparat/apparat.duckdb (enestroem_verzeichnis)</code></dd></dl></article><article class=\"defizit st-erledigt\" id=\"d-L4\"><div class=\"defizit-kopf\"><span class=\"defizit-id\">L4</span><h3 class=\"defizit-titel\">Band I 8 fehlt</h3><span class=\"defizit-stand\">erledigt am 30. 10.</span></div><p class=\"defizit-befund\">Der Ordner, der als I 8 (Introductio in analysin infinitorum, Teil 1) geführt wird, enthält einen Scan von I 25. Die Introductio selbst ist nicht im Bestand. Fahndung am 27.10.: alle elf Kopien dieser Datei auf beiden Datenträgern (drei Fassungen vom 3. und 9. Juni 2021) enthalten I 25; ein Exemplar mit „Series prima, Volumen octavum“ gibt es nirgends. Der Fehler stammt aus dem Scan bzw. der Lieferung vom Juni 2021. Springer hat den gedruckten Band geliefert (Lieferung 88216458 vom 27.04.2021); der Scandienst lieferte unter seiner ISBN einen zweiten Scan von I 25. Rückfrage an den Scandienst am 27.10.2026 vorbereitet. Am 28.10. gefunden: Gallica (BnF) hat den Band digitalisiert, Teubner 1922, 414 Aufnahmen für 392 gezählte Seiten, gemeinfrei (nichtkommerzielle Nutzung frei mit Quellenangabe): https://gallica.bnf.fr/ark:/12148/bpt6k69587</p><dl><dt>Aufgabe</dt><dd>Das Gallica-Digitalisat übernehmen (Projektleitung, 28.10.2026: „Gallica reicht“; kein Nachscan): PDF im Browser laden, scripts/i8_gallica_aufnehmen.py, Seitenkarte neu, dann die Lücken lesen. Am 30.10. aufgenommen: 414 Seitenbilder (243 ppi, verlustfrei), Stichprobe 5/5, alle 414 Seiten gelesen (Kimi 338, Gemini 76), Band-Audit bestätigt Titelblatt und Bildgleichheit.</dd><dt>Erkannt</dt><dd>26. 10. 2026</dd><dt>Beleg</dt><dd><code>development/famulus-proof/runs/seitenkarte/band-audit-2026-10-27.md</code></dd></dl></article></div>",
+   "source": "issues.duckdb (euler, bereich daten): the entries of kind luecke as cards"
   },
-  "def_tabelle_referenz": {
-   "value": "| Nr. | Befund | erkannt | Aufgabe | Stand |\n|---|---|---|---|---|\n| R1 | **Eneström-Dokumente mit fremdem Inhalt.** Sechs Dokumente beginnen mit dem Kopf einer anderen Nummer: E101 (enthält I 25 ab E9 statt der Introductio), E104 (enthält E127), E653 (E658), E457 (E340), E220 (E221 mit) und E35 (ganzer Band III 2 mit E17). | 27. 10. | Aus den Opera omnia nach der Seitenkarte neu schneiden | geplant, Frist 9. 11. |\n| R2 | **Eneström-Dokumente mit falschem Anfang.** E127, E305, E315 und E340 beginnen mitten im Text eines Aufsatzes, E91 mit dem Reihentitel des Bandes III 1. | 27. 10. | Aus den Opera omnia nach der Seitenkarte neu schneiden | geplant, Frist 9. 11. |\n| R3 | **Unscharfe Ränder der Eneström-Dokumente.** Manche Dokumente enthalten Seiten des benachbarten Aufsatzes; E136 beginnt etwa mit den zwei letzten Seiten von E126. Andere enthalten ganze Bände (E17/E35 in III 2, E343/E417 in III 11, E92/E344 in III 12). | 27. 10. | Ränder nach den Kolumnentiteln der Opera omnia berichtigen | geplant, Frist 9. 11. |\n| R4 | **Widersprüche im Briefregister der Reihe IVA.** Das Briefregister führt julianische Daten für Briefe, die die Synopse als gregorianisch ausweist, den Ort des Empfängers als Absendeort und 157 Repertoriumsnummern, die Briefe verschiedener Daten teilen. | 24. 10. | Als Widersprüche führen und je Brief gegen die kritische Edition entscheiden | Entscheidung der Projektleitung |",
-   "source": "defizite.yaml: the entries of kind referenz as a table"
+  "def_fehler_n": {
+   "value": 2,
+   "source": "issues.duckdb: entries of kind fehler"
   },
-  "def_tabelle_ablauf": {
-   "value": "| Nr. | Befund | erkannt | Aufgabe | Stand |\n|---|---|---|---|---|\n| A1 | **Kontingentgrenze falsch gedeutet.** Am 26.10. galt die Ollama-Grenze als Wochenlimit; tatsächlich war es das Sitzungslimit, das nach einigen Stunden endet. Die Woche war erst zur Hälfte verbraucht. | 26. 10. | Beide Grenzen unterscheiden; Wochenkapazität messen, prognostizieren und eine Reserve für das Wochenende halten | erledigt am 26. 10. |\n| A2 | **Stilles Ausweichen auf ein anderes Lesemodell.** An der Kontingentgrenze las die Texterkennung jede Seite stillschweigend mit einem anderen Modell weiter. | 26. 10. | Anhalten statt Ausweichen; Fortsetzung, sobald die Grenze fällt | erledigt am 26. 10. |\n| A3 | **Verarbeitungskette brach ohne Meldung ab.** Die Nachbaukette endete in der Nacht zum 27.10. ohne Eintrag; die Ursache war nicht mehr festzustellen. | 27. 10. | Kettenwächter, der jeden Abbruch analysiert, die bekannte Ursache behebt und neu startet | erledigt am 27. 10. |",
-   "source": "defizite.yaml: the entries of kind ablauf as a table"
+  "def_karten_fehler_html": {
+   "value": "<div class=\"defizite\"><article class=\"defizit st-entscheidung\" id=\"d-F2\"><div class=\"defizit-kopf\"><span class=\"defizit-id\">F2</span><h3 class=\"defizit-titel\">Doppelte Bandordner</h3><span class=\"defizit-stand\">Entscheidung der Projektleitung</span></div><p class=\"defizit-befund\">III 1 liegt zweimal vor (gleicher Scan) und II 27 zweimal (zwei Rasterungen). (Der Ordner „I 8“ war eine Kopie von I 25; seit 30.10. enthält er den richtigen Band, siehe L4.)</p><dl><dt>Aufgabe</dt><dd>Die doppelten Ordner zusammenführen; bis dahin wird jede Seite nur einmal gelesen und in die Kopie übertragen</dd><dt>Erkannt</dt><dd>26. 10. 2026</dd><dt>Beleg</dt><dd><code>pdai-collections/eulerOO/_seitenkarte/seitenkarte.duckdb (Tabelle dubletten)</code></dd></dl></article><article class=\"defizit st-entscheidung\" id=\"d-F3\"><div class=\"defizit-kopf\"><span class=\"defizit-id\">F3</span><h3 class=\"defizit-titel\">Ältere Transkriptionen formal nicht gültig</h3><span class=\"defizit-stand\">Entscheidung der Projektleitung</span></div><p class=\"defizit-befund\">Die übernommenen Seiten stammen zu 88 % aus einer Lesung vom März 2026 mit einem inzwischen ausgemusterten Modell. In einer Stichprobe von 300 Seiten genügen nur 39 % der Seitengrammatik.</p><dl><dt>Aufgabe</dt><dd>Neulesung in enestroem; die Verbesserung gelangt automatisch nach eulerOO</dd><dt>Erkannt</dt><dd>26. 10. 2026</dd><dt>Beleg</dt><dd><code>Prüflauf vom 26.10.2026 gegen pdai-core page.dtd</code></dd></dl></article></div>",
+   "source": "issues.duckdb (euler, bereich daten): the entries of kind fehler as cards"
+  },
+  "def_referenz_n": {
+   "value": 4,
+   "source": "issues.duckdb: entries of kind referenz"
+  },
+  "def_karten_referenz_html": {
+   "value": "<div class=\"defizite\"><article class=\"defizit st-geplant\" id=\"d-R1\"><div class=\"defizit-kopf\"><span class=\"defizit-id\">R1</span><h3 class=\"defizit-titel\">Eneström-Dokumente mit fremdem Inhalt</h3><span class=\"defizit-stand\">geplant</span></div><p class=\"defizit-befund\">Sechs Dokumente beginnen mit dem Kopf einer anderen Nummer: E101 (enthält I 25 ab E9 statt der Introductio), E104 (enthält E127), E653 (E658), E457 (E340), E220 (E221 mit) und E35 (ganzer Band III 2 mit E17).</p><dl><dt>Aufgabe</dt><dd>Aus den Opera omnia nach der Seitenkarte neu schneiden</dd><dt>Frist</dt><dd>9. 11. 2026</dd><dt>Erkannt</dt><dd>27. 10. 2026</dd><dt>Beleg</dt><dd><code>pdai-collections/eulerOO/_seitenkarte/e_kopfpruefung.json</code></dd></dl></article><article class=\"defizit st-geplant\" id=\"d-R2\"><div class=\"defizit-kopf\"><span class=\"defizit-id\">R2</span><h3 class=\"defizit-titel\">Eneström-Dokumente mit falschem Anfang</h3><span class=\"defizit-stand\">geplant</span></div><p class=\"defizit-befund\">E127, E305, E315 und E340 beginnen mitten im Text eines Aufsatzes, E91 mit dem Reihentitel des Bandes III 1.</p><dl><dt>Aufgabe</dt><dd>Aus den Opera omnia nach der Seitenkarte neu schneiden</dd><dt>Frist</dt><dd>9. 11. 2026</dd><dt>Erkannt</dt><dd>27. 10. 2026</dd><dt>Beleg</dt><dd><code>pdai-collections/eulerOO/_seitenkarte/e_kopfpruefung.json</code></dd></dl></article><article class=\"defizit st-geplant\" id=\"d-R3\"><div class=\"defizit-kopf\"><span class=\"defizit-id\">R3</span><h3 class=\"defizit-titel\">Unscharfe Ränder der Eneström-Dokumente</h3><span class=\"defizit-stand\">geplant</span></div><p class=\"defizit-befund\">Manche Dokumente enthalten Seiten des benachbarten Aufsatzes; E136 beginnt etwa mit den zwei letzten Seiten von E126. Andere enthalten ganze Bände (E17/E35 in III 2, E343/E417 in III 11, E92/E344 in III 12).</p><dl><dt>Aufgabe</dt><dd>Ränder nach den Kolumnentiteln der Opera omnia berichtigen</dd><dt>Frist</dt><dd>9. 11. 2026</dd><dt>Erkannt</dt><dd>27. 10. 2026</dd><dt>Beleg</dt><dd><code>Prüflauf von enestroem_rueckfuehrung.py vom 27.10.2026 (Kolumnentitel)</code></dd></dl></article><article class=\"defizit st-entscheidung\" id=\"d-R4\"><div class=\"defizit-kopf\"><span class=\"defizit-id\">R4</span><h3 class=\"defizit-titel\">Widersprüche im Briefregister der Reihe IVA</h3><span class=\"defizit-stand\">Entscheidung der Projektleitung</span></div><p class=\"defizit-befund\">Das Briefregister führt julianische Daten für Briefe, die die Synopse als gregorianisch ausweist, den Ort des Empfängers als Absendeort und 157 Repertoriumsnummern, die Briefe verschiedener Daten teilen.</p><dl><dt>Aufgabe</dt><dd>Als Widersprüche führen und je Brief gegen die kritische Edition entscheiden</dd><dt>Erkannt</dt><dd>24. 10. 2026</dd><dt>Beleg</dt><dd><code>Dossier famulus-proof, Befunde vom 24.10.2026</code></dd></dl></article></div>",
+   "source": "issues.duckdb (euler, bereich daten): the entries of kind referenz as cards"
   },
   "iss_n": {
-   "value": 24,
+   "value": 18,
    "source": "platform/registry/issues/issues.duckdb (collection euler and famulus): issues"
   },
   "iss_offen": {
-   "value": 12,
+   "value": 11,
    "source": "platform/registry/issues/issues.duckdb (collection euler and famulus): open issues"
   },
   "iss_gemeldet": {
@@ -334,13 +338,12 @@
    "source": "platform/registry/issues/issues.duckdb (collection euler and famulus): in work"
   },
   "iss_erledigt": {
-   "value": 12,
+   "value": 7,
    "source": "platform/registry/issues/issues.duckdb (collection euler and famulus): done"
   }
  },
  "notes": [
   "eulerOO volumes are the directories with a biblio.xml that carries a <volume> field; EOII27 has none and is not counted.",
-  "Eneström years above 1800 excluded from the decade chart: [1954]",
-  "search_ms/search_hits/search_docs: the Wörterbuch service did not answer at build time (HTTP Error 503: Service Unavailable); the values are those of the last successful measurement."
+  "Eneström years above 1800 excluded from the decade chart: [1954]"
  ]
 }

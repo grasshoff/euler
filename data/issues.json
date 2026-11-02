@@ -1,41 +1,7 @@
 {
  "collection": "euler",
- "stand": "2026-10-27 13:30",
+ "stand": "2026-10-30 04:12",
  "issues": [
-  {
-   "id": "EULER-F1",
-   "collection": "euler",
-   "bereich": "daten",
-   "art": "fehler",
-   "titel": "Textabdeckung der Opera omnia falsch bewertet",
-   "befund": "Die Auswertung vom 24.10. meldete nur 6.689 von 41.219 Seiten mit Text. Die Seiten der Eneström-Dokumente sind aber Ausschnitte derselben Bände: 26.953 Seiten (in allen Ordnern, Dubletten mitgezählt) waren längst transkribiert, nur an anderer Stelle.",
-   "beleg": "development/famulus-proof/runs/seitenkarte/eulerOO-2026-10-26.md",
-   "ort": null,
-   "stichworte": null,
-   "quelle": "owner",
-   "hinweis_von": "Projektleitung",
-   "status": "erledigt",
-   "zusammen_mit": null,
-   "aufgabe": "Seitenkarte durch Bildabgleich aller Seiten; Übernahme der Transkriptionen mit Herkunftsangabe",
-   "frist": null,
-   "erledigt_am": "2026-10-26",
-   "schwere": null,
-   "n_meldungen": 0,
-   "erkannt": "2026-10-26",
-   "geaendert": "2026-10-27T12:25:54",
-   "verlauf": [
-    {
-     "ts": "2026-10-27",
-     "feld": "angelegt",
-     "neu": "bestaetigt"
-    },
-    {
-     "ts": "2026-10-27",
-     "feld": "status",
-     "neu": "erledigt"
-    }
-   ]
-  },
   {
    "id": "EULER-L1",
    "collection": "euler",
@@ -144,21 +110,21 @@
    "bereich": "daten",
    "art": "luecke",
    "titel": "Band I 8 fehlt",
-   "befund": "Der Ordner, der als I 8 (Introductio in analysin infinitorum, Teil 1) geführt wird, enthält einen Scan von I 25. Die Introductio selbst ist nicht im Bestand. Fahndung am 27.10.: alle elf Kopien dieser Datei auf beiden Datenträgern (drei Fassungen vom 3. und 9. Juni 2021) enthalten I 25; ein Exemplar mit „Series prima, Volumen octavum“ gibt es nirgends. Der Fehler stammt aus dem Scan bzw. der Lieferung vom Juni 2021. Springer hat den gedruckten Band geliefert (Lieferung 88216458 vom 27.04.2021); der Scandienst lieferte unter seiner ISBN einen zweiten Scan von I 25. Rückfrage an den Scandienst am 27.10.2026 vorbereitet.",
+   "befund": "Der Ordner, der als I 8 (Introductio in analysin infinitorum, Teil 1) geführt wird, enthält einen Scan von I 25. Die Introductio selbst ist nicht im Bestand. Fahndung am 27.10.: alle elf Kopien dieser Datei auf beiden Datenträgern (drei Fassungen vom 3. und 9. Juni 2021) enthalten I 25; ein Exemplar mit „Series prima, Volumen octavum“ gibt es nirgends. Der Fehler stammt aus dem Scan bzw. der Lieferung vom Juni 2021. Springer hat den gedruckten Band geliefert (Lieferung 88216458 vom 27.04.2021); der Scandienst lieferte unter seiner ISBN einen zweiten Scan von I 25. Rückfrage an den Scandienst am 27.10.2026 vorbereitet. Am 28.10. gefunden: Gallica (BnF) hat den Band digitalisiert, Teubner 1922, 414 Aufnahmen für 392 gezählte Seiten, gemeinfrei (nichtkommerzielle Nutzung frei mit Quellenangabe): https://gallica.bnf.fr/ark:/12148/bpt6k69587",
    "beleg": "development/famulus-proof/runs/seitenkarte/band-audit-2026-10-27.md",
    "ort": null,
    "stichworte": null,
    "quelle": "sitzung",
    "hinweis_von": null,
-   "status": "entscheidung",
+   "status": "erledigt",
    "zusammen_mit": null,
-   "aufgabe": "Nachscan von I 8 beim Scandienst anfordern; danach den Ordner ersetzen und die Lücken lesen",
+   "aufgabe": "Das Gallica-Digitalisat übernehmen (Projektleitung, 28.10.2026: „Gallica reicht“; kein Nachscan): PDF im Browser laden, scripts/i8_gallica_aufnehmen.py, Seitenkarte neu, dann die Lücken lesen. Am 30.10. aufgenommen: 414 Seitenbilder (243 ppi, verlustfrei), Stichprobe 5/5, alle 414 Seiten gelesen (Kimi 338, Gemini 76), Band-Audit bestätigt Titelblatt und Bildgleichheit.",
    "frist": null,
-   "erledigt_am": null,
+   "erledigt_am": "2026-10-30",
    "schwere": null,
    "n_meldungen": 0,
    "erkannt": "2026-10-26",
-   "geaendert": "2026-10-27T12:30:10",
+   "geaendert": "2026-10-30T03:11:48",
    "verlauf": [
     {
      "ts": "2026-10-27",
@@ -169,6 +135,16 @@
      "ts": "2026-10-27",
      "feld": "status",
      "neu": "entscheidung"
+    },
+    {
+     "ts": "2026-10-29",
+     "feld": "status",
+     "neu": "in_arbeit"
+    },
+    {
+     "ts": "2026-10-30",
+     "feld": "status",
+     "neu": "erledigt"
     }
    ]
   },
@@ -178,21 +154,21 @@
    "bereich": "daten",
    "art": "fehler",
    "titel": "Doppelte Bandordner",
-   "befund": "III 1 liegt zweimal vor (gleicher Scan), II 27 zweimal (zwei Rasterungen), und der Ordner „I 8“ ist eine Kopie von I 25.",
+   "befund": "III 1 liegt zweimal vor (gleicher Scan) und II 27 zweimal (zwei Rasterungen). (Der Ordner „I 8“ war eine Kopie von I 25; seit 30.10. enthält er den richtigen Band, siehe L4.)",
    "beleg": "pdai-collections/eulerOO/_seitenkarte/seitenkarte.duckdb (Tabelle dubletten)",
    "ort": null,
    "stichworte": null,
    "quelle": "sitzung",
    "hinweis_von": null,
-   "status": "erledigt",
+   "status": "entscheidung",
    "zusammen_mit": null,
-   "aufgabe": "Als Dubletten führen; jede Seite wird nur einmal gelesen und in die Kopie übertragen",
+   "aufgabe": "Die doppelten Ordner zusammenführen; bis dahin wird jede Seite nur einmal gelesen und in die Kopie übertragen",
    "frist": null,
-   "erledigt_am": "2026-10-26",
+   "erledigt_am": null,
    "schwere": null,
    "n_meldungen": 0,
    "erkannt": "2026-10-26",
-   "geaendert": "2026-10-27T12:25:54",
+   "geaendert": "2026-10-30T03:11:48",
    "verlauf": [
     {
      "ts": "2026-10-27",
@@ -203,6 +179,11 @@
      "ts": "2026-10-27",
      "feld": "status",
      "neu": "erledigt"
+    },
+    {
+     "ts": "2026-10-27",
+     "feld": "status",
+     "neu": "entscheidung"
     }
    ]
   },
@@ -237,40 +218,6 @@
      "ts": "2026-10-27",
      "feld": "status",
      "neu": "entscheidung"
-    }
-   ]
-  },
-  {
-   "id": "EULER-F4",
-   "collection": "euler",
-   "bereich": "daten",
-   "art": "fehler",
-   "titel": "Falsche Seitenzahl auf Impressumseiten",
-   "befund": "Auf der Impressumseite von I 1 wurde die Druckzählung „9 8 7 6 5 4 3 2“ als Seitenzahl 9 gelesen.",
-   "beleg": "pdai-collections/eulerOO/978-3-7643-1400-2/pages/page_006/page_006.xml",
-   "ort": null,
-   "stichworte": null,
-   "quelle": "sitzung",
-   "hinweis_von": null,
-   "status": "geplant",
-   "zusammen_mit": null,
-   "aufgabe": "Seitenzahlerkennung für Titelbogen ohne Seitenzahl berichtigen",
-   "frist": "2026-11-09",
-   "erledigt_am": null,
-   "schwere": null,
-   "n_meldungen": 0,
-   "erkannt": "2026-10-26",
-   "geaendert": "2026-10-27T12:25:54",
-   "verlauf": [
-    {
-     "ts": "2026-10-27",
-     "feld": "angelegt",
-     "neu": "bestaetigt"
-    },
-    {
-     "ts": "2026-10-27",
-     "feld": "status",
-     "neu": "geplant"
     }
    ]
   },
@@ -411,142 +358,6 @@
    ]
   },
   {
-   "id": "EULER-A1",
-   "collection": "euler",
-   "bereich": "daten",
-   "art": "ablauf",
-   "titel": "Kontingentgrenze falsch gedeutet",
-   "befund": "Am 26.10. galt die Ollama-Grenze als Wochenlimit; tatsächlich war es das Sitzungslimit, das nach einigen Stunden endet. Die Woche war erst zur Hälfte verbraucht.",
-   "beleg": "Antwort des Dienstes „session usage limit“, 26.10.2026",
-   "ort": null,
-   "stichworte": null,
-   "quelle": "sitzung",
-   "hinweis_von": null,
-   "status": "erledigt",
-   "zusammen_mit": null,
-   "aufgabe": "Beide Grenzen unterscheiden; Wochenkapazität messen, prognostizieren und eine Reserve für das Wochenende halten",
-   "frist": null,
-   "erledigt_am": "2026-10-26",
-   "schwere": null,
-   "n_meldungen": 0,
-   "erkannt": "2026-10-26",
-   "geaendert": "2026-10-27T12:25:54",
-   "verlauf": [
-    {
-     "ts": "2026-10-27",
-     "feld": "angelegt",
-     "neu": "bestaetigt"
-    },
-    {
-     "ts": "2026-10-27",
-     "feld": "status",
-     "neu": "erledigt"
-    }
-   ]
-  },
-  {
-   "id": "EULER-A2",
-   "collection": "euler",
-   "bereich": "daten",
-   "art": "ablauf",
-   "titel": "Stilles Ausweichen auf ein anderes Lesemodell",
-   "befund": "An der Kontingentgrenze las die Texterkennung jede Seite stillschweigend mit einem anderen Modell weiter.",
-   "beleg": "ocr_runner client.py, dual_read.py, cure_run.py",
-   "ort": null,
-   "stichworte": null,
-   "quelle": "sitzung",
-   "hinweis_von": null,
-   "status": "erledigt",
-   "zusammen_mit": null,
-   "aufgabe": "Anhalten statt Ausweichen; Fortsetzung, sobald die Grenze fällt",
-   "frist": null,
-   "erledigt_am": "2026-10-26",
-   "schwere": null,
-   "n_meldungen": 0,
-   "erkannt": "2026-10-26",
-   "geaendert": "2026-10-27T12:25:54",
-   "verlauf": [
-    {
-     "ts": "2026-10-27",
-     "feld": "angelegt",
-     "neu": "bestaetigt"
-    },
-    {
-     "ts": "2026-10-27",
-     "feld": "status",
-     "neu": "erledigt"
-    }
-   ]
-  },
-  {
-   "id": "EULER-A3",
-   "collection": "euler",
-   "bereich": "daten",
-   "art": "ablauf",
-   "titel": "Verarbeitungskette brach ohne Meldung ab",
-   "befund": "Die Nachbaukette endete in der Nacht zum 27.10. ohne Eintrag; die Ursache war nicht mehr festzustellen.",
-   "beleg": "/Volumes/PDAI-1/tmp/seitenkarte/nachbau.log",
-   "ort": null,
-   "stichworte": null,
-   "quelle": "sitzung",
-   "hinweis_von": null,
-   "status": "erledigt",
-   "zusammen_mit": null,
-   "aufgabe": "Kettenwächter, der jeden Abbruch analysiert, die bekannte Ursache behebt und neu startet",
-   "frist": null,
-   "erledigt_am": "2026-10-27",
-   "schwere": null,
-   "n_meldungen": 0,
-   "erkannt": "2026-10-27",
-   "geaendert": "2026-10-27T12:25:54",
-   "verlauf": [
-    {
-     "ts": "2026-10-27",
-     "feld": "angelegt",
-     "neu": "bestaetigt"
-    },
-    {
-     "ts": "2026-10-27",
-     "feld": "status",
-     "neu": "erledigt"
-    }
-   ]
-  },
-  {
-   "id": "EULER-F5",
-   "collection": "euler",
-   "bereich": "daten",
-   "art": "fehler",
-   "titel": "Enthält jeder Bandordner, was angegeben ist?",
-   "befund": "Vollständiges Audit aller 85 Bandordner gegen Titelblatt, Bandtitel, Bogensignaturen und den Abgleich der Seitenbilder mit dem PDF. Ein Ordner enthält einen anderen Band (I 8, siehe L4); alle anderen sind bestätigt.",
-   "beleg": "development/famulus-proof/runs/seitenkarte/band-audit-2026-10-27.md",
-   "ort": null,
-   "stichworte": null,
-   "quelle": "owner",
-   "hinweis_von": "Projektleitung",
-   "status": "erledigt",
-   "zusammen_mit": null,
-   "aufgabe": "Band-Audit (band_audit.py) als feste Prüfung; Einzelprüfung jedes Hinweises",
-   "frist": null,
-   "erledigt_am": "2026-10-27",
-   "schwere": null,
-   "n_meldungen": 0,
-   "erkannt": "2026-10-27",
-   "geaendert": "2026-10-27T12:25:54",
-   "verlauf": [
-    {
-     "ts": "2026-10-27",
-     "feld": "angelegt",
-     "neu": "bestaetigt"
-    },
-    {
-     "ts": "2026-10-27",
-     "feld": "status",
-     "neu": "erledigt"
-    }
-   ]
-  },
-  {
    "id": "EULER-1",
    "collection": "euler",
    "bereich": "rundgang",
@@ -577,40 +388,6 @@
      "ts": "2026-10-27",
      "feld": "status",
      "neu": "geplant"
-    }
-   ]
-  },
-  {
-   "id": "EULER-2",
-   "collection": "euler",
-   "bereich": "rundgang",
-   "art": "referenz",
-   "titel": "Beleg mit Seitenindex statt Druckseite angegeben",
-   "befund": "Die Bildunterschrift nannte für Goldbachs Geburt »S. 13«; das ist der Seitenindex, gedruckt ist es S. 4 der Einleitung von IV A 4.",
-   "beleg": null,
-   "ort": null,
-   "stichworte": null,
-   "quelle": "sitzung",
-   "hinweis_von": null,
-   "status": "erledigt",
-   "zusammen_mit": null,
-   "aufgabe": null,
-   "frist": null,
-   "erledigt_am": "2026-10-27",
-   "schwere": null,
-   "n_meldungen": 0,
-   "erkannt": "2026-10-27",
-   "geaendert": "2026-10-27T12:26:27",
-   "verlauf": [
-    {
-     "ts": "2026-10-27",
-     "feld": "angelegt",
-     "neu": "bestaetigt"
-    },
-    {
-     "ts": "2026-10-27",
-     "feld": "status",
-     "neu": "erledigt"
     }
    ]
   }
@@ -816,6 +593,35 @@
     {
      "ts": "2026-10-27",
      "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "FAMULUS-7",
+   "collection": "famulus",
+   "bereich": "dienst",
+   "art": "fehler",
+   "titel": "OCR-Normalizer leerte Seiten mit nachgestelltem Code-Zaun",
+   "befund": "ocr_runner.normalize.normalize_base nahm bei einem einzelnen ``` den Text zwischen erstem und zweitem Zaun; eine Antwort, die mit <page> beginnt und nur nach </page> einen Zaun trägt (gemini-3.8-flash), wurde zur leeren Zeichenkette und als 'no well-formed <page>' verworfen — in jeder Sammlung.",
+   "beleg": "diaries-sec Ossendrijver2012 pidx 276, quality/dual-read/Ossendrijver2012/page_276.gemini-3.8-flash.raw.txt (28 Oct 2026)",
+   "ort": "pdai/pipeline/ocr-runner/src/ocr_runner/normalize.py normalize_base",
+   "stichworte": null,
+   "quelle": "sitzung",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": "Behoben 28 Oct 2026: Zäune nur entfernen, wenn <page> vor dem ersten Zaun steht; ocr-runner-Tests 101 grün.",
+   "frist": null,
+   "erledigt_am": null,
+   "schwere": null,
+   "n_meldungen": 0,
+   "erkannt": "2026-10-28",
+   "geaendert": "2026-10-28T20:13:17",
+   "verlauf": [
+    {
+     "ts": "2026-10-28",
+     "feld": "angelegt",
      "neu": "erledigt"
     }
    ]
