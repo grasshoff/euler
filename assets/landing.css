@@ -1011,3 +1011,18 @@ main table { display: block; max-width: 100%; overflow-x: auto; -webkit-overflow
 /* reading modes of a document in the document table (Seiten · Tafeln) */
 .doc-table .doc-modes { display: block; margin-top: .15rem; font-size: .82em; }
 .doc-table .doc-modes a { color: var(--gold-deep); }
+/* download page of a landing (Euler, 5 Nov 2026): one card per volume — title-leaf thumbnail, sigle, title, one action */
+.chapter.no-figure:has(.baende) { grid-template-columns: minmax(0, 1fr); }
+.baende { display: grid; grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr)); gap: 1rem; margin: 1.2rem 0 0.4rem; }
+.band { display: grid; grid-template-columns: 5.6rem minmax(0, 1fr); gap: 0.85rem; padding: 0.85rem; background: var(--paper); border: 1px solid var(--line); border-radius: 3px; }
+.band-titel { display: block; align-self: start; line-height: 0; border: 1px solid var(--line-strong); box-shadow: 0 1px 3px rgba(0, 33, 71, 0.12); }
+.band-titel img { width: 100%; height: auto; display: block; }
+.band-titel:hover, .band-titel:focus-visible { border-color: var(--gold); outline: none; }
+.band-text { min-width: 0; display: flex; flex-direction: column; }
+.band-sigle { margin: 0; font-family: var(--sans); font-size: 0.78rem; font-weight: 650; letter-spacing: 0.04em; color: var(--gold-deep); }
+.band h3 { margin: 0.15rem 0 0.3rem; font-size: 1rem; line-height: 1.3; overflow-wrap: anywhere; }
+.band-hrsg, .band-meta, .band-fassung { margin: 0 0 0.25rem; font-family: var(--sans); font-size: 0.8rem; color: var(--muted); overflow-wrap: anywhere; }
+.band-fassung a { color: var(--oxford-soft); }
+.band-pdf { margin-top: auto; align-self: start; padding: 0.35rem 0.7rem; font-family: var(--sans); font-size: 0.82rem; font-weight: 600; color: var(--paper); background: var(--oxford); border-radius: 2px; text-decoration: none; }
+.band-pdf:hover, .band-pdf:focus-visible { background: var(--gold-deep); color: var(--paper); }
+@media (max-width: 680px) { .baende { grid-template-columns: 1fr; } }

@@ -1,6 +1,6 @@
 {
  "collection": "euler",
- "stand": "2026-10-30 04:12",
+ "stand": "2026-11-05 08:15",
  "issues": [
   {
    "id": "EULER-L1",
@@ -390,6 +390,35 @@
      "neu": "geplant"
     }
    ]
+  },
+  {
+   "id": "PENTEST-1",
+   "collection": "euler",
+   "bereich": "landing",
+   "art": "fehler",
+   "titel": "Pentest-Meldung: automatischer Test der offenen Schreibschnittstelle.",
+   "befund": "Pentest-Meldung: automatischer Test der offenen Schreibschnittstelle.",
+   "beleg": null,
+   "ort": "https://famulus.lettre.ai/euler/",
+   "stichworte": null,
+   "quelle": "leser",
+   "hinweis_von": null,
+   "status": "gemeldet",
+   "zusammen_mit": null,
+   "aufgabe": null,
+   "frist": null,
+   "erledigt_am": null,
+   "schwere": null,
+   "n_meldungen": 1,
+   "erkannt": "2026-11-04",
+   "geaendert": "2026-11-04T10:28:57",
+   "verlauf": [
+    {
+     "ts": "2026-11-04",
+     "feld": "angelegt",
+     "neu": "gemeldet"
+    }
+   ]
   }
  ],
  "plattform": [
@@ -622,6 +651,332 @@
     {
      "ts": "2026-10-28",
      "feld": "angelegt",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "FAMULUS-8",
+   "collection": "famulus",
+   "bereich": "viewer",
+   "art": "bedienung",
+   "titel": "Sprache der Oberfläche und der Antworten folgt der Browsersprache, nicht der Wahl des Lesers",
+   "befund": "Ein Leser der Euler-Landing (Rundgang, dann Viewer) bekam die Seite mit Suchwerkzeugen, Erläuterung, Wörterbuch und Abfrageoberfläche automatisch auf Französisch, vermutlich wegen der Browsersprache. Er stellte die Fragen deshalb französisch und erhielt französische Antworten; die Belege aus der Einleitung des Bandes wurden englisch (Originalsprache) zitiert, dazwischen standen vereinzelt deutsche Wörter. Zu klären: woher die Sprache kommt (Accept-Language, ?ui=, gespeicherte Einstellung), ob der Leser sie sieht und ändern kann, ob Antwort, Belege, Übersetzung und Oberfläche einer Sprache folgen, woher die deutschen Einsprengsel kommen.",
+   "beleg": "Lesermail vom 30.10.2026 an den Projektleiter (Euler-Alpha, kleiner Kreis)",
+   "ort": "https://famulus.lettre.ai/euler/lesen/",
+   "stichworte": "Sprache, Browsersprache, Accept-Language, ui, französisch, Übersetzung, Belege",
+   "quelle": "leser",
+   "hinweis_von": "Leser (Mail 30.10.2026)",
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": "Plan analysen/FAMULUS-8.md Schritte 1–8; Owner-Entscheidungen 31.10.2026: E1 Oberflächensprache, E2 Browsersprache sichtbar mit Herkunft, E3 Original + [Übersetzung], E4 Lesung englisch, E5 ?ui= nur bei Wahl im Rundgang",
+   "frist": null,
+   "erledigt_am": "2026-10-31",
+   "schwere": "mittel",
+   "n_meldungen": 0,
+   "erkannt": "2026-10-31",
+   "geaendert": "2026-10-31T12:40:45",
+   "verlauf": [
+    {
+     "ts": "2026-10-31",
+     "feld": "angelegt",
+     "neu": "gemeldet"
+    },
+    {
+     "ts": "2026-10-31",
+     "feld": "status",
+     "neu": "in_arbeit"
+    },
+    {
+     "ts": "2026-10-31",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "FAMULUS-9",
+   "collection": "famulus",
+   "bereich": "viewer",
+   "art": "bedienung",
+   "titel": "Viewer-Kopf aufräumen: Pfad ohne »Landings«, kein »Original«-Schalter, Tastenhinweise ins Hilfe-Menü",
+   "befund": "Owner 31.10.2026: (1) im Titelpfad ist »Landings« überflüssig, der Pfad beginnt mit Editions; (2) »Original« wird nicht mehr gebraucht, die Darstellungsmodi Faksimile/Text/beide werden umgeschaltet; (3) die Unterzeile mit den Tastenhinweisen stört und gehört ins ☰-Menü unter Hilfe.",
+   "beleg": null,
+   "ort": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7",
+   "stichworte": null,
+   "quelle": "owner",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": null,
+   "frist": null,
+   "erledigt_am": "2026-10-31",
+   "schwere": "mittel",
+   "n_meldungen": 0,
+   "erkannt": "2026-10-31",
+   "geaendert": "2026-10-31T11:45:02",
+   "verlauf": [
+    {
+     "ts": "2026-10-31",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-31",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "FAMULUS-10",
+   "collection": "famulus",
+   "bereich": "rundgang",
+   "art": "ablauf",
+   "titel": "Euler-Rundgang an der Goldbach-Edition: Titelbild, Seite, Textverständnis, Übersetzung, Wörterbuch",
+   "befund": "Owner 31.10.2026: Der Rundgang soll die Briefedition Euler–Goldbach (978-3-0348-0892-7) ausführlich vorführen: Titelbild mit Faksimile/Text, Sprung auf page_013 mit Satzmarkierung, Textverständnis, Übersetzung ins Deutsche, page_432 mit Wörterbuch (Termini der Seite, Theorematis → Eintrag).",
+   "beleg": null,
+   "ort": null,
+   "stichworte": null,
+   "quelle": "owner",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": null,
+   "frist": null,
+   "erledigt_am": "2026-10-31",
+   "schwere": "mittel",
+   "n_meldungen": 0,
+   "erkannt": "2026-10-31",
+   "geaendert": "2026-10-31T12:40:45",
+   "verlauf": [
+    {
+     "ts": "2026-10-31",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-31",
+     "feld": "status",
+     "neu": "in_arbeit"
+    },
+    {
+     "ts": "2026-10-31",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "FAMULUS-11",
+   "collection": "famulus",
+   "bereich": "viewer",
+   "art": "bedienung",
+   "titel": "Erläuterung heißt Textverständnis; die markierte Passage wird oben nicht wiederholt",
+   "befund": "Owner 31.10.2026: Die Ansicht gibt Textverständnis, keine vollständige Analyse (die gibt die Anfrage); Umbenennung in allen Sprachen, Hinweis auf die Anfrage; die markierte Passage steht schon ausgezeichnet im Text und wird im Panel nicht wiederholt.",
+   "beleg": null,
+   "ort": null,
+   "stichworte": null,
+   "quelle": "owner",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": null,
+   "frist": null,
+   "erledigt_am": "2026-10-31",
+   "schwere": "mittel",
+   "n_meldungen": 0,
+   "erkannt": "2026-10-31",
+   "geaendert": "2026-10-31T11:45:02",
+   "verlauf": [
+    {
+     "ts": "2026-10-31",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-31",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "FAMULUS-12",
+   "collection": "famulus",
+   "bereich": "dienst",
+   "art": "fehler",
+   "titel": "Übersetzung hält gemischt deutsch-lateinische Stelle für schon deutsch",
+   "befund": "page_432 Satz 0 (Meine Demonstration … Sit propositum trapezium ABCD …) trägt das Stanza-Label de; uebersetzen.py nimmt die Sprache des ersten Satzes und gibt die Stelle unverändert zurück (gleich=True), der lateinische Teil bleibt unübersetzt.",
+   "beleg": null,
+   "ort": "https://famulus.lettre.ai/euler/eulerOO/978-3-0348-0892-7?p=433",
+   "stichworte": null,
+   "quelle": "owner",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": null,
+   "frist": null,
+   "erledigt_am": "2026-10-31",
+   "schwere": "mittel",
+   "n_meldungen": 0,
+   "erkannt": "2026-10-31",
+   "geaendert": "2026-10-31T11:45:02",
+   "verlauf": [
+    {
+     "ts": "2026-10-31",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-31",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "FAMULUS-13",
+   "collection": "famulus",
+   "bereich": "daten",
+   "art": "fehler",
+   "titel": "OCR-Text enthält Markdown-Hervorhebung (*wort*)",
+   "befund": "page_432.xml: <p>Meine *Demonstration* … *Theorematis*; der Renderer zeigt die Sternchen roh, Übersetzung/Auswahl übernehmen sie.",
+   "beleg": null,
+   "ort": null,
+   "stichworte": null,
+   "quelle": "owner",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": null,
+   "frist": null,
+   "erledigt_am": "2026-10-31",
+   "schwere": "mittel",
+   "n_meldungen": 0,
+   "erkannt": "2026-10-31",
+   "geaendert": "2026-10-31T12:40:45",
+   "verlauf": [
+    {
+     "ts": "2026-10-31",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-31",
+     "feld": "status",
+     "neu": "entscheidung"
+    },
+    {
+     "ts": "2026-10-31",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "FAMULUS-14",
+   "collection": "famulus",
+   "bereich": "viewer",
+   "art": "fehler",
+   "titel": "Abbildung der Seite fehlt (Trapez, page_432)",
+   "befund": "Im Transkript erscheint statt der Abbildung ein leerer heller Kasten; lokal liefert page_432_fig_1.png 200, über den Proxy kommt eine ältere Datei von openscience.",
+   "beleg": null,
+   "ort": null,
+   "stichworte": null,
+   "quelle": "owner",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": null,
+   "frist": null,
+   "erledigt_am": "2026-10-31",
+   "schwere": "mittel",
+   "n_meldungen": 0,
+   "erkannt": "2026-10-31",
+   "geaendert": "2026-10-31T11:45:02",
+   "verlauf": [
+    {
+     "ts": "2026-10-31",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-31",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "FAMULUS-15",
+   "collection": "famulus",
+   "bereich": "viewer",
+   "art": "fehler",
+   "titel": "Wörterbuch zeigt Müll der ganzen Sammlung statt der Termini der Seite",
+   "befund": "Liste »Einträge (16)« aus lw_headword der Primärsammlung, ohne Seitenbezug; falsche Sprachen/Formen (onendliche la, unendlico la, séreo la, reihen la), Dubletten (academie/académie); theorematis wird von Stanza zu theorematus/Theorematas lemmatisiert, kein Eintrag theorema.",
+   "beleg": null,
+   "ort": null,
+   "stichworte": null,
+   "quelle": "owner",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": null,
+   "frist": null,
+   "erledigt_am": "2026-10-31",
+   "schwere": "mittel",
+   "n_meldungen": 0,
+   "erkannt": "2026-10-31",
+   "geaendert": "2026-10-31T12:40:45",
+   "verlauf": [
+    {
+     "ts": "2026-10-31",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-31",
+     "feld": "status",
+     "neu": "in_arbeit"
+    },
+    {
+     "ts": "2026-10-31",
+     "feld": "status",
+     "neu": "erledigt"
+    }
+   ]
+  },
+  {
+   "id": "FAMULUS-16",
+   "collection": "famulus",
+   "bereich": "dienst",
+   "art": "fehler",
+   "titel": "Begriffsbindung nimmt Lemmata fremder Sprachen (Quelle → quelle|la)",
+   "befund": "evidenzraum/fastindex._binden_begriff bindet bei quelle=frage jedes Lemma|Sprache-Paar des Bestands ohne Prüfung, ob die Form in Sätzen dieser Sprache belegt ist; Lauf an-731666d12181; anfrage/woerterbuch.anstossen legt daraus Wörterbucheinträge an.",
+   "beleg": null,
+   "ort": null,
+   "stichworte": null,
+   "quelle": "owner",
+   "hinweis_von": null,
+   "status": "erledigt",
+   "zusammen_mit": null,
+   "aufgabe": null,
+   "frist": null,
+   "erledigt_am": "2026-10-31",
+   "schwere": "mittel",
+   "n_meldungen": 0,
+   "erkannt": "2026-10-31",
+   "geaendert": "2026-10-31T11:45:02",
+   "verlauf": [
+    {
+     "ts": "2026-10-31",
+     "feld": "angelegt",
+     "neu": "bestaetigt"
+    },
+    {
+     "ts": "2026-10-31",
+     "feld": "status",
      "neu": "erledigt"
     }
    ]
