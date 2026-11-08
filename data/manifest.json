@@ -78,7 +78,7 @@
    "source": "enestroem.bib: entries with a year"
   },
   "iva_edition_letters": {
-   "value": 1040,
+   "value": 1057,
    "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8)"
   },
   "iva_edition_lost": {
@@ -86,15 +86,15 @@
    "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8) (numbers in brackets = lost letters)"
   },
   "iva_catalogue_entries": {
-   "value": 2799,
+   "value": 2818,
    "source": "letters_reference.duckdb descriptio (distinct R numbers of the main list of IVA 1, machine-read)"
   },
   "iva_register_only": {
-   "value": 2353,
+   "value": 2361,
    "source": "letters_reference.duckdb reference (Descriptio entries no edition letter claims, reading suspect ones excluded)"
   },
   "iva_aligned": {
-   "value": 644,
+   "value": 654,
    "source": "letters_reference.duckdb crosswalk"
   },
   "iva_first": {
@@ -102,11 +102,11 @@
    "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8)"
   },
   "iva_last": {
-   "value": 1778,
+   "value": 1784,
    "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8)"
   },
   "iva_vols_critical": {
-   "value": 7,
+   "value": 8,
    "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8)"
   },
   "iva_crit_first": {
@@ -114,7 +114,7 @@
    "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8) (first volume with a letter list)"
   },
   "iva_crit_last": {
-   "value": 8,
+   "value": 9,
    "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8) (last volume with a letter list)"
   },
   "iva_viewer_letters": {
@@ -226,7 +226,7 @@
    "source": "eulerOO + enestroem _corpus.duckdb stz_begriffe: their occurrences"
   },
   "search_ms": {
-   "value": 271,
+   "value": 216,
    "source": "measured at build: GET woerterbuch/vorkommen (lemma numerus, all eulerOO volumes), median of 3"
   },
   "search_hits": {
