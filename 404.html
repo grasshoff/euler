@@ -28,7 +28,12 @@ function publicPath(p) {
 }
 (function () {
   var p = location.pathname, seg = p.split("/")[1] || "", s = service(p);
-  if (s) {
+  // a file of a live service (a volume PDF, a .bib) is fetched by the browser itself: in the frame its download would
+  // be blocked (no user gesture inside a cross-origin frame); the server names the file (Content-Disposition), and the
+  // page keeps showing famulus.lettre.ai (8 Nov 2026: every Euler volume download returned this page instead of the PDF)
+  if (s && /[.](pdf|zip|bib|sha256|epub|csv|xml|json)$/i.test(s)) {
+    location.replace(LIVE + s + location.search);
+  } else if (s) {
     document.documentElement.className = "live";
     document.title = "Famulus";        // a working live page is no "page not found"; the viewer may report its own title
     document.addEventListener("DOMContentLoaded", function () {
