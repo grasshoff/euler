@@ -818,7 +818,7 @@ html:not([data-guide-lang]) [data-gl="en"] { display: none !important; }
 .hs-t { font: 560 1.12rem/1.05 var(--display); max-width: 6.4rem; }
 .hs-play { display: grid; place-items: center; width: 1.9rem; height: 1.9rem; margin: 0.2rem 0 0.1rem; border-radius: 50%; background: #fff; color: var(--obe); font-size: 0.8rem; padding-left: 0.12rem;
   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7); animation: hs-pulse 2.2s ease-out infinite; }
-.hs-s { font: 500 0.7rem/1.1 var(--sans); opacity: 0.9; }
+.hs-s { font: 500 0.75rem/1.1 var(--sans); opacity: 0.9; }  /* 12 px: TÜV L5 minimum */
 @keyframes hs-wink { 0%, 86%, 100% { transform: rotate(-9deg); } 90% { transform: rotate(-3deg) scale(1.06); } 94% { transform: rotate(-12deg) scale(1.02); } }
 @keyframes hs-pulse { 0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.65); } 70%, 100% { box-shadow: 0 0 0 0.75rem rgba(255, 255, 255, 0); } }
 @media (max-width: 760px) {

@@ -1,53 +1,57 @@
 {
  "slug": "euler",
  "facts": {
+  "iva_vol_last": {
+   "value": 9,
+   "source": "euler-oo-iv /api/documents: highest volume number served"
+  },
   "oo_vols": {
-   "value": 84,
-   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+   "value": 85,
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders; series IVA: the volumes the correspondence viewer serves (euler-oo-iv /api/documents) with eulerOO-IVA/<id>/biblio.xml"
   },
   "oo_pages": {
-   "value": 41262,
-   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+   "value": 41340,
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders; series IVA: the volumes the correspondence viewer serves (euler-oo-iv /api/documents) with eulerOO-IVA/<id>/biblio.xml"
   },
   "oo_vols_I": {
    "value": 30,
-   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders; series IVA: the volumes the correspondence viewer serves (euler-oo-iv /api/documents) with eulerOO-IVA/<id>/biblio.xml"
   },
   "oo_pages_I": {
    "value": 15044,
-   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders; series IVA: the volumes the correspondence viewer serves (euler-oo-iv /api/documents) with eulerOO-IVA/<id>/biblio.xml"
   },
   "oo_vols_II": {
    "value": 33,
-   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders; series IVA: the volumes the correspondence viewer serves (euler-oo-iv /api/documents) with eulerOO-IVA/<id>/biblio.xml"
   },
   "oo_pages_II": {
    "value": 13918,
-   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders; series IVA: the volumes the correspondence viewer serves (euler-oo-iv /api/documents) with eulerOO-IVA/<id>/biblio.xml"
   },
   "oo_vols_III": {
    "value": 13,
-   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders; series IVA: the volumes the correspondence viewer serves (euler-oo-iv /api/documents) with eulerOO-IVA/<id>/biblio.xml"
   },
   "oo_pages_III": {
    "value": 5931,
-   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders; series IVA: the volumes the correspondence viewer serves (euler-oo-iv /api/documents) with eulerOO-IVA/<id>/biblio.xml"
   },
   "oo_vols_IVA": {
-   "value": 8,
-   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+   "value": 9,
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders; series IVA: the volumes the correspondence viewer serves (euler-oo-iv /api/documents) with eulerOO-IVA/<id>/biblio.xml"
   },
   "oo_pages_IVA": {
-   "value": 6369,
-   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+   "value": 6447,
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders; series IVA: the volumes the correspondence viewer serves (euler-oo-iv /api/documents) with eulerOO-IVA/<id>/biblio.xml"
   },
   "oo_year_min": {
    "value": 1911,
-   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders; series IVA: the volumes the correspondence viewer serves (euler-oo-iv /api/documents) with eulerOO-IVA/<id>/biblio.xml"
   },
   "oo_year_max": {
    "value": 2022,
-   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders"
+   "source": "PDAI eulerOO: <ISBN>/biblio.xml (volume, year, language) and page folders; series IVA: the volumes the correspondence viewer serves (euler-oo-iv /api/documents) with eulerOO-IVA/<id>/biblio.xml"
   },
   "en_entries": {
    "value": 866,
@@ -104,6 +108,22 @@
   "iva_vols_critical": {
    "value": 7,
    "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8)"
+  },
+  "iva_crit_first": {
+   "value": 2,
+   "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8) (first volume with a letter list)"
+  },
+  "iva_crit_last": {
+   "value": 8,
+   "source": "letters_reference.duckdb (edition_letters, read from the letter lists of IVA 2-8) (last volume with a letter list)"
+  },
+  "iva_viewer_letters": {
+   "value": 3677,
+   "source": "eulerOO-IVA_famulus.duckdb fq_letters / fq_letter_pages (letters of the correspondence viewer)"
+  },
+  "iva_viewer_letters_paged": {
+   "value": 1104,
+   "source": "eulerOO-IVA_famulus.duckdb fq_letters / fq_letter_pages (letters of the correspondence viewer) (letters with their pages bound)"
   },
   "iva_top_n": {
    "value": 250,
@@ -206,7 +226,7 @@
    "source": "eulerOO + enestroem _corpus.duckdb stz_begriffe: their occurrences"
   },
   "search_ms": {
-   "value": 259,
+   "value": 271,
    "source": "measured at build: GET woerterbuch/vorkommen (lemma numerus, all eulerOO volumes), median of 3"
   },
   "search_hits": {
