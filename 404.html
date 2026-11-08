@@ -32,7 +32,15 @@ function publicPath(p) {
   // be blocked (no user gesture inside a cross-origin frame); the server names the file (Content-Disposition), and the
   // page keeps showing famulus.lettre.ai (8 Nov 2026: every Euler volume download returned this page instead of the PDF)
   if (s && /[.](pdf|zip|bib|sha256|epub|csv|xml|json)$/i.test(s)) {
-    location.replace(LIVE + s + location.search);
+    // the page stays on screen while the browser saves the file: say so, with one way back (not "page not found")
+    document.documentElement.className = "datei";
+    document.title = "Famulus · Download";
+    document.addEventListener("DOMContentLoaded", function () {
+      var z = document.getElementById("datei-zurueck");
+      var r = document.referrer;
+      z.href = r && r.indexOf(location.origin + "/") === 0 && r.indexOf("/" + GATEWAY + "/") < 0 ? r : "/";
+      location.replace(LIVE + s + location.search);   // after the page is built: started in <head>, it stops the parser
+    });
   } else if (s) {
     document.documentElement.className = "live";
     document.title = "Famulus";        // a working live page is no "page not found"; the viewer may report its own title
@@ -63,6 +71,7 @@ main { max-width: 36rem; margin: 18vh auto; padding: 0 16px; }
 h1 { font-weight: 500; } a { color: var(--ink); text-decoration-color: var(--gold); }
 html.live, html.live body { height: 100%; overflow: hidden; }
 html.live main { display: none; }
+#datei, html.datei main { display: none; } html.datei #datei { display: block; }
 html.live iframe { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; z-index: 2147483647; background: #fff; }
 </style>
 </head>
@@ -70,6 +79,10 @@ html.live iframe { position: fixed; inset: 0; width: 100%; height: 100%; border:
 <main>
 <h1>This page does not exist.</h1>
 <p><a href="/">Famulus</a> · <a href="/news/">Famulus News</a> · <a href="/guide/">Wegweiser</a> · <a href="/editions/">Editions</a></p>
+</main>
+<main id="datei" lang="de">
+<h1>Der Download beginnt.</h1>
+<p><a id="datei-zurueck" href="/">Zurück</a></p>
 </main>
 </body>
 </html>
