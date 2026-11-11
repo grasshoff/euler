@@ -1,0 +1,499 @@
+---
+title: Euler's Argument for the Tide-Raising Force, Reconstructed
+subtitle: One Segment of a Source, Passage by Passage, beside Its Formal Reconstruction
+running-title: Euler's argument for the tide-raising force
+author:
+- name: Gerd Graßhoff
+  email: gerd.grasshoff@hu-berlin.de
+  orcid: 0000-0002-4450-357X
+  affiliations:
+  - name: Humboldt-Universität zu Berlin
+    department: Philosophisches Institut
+    city: Berlin
+    country: Germany
+  - name: Deutsches Museum
+    department: Forschungsinstitut
+    city: München
+    country: Germany
+date: '2026-11-10'
+lang: en
+bibliography: bibliography.bib
+abstract: 'One segment of a historical source is taken through its argument: the end of §22 and §§24 to 29 of Euler''s
+
+  *Inquisitio physica in causam fluxus ac refluxus maris* (Eneström 57), seven pages of Opera omnia II 31, in
+
+  which Euler derives the force by which the sun or the moon tends to raise the tides. The segment is divided
+
+  into twelve passages. Each passage is quoted in Latin and in English and set beside the step of the
+
+  reconstruction that says the same thing explicitly, with its premises, the rule that licenses it, and the
+
+  result of a check. Annotations stand in a third column. The texts are not typed: the Latin is taken from the
+
+  page of the edition, the English from the edition''s stored translation, and every passage links to its page
+
+  in the edition. The reconstruction confirms Euler''s exact components and his expansion. It follows the first
+
+  edition and the manuscript against an emendation of the editor, which a test shows to be wrong. It marks
+
+  where it does not follow Euler''s route: the resolution by similar triangles in §26 is compared with the
+
+  result, not rebuilt. The format, called an exposition, is general.
+
+  '
+keywords:
+- history of astronomy
+- Euler
+- tides
+- geometrical reasoning
+- argument reconstruction
+- source edition
+license: CC BY-NC-ND 4.0
+expertise:
+  schema: famulus-expertise/1
+  subject:
+    question: By what argument does Euler derive the force by which the sun or the moon tends to raise the tides,
+      and what does a formal reconstruction make of each sentence of it?
+    sources:
+    - ref: fr:enestroem/E57/0018
+      role: object
+      note: 'Opera omnia II 31, p. 37: the component along MR with the emended sign, the first-order formulae, and
+        note 5'
+    work: Euler, Inquisitio physica in causam fluxus ac refluxus maris (Eneström 57), chapter II, the end of §22
+      and §§24 to 29
+    edition: Opera omnia II 31, pages 33 to 39; cited by the pages of the Famulus collection enestroem, document
+      E57 (page n of the collection is page n + 19 of Opera omnia II 31)
+    method: The model is written out and the argument is written as steps, one proposition each, with its premises
+      and the rule that licenses it; a program checks them. The segment is divided into twelve passages, each quoted
+      in Latin and in English beside the step of the reconstruction, with notes.
+    limits:
+    - The Latin is the edition's transcription, not a new collation.
+    - The English is a machine translation compared with the Latin by the author, not a scholarly translation.
+    - 'The reconstruction covers what Euler argues in these sections, not what he presupposes from the sections
+      before: that the earth may be treated as if collected in its centre, and the form of the force.'
+    - The emendation is judged on the argument alone, without the first edition or the manuscript.
+    - The resolution by similar triangles in §26 is compared with the result, not rebuilt; the first resolution
+      of §25 is left out; Euler's Fig. 4 is not drawn.
+    - The checks report the positions of the particle on the line CS as not covered by the construction of the perpendicular
+      MP.
+  claims:
+  - id: C1
+    text: 'The sentence at the end of §22 is a definition, not a premise among others: it fixes what the argument
+      is about, the force on the particle less the force on the centre.'
+    section: sec-results
+    status: grounded
+    grounds:
+    - fr:astra/euler-e57-tide
+  - id: C2
+    text: 'The exact components of §26 are confirmed by another route than Euler''s: the reconstruction states that
+      Euler''s closed expressions equal the quantities defined, and the check confirms it in every sampled configuration.'
+    section: sec-results
+    status: grounded
+    grounds:
+    - fr:astra/euler-e57-tide
+  - id: C3
+    text: The expansion of §27 is not an equality but a step to a stated order; it is checked by making the ratio
+      of the particle's distance to the luminary's distance small and requiring the relative difference to fall
+      like the stated power of the ratio.
+    section: sec-results
+    status: grounded
+    grounds:
+    - fr:astra/euler-e57-tide
+  - id: C4
+    text: 'The editor''s emendation 4xx + yy in the second-order term of the component along MR is wrong: the reading
+      4xx − yy of the first edition and the manuscript follows from Euler''s own substitution and is of second order,
+      the emended reading is of first order only.'
+    section: sec-results
+    status: grounded
+    grounds:
+    - fr:enestroem/E57/0018
+  - id: C5
+    text: §28 gives the angle whose tangent is √2 as 54°45′ 'circiter'; to the nearest minute it is 54°44′.
+    section: sec-results
+    status: gap
+    gap: The issue gives no address for the page of §28 beside this statement.
+  - id: C6
+    text: The first edition and the manuscript have not been seen; their reading is known from the editor's note,
+      and the emendation is judged on the argument alone.
+    section: sec-limits
+    status: gap
+    gap: The first edition and the manuscript are not among the sources of the issue.
+  agent:
+    summary: 'Reconstruction of one segment of Euler''s Inquisitio physica in causam fluxus ac refluxus maris (Eneström
+      57): the end of §22 and §§24 to 29, pages 33 to 39 of Opera omnia II 31, in twelve passages. Each passage
+      stands beside the steps of a formal reconstruction with premises, rule and check. The Latin is the edition''s
+      transcription, the English a machine translation compared with the Latin. The reconstruction is the author''s,
+      not Euler''s wording; §26 is compared with the result, not rebuilt. The first edition and the manuscript were
+      not seen.'
+    read_first:
+    - sec-segment
+    - sec-reading
+    - sec-passages
+    - sec-results
+    - sec-limits
+    answers:
+    - By what steps does Euler derive the tide-raising force of the sun or the moon in §§22 to 29 of E57?
+    - Which step of the reconstruction renders a given passage, from which premises and by which rule?
+    - Is the editor's emendation of the second-order term of the component along MR right?
+    - Where does the reconstruction not follow Euler's route, and what is not reconstructed?
+    - How is an exposition of another source built?
+    terms:
+    - term: passage
+      meaning: 'a stretch of Euler''s text that does one thing: states the principle, sets up the figure, gives
+        a formula, draws a consequence'
+    - term: exposition
+      meaning: 'the format of the issue: one segment of a source, passage by passage, each passage beside the steps
+        that reconstruct it, with notes'
+    - term: model
+      meaning: the points of Euler's figure with their constructions, the lengths as symbols, the forces as quantities
+        defined on them
+    - term: step
+      meaning: one proposition of the argument with the premises it is drawn from and the rule that licenses it
+    - term: marks ✓ ◦ ≈
+      meaning: ✓ an instance of the rule named, ◦ read off the construction, ≈ by calculation or by expansion
+    do_not:
+    - Do not quote the reconstruction or its steps as Euler's wording.
+    - 'Do not cite the English as a published or scholarly translation: it is a machine translation compared with
+      the Latin by the author.'
+    - 'Do not present the Latin as a new collation: it is the edition''s transcription.'
+    - 'Do not state that the first edition or the manuscript was consulted: their reading is known from the editor''s
+      note.'
+    - 'Do not present the resolution by similar triangles of §26 as reconstructed: it is compared with the result,
+      not rebuilt.'
+    - Do not extend the reconstruction to what Euler presupposes from the sections before §22.
+    cite: 'Graßhoff, Gerd. Euler''s Argument for the Tide-Raising Force, Reconstructed: One Segment of a Source,
+      Passage by Passage, beside Its Formal Reconstruction. Famulus Expertise Euler, No. 1 (whole no. 1). Duisburg:
+      OpenScienceTechnology, 2026. Version 1.0. https://famulus.lettre.ai/euler/lettre/1/'
+    bibtex: "@article{grasshoff2026expertise-euler-1,\n  author = {Graßhoff, Gerd},\n  title = {{Euler's Argument\
+      \ for the Tide-Raising Force, Reconstructed: One Segment of a Source, Passage by Passage, beside Its Formal\
+      \ Reconstruction}},\n  journal = {Famulus Expertise Euler},\n  number = {1},\n  year = {2026},\n  date = {2026-11-10},\n\
+      \  version = {1.0},\n  publisher = {OpenScienceTechnology},\n  address = {Duisburg},\n  url = {https://famulus.lettre.ai/euler/lettre/1/},\n\
+      \  note = {Version 1.0. Famulus Expertise, whole no. 1},\n  langid = {english}\n}"
+    cite_section: Graßhoff 2026, Famulus Expertise Euler 1, version 1.0, § 4 (“What the reconstruction shows”),
+      https://famulus.lettre.ai/euler/lettre/1/#sec-results
+    sections:
+    - number: '1'
+      title: The segment
+      id: sec-segment
+    - number: '2'
+      title: How to read the passages
+      id: sec-reading
+    - number: '3'
+      title: The passages
+      id: sec-passages
+    - number: '4'
+      title: What the reconstruction shows
+      id: sec-results
+    - number: '5'
+      title: The exposition as a format
+      id: sec-format
+    - number: '6'
+      title: Limits
+      id: sec-limits
+    use:
+      licence: CC BY-NC-ND 4.0
+      may:
+      - read
+      - quote with the citation
+      - copy and pass on unchanged for non-commercial purposes with author and source named
+      may_not:
+      - publish an adapted or translated version
+      - use commercially
+      - present reproductions from the cited sources as covered by this licence
+    entry_points:
+      mcp: famulus-expertise
+      tools:
+      - fx_about
+      - fx_series
+      - fx_issues
+      - fx_issue
+      - fx_text
+      - fx_search
+      - fx_claims
+      - fx_references
+      - fx_about_source
+      - fx_cite
+      - fx_gates
+      resource: expertise://euler/1
+  review:
+    drafted_by: Claude (AI assistant), 11 Nov 2026
+    confirmed_by: null
+    confirmed_on: null
+  identity:
+    series: Famulus Expertise
+    subseries: Famulus Expertise Euler
+    edition: euler
+    number: 1
+    whole_number: 1
+    id: tide-raising-force
+    ref: fr:expertise/euler/1
+    url: https://famulus.lettre.ai/euler/lettre/1/
+    pdf: https://famulus.lettre.ai/euler/lettre/1/tide-raising-force.pdf
+    source: https://famulus.lettre.ai/euler/lettre/1/heft.fam
+    preamble: https://famulus.lettre.ai/euler/lettre/1/heft.json
+    issn: null
+    doi: null
+    version: '1.0'
+    date: '2026-11-10'
+    status: published
+    revisions:
+    - version: '1.0'
+      date: '2026-11-10'
+      note: First publication.
+    language: en
+    licence:
+      name: CC BY-NC-ND 4.0
+      long: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+      url: https://creativecommons.org/licenses/by-nc-nd/4.0/
+    collections:
+    - enestroem
+    - eulerOO
+    - eulerOO-IVA
+  responsibility:
+    authors:
+    - name: Gerd Graßhoff
+      orcid: 0000-0002-4450-357X
+      affiliations:
+      - name: Humboldt-Universität zu Berlin
+        department: Philosophisches Institut
+        city: Berlin
+        country: Germany
+      - name: Deutsches Museum
+        department: Forschungsinstitut
+        city: München
+        country: Germany
+    editor: Gerd Graßhoff
+    publisher:
+      name: OpenScienceTechnology GmbH
+      place: Duisburg
+    ai_contribution: null
+  evidence:
+    references:
+    - ref: fr:astra/euler-e57-tide
+      roles:
+      - ground
+      - segment
+      count: 1
+    - ref: fr:astra/euler-fig-3
+      roles:
+      - segment
+      count: 1
+    - ref: fr:enestroem/E57/0018
+      roles:
+      - ground
+      - inline
+      - subject
+      count: 1
+    citations:
+    - eulerE57
+    - grasshoff2026astra
+    - grasshoff2026fundamentals
+    - grasshoff2026twocases
+    figures:
+    - file: figures/euler-p37-formula-note.png
+      id: fig-note
+  quality:
+    catalogue: 2026-11-11.1
+    run: '2026-11-11T10:46:22'
+    verdict: inventory
+    counts:
+      erfuellt: 10
+      luecke: 5
+      verletzt: 4
+      teilgeprueft: 2
+    results:
+      erfuellt: fulfilled
+      verletzt: violated
+      luecke: gap
+      offen_modell: awaiting a judgement
+      teilgeprueft: partly tested
+      fehler: error
+      nicht_anwendbar: not applicable
+    open:
+    - gate: heft.praeambel.bestaetigung.01
+      result: luecke
+      blocking: true
+      title: The author has confirmed the preamble
+      findings: 1
+    - gate: heft.praeambel.ki_erklaerung.01
+      result: luecke
+      blocking: true
+      title: The contribution of AI systems to the issue is declared
+      findings: 1
+    - gate: referenz.abdeckung.quellenaussage.01
+      result: verletzt
+      blocking: true
+      title: Every statement about a source carries a reference
+      findings: 10
+    - gate: referenz.adresse.schaerfe.01
+      result: verletzt
+      blocking: true
+      title: Every Famulus reference is sharp
+      findings: 1
+    - gate: zitat.wortlaut.fundstelle.01
+      result: luecke
+      blocking: true
+      title: A typed wording stands at the place named
+      findings: 1
+    - gate: validitaet.astra.vollstaendigkeit.01
+      result: teilgeprueft
+      blocking: true
+      title: The objects of Famulus Astra shown in the issue are completely checked
+      findings: 1
+    - gate: validitaet.sachlich.aussagen.01
+      result: luecke
+      blocking: true
+      title: The factual statements of the issue are justified (sachliche Validität)
+      findings: 1
+    - gate: sprache.nononsense.einschuebe.01
+      result: verletzt
+      blocking: true
+      title: No evaluative, intensifying or meta-linguistic insertions
+      findings: 3
+    - gate: sprache.termini.collection.01
+      result: teilgeprueft
+      blocking: true
+      title: The terms follow the dictionaries of the collections of the sub-series
+      findings: 6
+    - gate: sprache.termini.fest.01
+      result: verletzt
+      blocking: true
+      title: The fixed terminology of the house is kept
+      findings: 1
+    - gate: apparat.bibliographie.schluessel.01
+      result: luecke
+      blocking: true
+      title: Every citation key resolves, every entry is complete
+      findings: 3
+  counting:
+    vgwort: assigned
+---
+```{=typst}
+#show figure: set block(breakable: true)
+```
+
+## The segment {#sec-segment}
+
+In chapter II of his prize essay on the tides [@eulerE57] Euler asks by what force the sun or the moon tends to
+move a particle of the earth relative to the earth's centre. He answers on seven pages, 33 to 39 of the volume
+of the Opera omnia: a principle at the end of §22, a figure in §24, the force resolved exactly in §§25 and 26,
+expanded in a small ratio in §27, and read for its consequences in §§28 and 29. An earlier paper treated this
+argument briefly as one of two cases [@grasshoff2026twocases]. Here it is the only subject, and the aim is
+different: to set Euler's own words beside the reconstruction, passage by passage, so that a reader can see
+for every sentence what has been made of it.
+
+The method is that of the series [@grasshoff2026fundamentals; @grasshoff2026astra]. The *model* is written
+out: the points of Euler's figure with their constructions, the lengths as symbols, the forces as quantities
+defined on them. The *argument* is written as steps, one proposition each, with the premises it is drawn from
+and the rule that licenses it. A program *checks* whether every premise is there, whether every proposition
+holds in the model for every admissible value and position, whether every step is an instance of its rule,
+and whether the conclusion rests only on what is cited.
+
+The figure is drawn here from the model, after Euler's Fig. 3: the earth as a circle about C, the luminary S, the
+particle M with its perpendicular MP on CS. It moves: the angle φ at C, which fixes the place of M, runs through a
+full turn. The distance of S is a drawing value, as it is in the printed figure.
+
+{{< famulus fr:astra/euler-fig-3 animation >}}
+
+## How to read the passages {#sec-reading}
+
+The segment is divided into twelve passages. A passage is a stretch of Euler's text that does one thing: states
+the principle, sets up the figure, gives a formula, draws a consequence. Each passage has three parts.
+
+*The source.* Euler's text, in Latin as the edition transcribes it, or in English. A mark such as |35| shows
+where a page of the Opera omnia begins. The English is the edition's stored page translation, a machine
+translation; it was compared with the Latin for this paper and is a working translation, not a published one.
+Three wordings were corrected, all three at a page break, where a translation made page by page had broken a
+sentence in two.
+
+*The reconstruction.* The step or steps of the argument that say what the passage says. A step has a number, a
+claim in words, the proposition in the notation of the figure, the steps or constructions it is drawn from,
+the rule, and a mark: ✓ an instance of the rule named, ◦ read off the construction, ≈ by calculation or by
+expansion. Where a passage is not a step, the reconstruction says what it is instead: a definition in the
+model, or a part of the text that is not reconstructed.
+
+*The notes.* What the reconstruction supplies that Euler leaves unsaid, where it departs from his route, and
+what the check found.
+
+::: {.content-visible when-format="html"}
+In this version the passages are interactive. *Latin · English* switches the source. *Overview · Steps · Full*
+sets how much of the reconstruction is shown; every step also opens by itself. *Notes* adds the third column.
+Selecting a step shows in the figure what it speaks of. *Open in the edition* opens the page of the Opera omnia
+in the edition's viewer, in a separate window.
+:::
+
+::: {.content-visible unless-format="html"}
+In print the source stands in two columns, Latin and English, with the reconstruction and the notes below. The
+page version of this issue shows the same passages as an interactive page: the source beside the
+reconstruction, the notes as a third column that can be switched on, a figure that shows what a selected step
+speaks of, and for every passage a link that opens the page of the Opera omnia in the edition's viewer.
+:::
+
+## The passages {#sec-passages}
+
+{{< famulus fr:astra/euler-e57-tide exposition >}}
+
+## What the reconstruction shows {#sec-results}
+
+*The principle is a definition.* The sentence at the end of §22 is not a premise among others. It fixes what
+the argument is about: the force on the particle less the force on the centre. In the model it is the
+definition of the two quantities observed, along MC and along MR, and every later step is a statement about
+them.
+
+*The exact components are confirmed, by another route than Euler's.* §26 reaches the two components through a
+perpendicular QV and the similar triangles QVM and MPC. The reconstruction does not rebuild this. It states
+that Euler's closed expressions equal the quantities defined, and the check confirms it in every sampled
+configuration. This is the widest gap between the source and the reconstruction, and the notes say so at the
+passage.
+
+*The expansion has an order, and the order can be tested.* §27 keeps first two terms and then one. A step of
+this kind is not an equality. It is checked by making the ratio of the particle's distance to the luminary's
+distance small, a hundredth, a thousandth, a ten-thousandth, and requiring the relative difference to fall
+like the stated power of the ratio.
+
+*An emendation of the editor is wrong.* For the component along MR the Opera omnia print 4xx + yy in the term
+of second order, with the note "Editio princeps et Manuscriptus: (4xx − yy)/2a loco (4xx + yy)/2a. Correxit
+EJA." (@fig-note). The reconstruction follows the first edition and the manuscript. Their reading follows from
+Euler's own substitution three lines above, and it is of second order: its relative difference from the exact
+component is 1.8 · 10⁻⁴, 1.8 · 10⁻⁶ and 1.8 · 10⁻⁸ at the three ratios. The emended reading is of first order
+only: 2.0 · 10⁻², 2.0 · 10⁻³ and 2.0 · 10⁻⁴. The emendation does not touch Euler's results, which use the first
+term. We have not seen the first edition or the manuscript; their reading is known to us from the editor's
+note.
+
+![Opera omnia II 31, p. 37 (`fr:enestroem/E57/0018`): the component along MR with the emended sign, the
+first-order formulae, and note 5.](figures/euler-p37-formula-note.png){#fig-note width=92%}
+
+*A rounded angle.* §28 gives the angle whose tangent is √2 as 54°45′ "circiter". To the nearest minute it is
+54°44′.
+
+*What is not reconstructed.* The first resolution of §25, along CS and along MP with the diagonal MO, is left
+out: §26 replaces it, and no formula of §§26 to 29 cites it. Euler's Fig. 4 is not drawn. The checks report the
+positions of the particle on the line CS as not covered by the construction of the perpendicular MP.
+
+## The exposition as a format {#sec-format}
+
+The page is built from one file that names, for every passage, where it begins and where it ends on a page of
+the edition, which steps reconstruct it, and the notes. Nothing of the source is typed into that file. The
+builder takes the Latin from the page of the edition and the English from the stored translation, and it
+refuses to build when a passage is not found exactly once, when a step of the argument stands beside no
+passage, or when a passage lies in no paragraph of the reference register. A correction of the translation is
+listed with its reason and shown as a correction. The reference of the source comes from a checked record.
+
+The same file gives the interactive page and the print, so the two cannot drift apart. The procedure for
+another source is the same: choose the segment, write the model, write the argument, divide the text into
+passages, attach the steps, and annotate what remains.
+
+## Limits {#sec-limits}
+
+The Latin is the edition's transcription, not a new collation; one spelling of the transcription (*Praetera*)
+is kept as it stands. The English is a machine translation compared with the Latin by the author, not a
+scholarly translation. The reconstruction covers what Euler argues in these sections, not what he presupposes
+from the sections before: that the earth may be treated as if collected in its centre (the paragraph before §22), and the form of
+the force. The emendation is judged on the argument alone, without the first edition or the manuscript.
+
+## Availability {.unnumbered}
+
+The exposition is `expositions/euler-e57-tide.yaml` in the Famulus workspace `famulus-astronomica`; the model,
+the derivation, the tested emendation and the figure are in `examples/euler/`. The page element is
+`<astra-exposition>`. Euler is cited by the pages of the Famulus collection `enestroem`, document `E57`; page n
+of the collection is page n + 19 of Opera omnia II 31.
